@@ -1,0 +1,1 @@
+export default new Array(40).fill(null).map((item, index) => require(`./${++index}.json`))
