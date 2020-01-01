@@ -42,6 +42,10 @@ export default class TestScreen extends React.Component {
     this.startTimer(600);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
   getQuestionItem(ticketNumber = this.state.ticketNumber, questionNumber = this.state.questionNumber) {
     return questions.default[ticketNumber][questionNumber];
   }
