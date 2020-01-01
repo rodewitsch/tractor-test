@@ -3,11 +3,15 @@ import { createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Platform } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
-import SettingsScreen from '../screens/SettingsScreen';
 import TestScreen from '../screens/TestScreen';
 
 const config = Platform.select({
-  web: { headerMode: 'none' },
+  web: {
+    headerMode: 'none',
+    navigationOptions: {
+      headerVisible: false,
+    }
+  },
   default: {},
 });
 
@@ -21,19 +25,10 @@ const HomeStack = createStackNavigator(
 
 HomeStack.path = '';
 
-const SettingsStack = createStackNavigator(
-  {
-    Settings: SettingsScreen,
-  },
-  config
-);
-
-SettingsStack.path = '';
 
 const MainStack = createStackNavigator(
   {
-    HomeStack: HomeStack,
-    SettingsStack: SettingsStack,
+    HomeStack: HomeStack
   },
   config
 );

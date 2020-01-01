@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "TractorTest",
-    "slug": "AwesomeProject",
+    "slug": "TractorTest",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -23,8 +23,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "permissions":[],
+      "package": "com.rdm.tracktortest"
     }
   }
 }
