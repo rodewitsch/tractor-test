@@ -128,42 +128,31 @@ export default class TestScreen extends React.Component {
           </Text>
         </Modal>
 
-        <Text style={styles.title}>Категория A. Билет №{this.state.ticketNumber + 1}</Text>
+        <Text style={styles.title}>Категория A. Билет №{this.state.ticketNumber + 1} - {this.state.timer}</Text>
 
         <View style={styles.examProcess}>
           {Array(10).fill(null).map((item, index) => (
             <TouchableOpacity onPress={() => this.setQuestion(index)}>
-              <View style={{ width: 30, backgroundColor: this.getQuestionStatusColor(index) }}>
+              <View style={{ width: 30, height: 25, backgroundColor: this.getQuestionStatusColor(index) }}>
                 <Text style={styles.questionNumberStatus}>{index + 1}</Text>
               </View>
             </TouchableOpacity>
           ))}
-          <Text style={styles.timer}>{this.state.timer}</Text>
+
         </View>
 
+        <Text style={{ fontSize: 18, paddingHorizontal: 20, paddingVertical: 10, fontStyle: 'italic', fontWeight: 'bold' }}>Вопрос:</Text>
+
         <View style={styles.questionArea}>
-
-          <TouchableOpacity style={styles.arrow} onPress={() => this.setQuestion(this.state.questionNumber - 1)}>
-            <Icon onPress={() => this.setQuestion(this.state.questionNumber - 1)} style={{ fontSize: 25 }} name='md-arrow-round-back' />
-          </TouchableOpacity>
-
-          <View style={{ width: '90%' }}>
-            <Text style={{ fontSize: 18, textAlign: 'justify', flexWrap: 'wrap' }}>{this.getQuestionItem().questionText}</Text>
-            {this.getQuestionItem().questionImage
-              ? <Image resizeMode='contain' style={{ height: 150, marginVertical: 5 }} source={{ uri: this.getQuestionItem().questionImage }}></Image>
-              : null
-            }
-          </View>
-
-          <TouchableOpacity style={styles.arrow} onPress={() => this.setQuestion(this.state.questionNumber + 1)}>
-            <Icon style={{ fontSize: 25 }} name='md-arrow-round-forward' />
-          </TouchableOpacity>
+          <Text style={{ fontSize: 18, textAlign: 'justify', flexWrap: 'wrap' }}>{this.getQuestionItem().questionText}</Text>
         </View>
 
         <ScrollView style={{ height: '50%' }}>
-          <View>
-            <Text style={{ fontSize: 18, paddingHorizontal: 20 }}>Варианты ответов:</Text>
-          </View>
+          {this.getQuestionItem().questionImage
+            ? <Image resizeMode='contain' style={{ height: 150, marginVertical: 5 }} source={{ uri: this.getQuestionItem().questionImage }}></Image>
+            : null
+          }
+          <Text style={{ fontSize: 18, paddingHorizontal: 20, paddingVertical: 10, fontStyle: 'italic', fontWeight: 'bold' }}>Варианты ответов:</Text>
           {
             this.getQuestionItem().answers.map((answer, index) => (
               <TouchableOpacity key={index} disabled={this.state.examStatus != 'inProgress'} onPress={() => this.setAnswer(index)}>
@@ -194,7 +183,8 @@ const styles = StyleSheet.create({
   examProcess: {
     height: 25,
     flexDirection: 'row',
-    backgroundColor: 'gray'
+    backgroundColor: 'gray',
+    justifyContent: 'center'
   },
   questionNumberStatus: {
     textAlign: 'center',
@@ -207,13 +197,8 @@ const styles = StyleSheet.create({
     fontSize: 18
   },
   questionArea: {
-    height: '35%',
-    flexDirection: 'row'
-  },
-  arrow: {
-    height: '100%',
-    width: '5%',
-    paddingVertical: '30%'
+    flexDirection: 'row',
+    marginHorizontal: 20
   },
   modal: {
     justifyContent: 'center',
