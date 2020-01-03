@@ -8,23 +8,39 @@ import {
   ScrollView
 } from 'react-native';
 import Modal from 'react-native-modalbox';
-import Icon from 'react-native-vector-icons/Ionicons';
 
-import * as questions from '../assets/questions/a/index';
+import * as A from '../assets/questions/a/index';
+import * as B from '../assets/questions/b/index';
+import * as D from '../assets/questions/d/index';
+import * as E1 from '../assets/questions/e1/index';
+import * as E2 from '../assets/questions/e2/index';
+import * as F from '../assets/questions/f/index';
 
 export default class TestScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    this.currentCategory = props.navigation.state.params.category
     this.timer = null;
     this.state = {};
     this.state.examStatus = 'inProgress';
-    this.state.ticketNumber = this.randomInteger(0, questions.default.length - 1);
+    this.state.ticketNumber = this.randomInteger(0, this.getCategoryTickets(this.currentCategory).default.length - 1);
     this.state.questionNumber = 0;
     this.state.timer = '10:00';
-    this.state.answers = new Array(questions.default[this.state.ticketNumber].length)
+    this.state.answers = new Array(this.getCategoryTickets(this.currentCategory).default[this.state.ticketNumber].length)
       .fill(null)
       .map((item, index) => ({ rightAnswer: (this.getQuestionItem(this.state.ticketNumber, index).rightAnswer - 1), userAnswer: null }));
+  }
+
+  getCategoryTickets(category) {
+    switch (category) {
+      case 'A': return A;
+      case 'B': return B;
+      case 'D': return D;
+      case 'E1': return E1;
+      case 'E2': return E2;
+      case 'F': return F;
+    }
   }
 
   setQuestion(number) {
@@ -47,7 +63,7 @@ export default class TestScreen extends React.Component {
   }
 
   getQuestionItem(ticketNumber = this.state.ticketNumber, questionNumber = this.state.questionNumber) {
-    return questions.default[ticketNumber][questionNumber];
+    return this.getCategoryTickets(this.currentCategory).default[ticketNumber][questionNumber];
   }
 
   setAnswer(number) {
@@ -128,7 +144,7 @@ export default class TestScreen extends React.Component {
           </Text>
         </Modal>
 
-        <Text style={styles.title}>Категория A. Билет №{this.state.ticketNumber + 1} - {this.state.timer}</Text>
+        <Text style={styles.title}>Категория {this.currentCategory.substr(0, 1)}. Билет №{this.state.ticketNumber + 1} - {this.state.timer}</Text>
 
         <View style={styles.examProcess}>
           {Array(10).fill(null).map((item, index) => (
