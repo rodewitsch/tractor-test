@@ -87,7 +87,7 @@ export default class TestScreen extends React.Component {
 
   getExamStatus() {
     if (this.state.answers.every(item => item.userAnswer != null)) {
-      if (this.state.answers.reduce((acc, item) => item.userAnswer != item.rightAnswer ? acc++ : acc, 0) > 1) return 'passed'; else return 'failed';
+      if (this.state.answers.reduce((acc, item) => (item.userAnswer != item.rightAnswer ? acc += 1 : acc), 0) > 1) return 'failed'; else return 'passed';
     }
     return 'inProgress';
   }
@@ -132,8 +132,8 @@ export default class TestScreen extends React.Component {
       <View style={styles.container}>
 
         <Modal style={styles.modal} position={"center"} ref={"modal3"}>
-          <Text style={{ fontSize: 30, color: this.state.examStatus == 'success' ? 'green' : 'red' }}>
-            {this.state.examStatus == 'success' ? 'Экзамен сдан' : 'Экзамен не сдан'}
+          <Text style={{ fontSize: 30, color: this.state.examStatus == 'passed' ? 'green' : 'red' }}>
+            {this.state.examStatus == 'passed' ? 'Экзамен сдан' : 'Экзамен не сдан'}
           </Text>
           <Text style={{ marginTop: 15, textAlign: 'center' }}>
             {this.state.examStatus == 'failed'
