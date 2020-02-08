@@ -1,102 +1,101 @@
 [
     {
-        "questionText": "",
+        "questionText": "В каких пределах по ширине обеспечивает укладку покрытия асфальтоукладчик Асф-К-3-04 со сменными вставками (уширителями)?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "3,0 - 4,0 м.",
+            "4,0 - 6,2 м.",
+            "5,0 - 7,0 м."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Каким должен быть свободный ход поршня гидроцилиднра механизма выключения муфты сцепления?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "5 мм.",
+            "7 мм.",
+            "9 мм."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Как контролируется уровень масла в корпусе редуктора привода питателя Асф-К-3-04?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Через контрольные отверстия.",
+            "Щупом.",
+            "Визуально через смотровые окна."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "При управлении толщиной укладываемого слоя выносным пультом для уменьшения слоя необходимо нажать рычажок переключателя:",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "От себя.",
+            "На себя."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Когда должна производится эксплуатация асфальтоукладчика в режиме обкатки?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "В течение первых 20 ч.",
+            "50 ч.",
+            "100 ч."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какое моторное масло рекомендуется использовать в дизеле Д-245 асфальтоукладчика ДС-181 в период эксплуатации при температуре от -40°C до +5°C?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "М-10Г2.",
+            "М-8Г2.",
+            "М-8А."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Слышны отчетливые стуки в цепном редукторе. В чем причина?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Не натянуты цепи.",
+            "Мало смазки.",
+            "Изношены цепи."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "При включении стартера двигателя Д-245 непроворачивается коленчатый вал дизеля. Какова возможная причина?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Слабая затяжка клемм аккумуляторной батареи.",
+            "Чрезмерное натяжение ремня вентилятора.",
+            "Высокий уровень электролита в аккумуляторной батарее."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какой зазор между впусным клапаном и коромыслом в дизеле Д-260?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "0,20 - 0,25 мм.",
+            "0,30 - 0,35 мм.",
+            "0,25 - 0,30 мм."
         ]
     },
     {
-        "questionText": "",
-        "questionImage": "",
+        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+        "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAs8AAAGwCAIAAADZjB9pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAd8SURBVHhe7djBEYMwDABBlP57Vj5u4QZIdj+oANvcaHb3AgDIfM4XAKChNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AIDW7O4ZeaGZOdOtnCLg3ufIK/RwdhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC0ZnfPyAvNzJn4UW5owcX5PW7Kw9ltAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANCa3T0jAEDAbgMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWrO7Z+SFZuZMAH/Mv+zh7DYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGjN7p4RACBgtwEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEDpur79PyRJ9PcWxgAAAABJRU5ErkJggg==",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Трамбующий брус.",
+            "Бункер открыт.",
+            "Уширители."
         ]
     }
 ]
