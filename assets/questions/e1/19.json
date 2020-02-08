@@ -1,102 +1,102 @@
 [
     {
-        "questionText": "",
+        "questionText": "На каком уклоне должен удерживаться прицеп (полуприцеп), груженный асфальтобетонной смесью, стояночным тормозом, если прицеп отсоединен от тягача?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "На уклоне 16 % включительно.",
+            "На уклоне до 23 % включительно.",
+            "На уклоне до 31 % включительно."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "При включении стояночного тормоза подача давления жидкости на гидромотор привода хода:",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Уменьшается.",
+            "Увеличивается.",
+            "Не изменяется."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "При какой температуре должны производиться замеры давления рабочей жидкости гидросистемы асфальтоукладчика?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "10 - 20 °C.",
+            "Не ниже -30 °C.",
+            "Не выше +50 °C."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какую смазку рекомендуется применять в коробке перемены передач асфальтоукладчика ДС-181?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "ТЭП-15.",
+            "ТАП-15В.",
+            "Допустыми оба варианта."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какова основная причина дефекта асфальтобетонного покрытия, выразившаяся в разрывании покрытия в середине или по краям?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Попадание в смесь крупного щебня.",
+            "Прилипание асфальтобетонной смеси к поверхности выглаживающей плиты.",
+            "Неправильноая установка плиты, уменьшение подачи смеси."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Муфта сцепления ведет (при выключенном сцеплении валы насосов вращаются). Каковы вероятные причины?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Перекос нажимного диска.",
+            "Большой зазор между упором выжимного подшипника и лапками выжимных рычагов.",
+            "Вроятны обе причины."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какой должен быть момент затяжки болтов крепления головки цилиндров двигателя Д-245?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "12 - 14 кгс/м.",
+            "16 - 18 кгс/м.",
+            "20 - 22 кгс/м."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Что необходимо сделать при запуске двигателя Д-260 в первоначальный момент или после длительного хранения?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Прокрутить коленчатый вал стартером в течение 10 с без подачи топлива.",
+            "Дать двигателю поработать 2 - 3 минуты на холостом режиме прежде чем нагружать его.",
+            "Необходимы обе операции."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "На какую максимальную величину допускается снижение уровня охлаждающей жидкости от верхнего торца заливной горловины двигателя Д-260?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "40 мм.",
+            "60 мм.",
+            "80 мм."
         ]
     },
     {
-        "questionText": "",
-        "questionImage": "",
+        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+        "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZ8AAAFuCAIAAADRToJ/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA3zSURBVHhe7d2xa5z1H8DxpgUVUVutWMQGdROiFIpDk6GDxUVtt2RxEBEKTpJzFKR/QTJ2EAcLLr3N6FAQBwebpaMduzQIVWuxgyio/X3IfY33i73km8vd9Xk+93oN+nzbiwlY336f53PPczP37t07AJDOwfJ3gFzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNStNTqdzkwznD9/vvxM0GAz9+7dK4c0WLfbXVpaKosGuHz58uLiYllAI6lbO8SOqRw1w9GjR3/++eeygEZyZtoCsXErR41x+/btBv5U0M/erQWefvrpqElZNIbtGw1n79Z0GxsbDUxbiJ8qfraygOZRt6a7evVqOWoeJ6c0mbo13aVLl8pR83z++eflCJrHdbema+ZFt55nnnnm1q1bZQENo25N17T3gmzjzw+N5cwUyEndgJzUremOHj1ajpqnyT8bqFvTvfDCC+WoeU6cOFGOoHnUrelOnz5djppH3WgydWu6TqdTjppnfn6+HEHzeEdICzT2LW/+8NBk9m4tcPHixXLUJCsrK+UIGsnerR0auH3zJ4eGs3drh6Zt32zcaD57t9Y4e/bsl19+WRYP1FtvvbW2tlYW0FTq1ibHjh378ccfy+IBcec8beHMtE2uXbsWcSmLByG+e/wMZQHNpm5tcvz48dg3xYlhWU9WfN9IW/wMZQ3Npm7ts7a2NvmL+vEd4/tKGy3iuluLdTqd1dXVshiPo0ePvvbaa5E2XaN11K31uptu3779zTff9H7lyJEjEaP5+fnXX3/9q6+++uyzz3q/vs3y8nJkq/flGxsbWx/gsPXl7777rnutaC91S+78+fOffPJJWfy/Xt3KAtJRt+R2fnC5f/skZqoA5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG5ATuoG5KRuQE7qBuSkbkBO6gbkpG7Jvfnmm+Xofq5evVqOIB11S+7xxx8vR/eztLS0sbFRFpCLuiX37LPPlqP7ibTNz8+XBeSibsktLi6WowEicLGDKwtIRN2Si63Z8ePHy2KAbre7urpaFpDFzL1798ohScXubHZ2tiwGu3z58q4bPWgRdZsKCwsLNePRmzdv7rrRg7ZQt6nQmx7sOh6NtEXgygJaznW3qRDZqtm7Rf5il1cW0HLqNi0icJcvXy6LwSKCnU6nLKDNDl24cKEckt3c3Nzdu3fX19fLeoB4QbwylDW0k+tuU2dpaanb7ZbFYN999503+tJq6jaNZmdnayYMcZZqhEp7ue42jSonDO5hoNXUbRrFjixOPMtiMBMGWs1UYUrFyenhw4evXLlS1gOsr6/Hy1yAo41cd5tqJgwkpm7TruYmLRMG2kjdpp2btMjKVGHaRbZq7mEwQqV1TBWonTBcv37dhIEWcWZK0el0ap5hacJAW6gb//IYODJRN/5lwkAmpgr8y4SBTNSN/xN7t5rAdbtdN2nRcGambOcxcOTguhv3Z8JA26kbA3kMHK3muhsD1ezdTBhoLHVjoMoRakTQhIEGMlVgJ3Nzcx4DR0u57sbuPAaONlI3qpgw0Dquu1GlJlsmDDSKulGlfsIgcDSEqQK1PAaOdnHdjb3xGDjaQt3YMzdp0Qrqxp5teAwcbWCqwJ5VThiMUHmwTBUYhgkDzefMlOFVThhio7e4uFgWMCnqxr6YMNBY6sa+mDDQWKYK7Etkq2bvFvmLXV5ZwESoG/tVOUKNCHoMHJNkZsoIzPmgGZrHdTdGxmPgaBR1Y5Q8Bo7mcN2NUaqcMDzYexgq95i0nb0bIxaBqxmPLi8vr6yslMXoRDpv3ry5vr7e+2ucBZff6DMzM9M7WPxHb0ky6sbora6u1oxHo27RuLIYVi9nsRfrFW3X8+L7KpGTuVzUjbEY94QhKhZxjG8xXM524L6xNNSNcam5SWuvE4ZoWewK40tGHrUtsQE08cjBVIFxiU3QrpmISFXu3WKbNrtpHPu12KzFLjL+Tx+kLQ17N8aocsIQcRl0t0PNZi16FP+EqGSoadPWVCFev7y87Dw0rd7/r2BMKgej8bLyBf+IM8Sdu9NrYrysfEG1KGB8uyG+kHZRN8aucjAaqeq9fueuxW9tnUXCDpyZMgn1j4GLl933vb6x4YoTydhzuS5GJXVjEnrTg12nAYcOHfrrr7/K4h+9E0lXx9grdWNCIm2zs7NlUUfX2A/vCGFCIlWDBqP31ZsYSBtDUzcmJ1JVOWG4ePGirrFPzkyZtPoJgwEC+6FuPACzHgPH+DkzZdKia8eOHSuLweJlD/YxcLSdujFR0az5+flr166V9Y5i7+aDZhiaujE5Uauad731W91UFrAXrrsxIRG1be93i9IdP358rI+BY5qpGxOybZKw9eRxEwbGxJkpk7CwsHDftIWabMXXmjCwV+rG2EWYImFl8Z/Pi4m01dzDEP8EgWNPfBY949XpdD799NOy2LzW9t+Wxcnp4cOHr1y5UtYDXL9+PV7mAhyVXHdjjLrdbv+GK8J034/g64kO1oxHTRiopG6My7Yhac1kwE1ajJDrbozLth1WnJDumqSa1wR7N2qoG2MRp5n9Q9KVlZWaJEXaaiYMRqjUUDdGL84u+6+gLW8qi91EBGsC1+123aTFzlx3Y/T6L5/FduzmzZu943qVE4booMfAMYi9GyMWVeqfDPS/ta1e5ZlsnJ/2n/9CP3s3Rmzrs5BDbKxqTjMHcZMW+2Hvxii988475WjTftIWat4dYsLAIOrGKF26dKkcDXtO2q9yhBoRNGHgv5yZMjLnzp1bW1sriwMHRvVHy4SB4agbI9N/xe3UqVM155WV4tzTY+DYK2emjMa2i1/vv/9+ORqF2JfVzA2MUOln78Zo9G/cwp07d44cOVIWoxDZ6r9rdZDYu+1woz5Txd6N0ei//H/mzJnRpi3E3q0mWyYMbFE3RqN/nnD27NlyNFKxL6uZw65uKgummDNTRiM2a7/++mvv+MaNGy+++GLveORMGKhk78YIfP3111tpO3ny5PjSFuIU2E1a1FA39iW2afHX/tPSc+fOlaOxqRmhRtrs3aacM1P25cyZM7du3YqUbO3drl27Ftu33vH4XL16dWFhoSwG2+eNrrSavRvD++WXX1599dXvv/9+K21PPvnkY4891jseq8oJQ7fbNWGYWurG8B555JHff/+9LDbduXPn7NmzX3zxRVmPU+VDMTudTs0UgnzUjeE9+uijP/3008MPP1zWm+Jk8JVXXimLMfMYOHagbgzvt99+O3HixB9//NFbHjp06Pnnn//444/HOjPdpvImLROGKaRuDC/2bv1TqZdffvmjjz566KGHynoiIm2Vj4GrmUKQibqxL7du3YrG9Y7ffvvtN954o3c8SRG4msGom7SmjboxvD///POll16K89OZmZk49fvggw+ee+658nuTtbi4WDNhWF1dNWGYHurG8A4ePNg7Mz158uSHH3444XPSbVZWVmqeXrm0tDTCB8/RZOrG8KJu3377bRy89957Z86c6f3iA1Q5YTBCnRLqxr4cPnz4qaeeik3TyB95NJzKCUMErizIy51YDO/vv//+4Ycfbty4cfr06fJLDVB5k9by8vL+P9eGJjt04cKFcgh7NDMz88QTT8zOzm57MO+DFT9P7CivXLlS1gOsr6/Hy7wPLjF7N3KKc0+PgZty6kZaPsp+ypkqkFZNtkwYElM30qq/h0HgUnJmSnKrq6s1N2D5DyEfezeS23wK3O43ablDKx91I7+ax8DVvA2YdlE3pkLlTVpkom5MhV0nDN71lo+6MS2iX4MCt7ipLMjCnVhMkbm5ubt3787MzPS/yze6VvPGEVrHO0KYRr0JaTTu1KlTzkmzUjcgJ9fdgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCc1A3ISd2AnNQNyEndgJzUDchJ3YCMDhz4HwnCfs5gR80TAAAAAElFTkSuQmCC",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Управление шнеком и питателем одной рукой.",
+            "Управление шнеком и питателем от одной лопатки.",
+            "Подъем и опускание рабочей плиты."
         ]
     }
 ]
