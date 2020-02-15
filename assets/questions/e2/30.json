@@ -1,102 +1,103 @@
 [
     {
-        "questionText": "",
+        "questionText": "При какой температуре окружающего воздуха необходимо переключить напряжение в сети автогрейдеров с летнего на зимнее?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Ниже +5°C.",
+            "Ниже 0°C.",
+            "Ниже -5°C."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Разрешается ли движение автогрейдероа под уклон с выключенной передачей?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Да.",
+            "Нет.",
+            "Разрешается в зависимости от дорожных условий."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какая оптимальная величина прогиба ремней привода водяного насоса и генератора при нажатии на середину ветви с усилием 30Н у скрепера МоАЗ-6014?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "5-10 мм.",
+            "10-15 мм.",
+            "15-20 мм."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какое из перечисленных масел применяется в системе смазки двигателя Д-260 при его эксплуатации в зимний период?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "М8Г2.",
+            "М10Г2.",
+            "ТЭП-25."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какая емкость топливного бака у вибрационного двухвальцевого катка ДС-31?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "150 л.",
+            "200 л.",
+            "250 л.",
+            "300 л."
         ]
     },
     {
-        "questionText": "",
-        "questionImage": "",
+        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+        "questionImage": "data:image/png;base64,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",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Левый уширитель.",
+            "Бункер открыт.",
+            "Шнев левый."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какой валец на катке ДС-30 является рабочим органом и элементом ходовой части?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Валец задний.",
+            "Валец передний.",
+            "Оба."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Как необходимо использовать муфту сцепления при переключении передач, с высшей на низшую, в транспортном диапазоне автогрейдера ГС-14.02?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Не выключать.",
+            "Один раз выключить.",
+            "Двойное выключение."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Когда необходимо смазывать рабочую плиту?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Когда она горячая.",
+            "Независимо от ее температуры.",
+            "После ее остывания."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Разрешается ли эксплуатация автогрейдера без аккумуляторной батареи?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Разрешается после запуска дизеля.",
+            "Запрещается.",
+            "Разрешается."
         ]
     }
 ]

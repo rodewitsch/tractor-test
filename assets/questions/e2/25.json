@@ -1,102 +1,103 @@
 [
     {
-        "questionText": "",
+        "questionText": "Какое напряжение в электрической сети имеет автогрейдер ГС-14.02?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "12 В.",
+            "24 В.",
+            "36 В."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Чем следует промывать набивку сапуна двигателя автогрейдера?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Раствором кальцинированной соды.",
+            "Дизельным топливом.",
+            "Струей чистой воды."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Допускается ли загрузка самоходного скрепера погрузочными средствами?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Допускается погрузочным средством с ковшом емкостью не более 2м3 мягких грунтов.",
+            "Допускается погрузочным средством с ковшом емкостью не более 2м3 скальных грунтов.",
+            "Допускается независимо от емкости ковша погрузочного средства."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Как необходимо производить проверку зазора между коромыслом и клапаном дизеля?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "На прогретом двигателе.",
+            "Через 5 мин после остановки дизеля.",
+            "На холодном двигателе."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какую ширину имеет вибрационный двухвальцевый каток ДС-31?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "2295 ± 30 мм.",
+            "2800 ± 30 мм.",
+            "3395 ± 40 мм."
         ]
     },
     {
-        "questionText": "",
-        "questionImage": "",
+        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+        "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsUAAAGmCAIAAAAbIW4mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA4DSURBVHhe7d0/j1TlG8dh+NlrsUSbodVGEwqatbSxgcQGWmtLfQW8Arc0sbJmSmm11IqERBtt2UbCvIb9HZijIrsMM+c7M+f5c12FziGEBNxn/Xg/5tzXLy4urgEABP43/h0AYCo9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8Ao7Ozs/ETwI6uX1xcjB+Bjp2fn9+8efPp06eLxWL8IYCtmU8AL3z55ZfDX7/44ov1I8BO9ATw4qbj559/Hj48fvx4uVyufxBge+47oHfrm47x4SW3HsCuzCegd1999dX46W+XfwRgMz0BXVsul48ePRof/jb8iFsPYCfuO6Br169fHz/918nJyZMnT9x6AFsyn4B+3b9/f/x0yWq1cusBbE9PQKeWL40PV3HrAWzPfQd06saNG6vVanx4g5OTk+fPn48PAG9mPgE9+uabb94aE4Ph5ww/c3wAeDPzCejOr7/++umnn44PW/A6CuCt9AR056OPPvrzzz/Hhy28//77f/311/gAcBX3HdCXs7OznWJi8OzZM6tHgc3MJ6Ajl1+tvT23HsAG5hPQkfUS0WmsHgU20BPQi+VyuV4iOo3Vo8AG7jugC8lNx6vcegBXMp+ALuzr5dlewg1cSU9A+5ZXLRGdxku4gSu574D2vWmJ6DRWjwKXmU9A4zYsEZ3G6lHgMvMJaNlyudx7T6z98ssvp6en4wPQPT0BLdtmieg0Vo8Cr3LfAc3aconoNFaPAq8yn4A27bpEdBqvowDW9AS0adclotNYPQqsue+ABk1YIjqN1aPAmvkEtGZfr9benlsPwHwCWpMsEZ3G6lFAT0BTwiWi01g9CrjvgKbs99XaO3HrAT0zn4B23L17d/w0By/hhp7pCWjEHpeITmP1KPTMfQc0Ysabjn94CTd0y3wCWnCgpV+7Wq1W8965AHMxn4DqHW6J6DRWj0KH9ARU73BLRKdx6wEdct8BdTvoEtFprB6FDplPQMWOs0R0Gq+jgK7oCajYJ5988vvvv48PhbF6FLrivgNqdXZ2VmxMDKweha6YT0CVjr9EdBq3HtAJ8wmo0vGXiE5j9Sh0Qk9AfWZZIjqN1aPQCfcdUJ8SXq29E7ce0DzzCahMjS+0tnoUmqcnoCazLxGdxupRaJ77DqhJdTcd//ASbmib+QRUo6ilX7uyehTaZj4BdShtieg0Vo9Cq/QE1KG0JaLTuPWAVrnvgAoUuER0GqtHoVXmE1C6kpeITuN1FNAePQGlK3mJ6DRWj0J73HdA0QpfIjqN1aPQHvMJKFctS0SncesBLTGfgHLVskR0GqtHoSV6AgpV0RLRaawehZa474BC1ftq7e2dnJw8efLErQc0wHwCStTJq6lXq5XVo9AGPQHFqXSJ6DRWj0Ib3HdAcdp4tfb2vIQbGmA+AWW5f/9+VzExGH6/Vo9C7cwnoCBtLBGdxupRqJqegIL0dtPxKrceUDX3HVCKZpaITjP83q0ehXqZT0AR2lsiOo2XcEOl9AQUob0lotNYPQqVct8B82tyieg0Vo9CpcwnYGZtLxGdxq0HVMd8AmbW9hLRabyEG6qjJ2BOzS8RncZLuKE67jsOq4cVkQCz8O+vophPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9cVgX+/Dw4cPxl+O/hj+Z8c8IiuHAvsneD+z461KG6/6RVOHu3buPHj0aH3jps88+++mnn8YHKIkDe5kD2zw9UYfz8/ObN2+OD7z09OnTxWIxPkBJHNjLHNjmue+ow3AOv/322/GBa9eGPw3fmyiWA/saB7YH5hM1+eCDD549ezY+dOzjjz/+7bffxgcolQO75sB2wnyiJo8fPx4/9e37778fP0HBHNg1B7YTeqImi8Xi66+/Hh96NfwJnJ6ejg9QMAd24MD2w31HfW7cuLFarcaHzpycnDx//nx8gBo4sOMDrTOfqM+PP/44furPd999N36CSjiwdEJP1Of09PTOnTvjQ0/uvTQ+QCUcWDrhvqNWvQ1RDU6pmgNL88wnatXbINHglKo5sDTPfKJi/bzT986dOz1fQtMGB5a26YmKnZ+f37p1q4chqq9SGuDA0jb3HRVbLBY9DBVta6QNDixtM5+o3u3btxt+DZ+dhDTGgaVVeqJ6bW8ytJOQxjiwtMp9R/WG09vqJkM7CWmPA0urzCca0d4mQzsJaZgDS3vMJxrR3o2snYQ0zIGlPXqiEYu2NhnaSUjbHFja476jKW2809ebeumEA0tLzCea0sY76bypl044sLRETzSlgU2GdhLSDweWlrjvaFDVQ1RfkPTGgaUN5hMNqnf86E29dMiBpQ3mE22qcZOhnYR0y4GlAXqiTTW+09eXIt1yYGmA+442LRaLukaRBqf0zIGlAeYTLatlk6GdhDBwYKmanmhZLUNUOwlh4MBSNfcdLRvOfPmbDO0khDUHlqqZT7Sv5E2GdhLCaxxYKmU+0b6Sb2TtJITXOLBUSk+0b1HqJkM7CeEyB5ZKue/oRWnv9LWTEDZwYKmO+UQvSnuTnZ2EsIEDS3X0RC+K2mRoJyFs5sBSHfcdfSlkiOqrDrbhwFIR84m+lDC09KZe2JIDS0XMJ7oz7yZDOwlhJw4stdAT3Zn3nb6+3mAnDiy1cN/RncV8mwwNTmFXDiy1MJ/o1PE3GdpJCJM5sJRPT3Tq+ENUOwlhMgeW8rnv6NTwneKYmwztJISEA0v5zCe6dpxNhh9++OEff/wxPgBTObCUzHyia8e5kf3hhx/GT0DAgaVkeqJri8NvMrSTEPbFgaVk7js44Dt97SSEvXNgKZP5BAfcZGgnIeydA0uZ9ASH2mRoJyEcggNLmdx38ML5+fmtW7f2O0T1pQUH4sBSIPMJXlgsFvsddXpTLxyOA0uBzCf41742GdpJCEfgwFIUPcG/9vVOX2/qhSNwYCmK+w7+NXxPyceew6/gexMcgQNLUcwneF2yydBOQjgyB5ZC6AlelwxRDU7hyBxYCuG+g9cN31+mbTK0kxCOz4GlEOYTXG3XTYZ2EsKMHFhmZz7B1Xa9kbWTEGbkwDI7PcHVFrtsMrSTEOblwDI79x1sss0mQzsJoRAOLDMyn2CTbd7paychFMKBZUbmE7zF5nf63rt3z5v/oRwOLHPRE7zF5k2Gvn6gKA4sc3HfwVss3rzJ0H/oQGkcWOZiPsFWLg9R7SSEYjmwHJ+eYCuX3+nrTb1QLAeW43PfwVaG70SvDku9qRdK5sByfOYT7GC9ydBOQqiCA8sx6Ql2sB6iGpxCFRxYjumdBw8ejB/hbd5999333nvv888/H5+BgjmwHJP5BACQ8v9jAgApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEApPQEAJDSEwBASk8AACk9AQCk9AQAkNITAEBKTwAAKT0BAKT0BACQ0hMAQEpPAAApPQEAZK5d+z8oWar99aVwYAAAAABJRU5ErkJggg==",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Трамбующий брус.",
+            "Шнек.",
+            "Питатель."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Какая передаваемая редуктором мощность от двигателя к насосам НП-90 у катка ДС-13?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "63,6 кВт.",
+            "73,6 кВт.",
+            "80,0 кВт."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Ниже какой температуры окружающего воздуха необходимо применять зимнее дизельное топливо?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "+5°C.",
+            "0°C.",
+            "-5°C."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "В каких пределах по ширине обеспечивает укладку покрытия асфальтоукладчик Асф-К-3-04 без сменных вставок (уширителей)?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "2,0 - 3,0 м.",
+            "2,5 - 3,5 м.",
+            "3,0 - 5,2 м."
         ]
     },
     {
-        "questionText": "",
+        "questionText": "Чем необходимо гасить пламя при воспламенении горючих жидкостей?",
         "questionImage": "",
         "rightAnswer": 0,
         "answers": [
-            "",
-            "",
-            ""
+            "Песком, землей.",
+            "Огнетушителем.",
+            "Водой.",
+            "Варианты 1 и 2."
         ]
     }
 ]
