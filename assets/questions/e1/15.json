@@ -1,102 +1,103 @@
 [
-    {
-        "questionText": "Что может быть причиной выхода из строя системы автоматического контроля профиля покрытия при работе асфальтоукладчика?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Низкое напряжение в электрической цепи.",
-            "Высокое напряжение в электрической цепи.",
-            "Отключение аккумуляторной батареи."
-        ]
-    },
-    {
-        "questionText": "Каким должен быть прогиб цепи привода ведущих колес асфальтоукладчика от усилия 150 - 170 Н?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Не более 40 мм.",
-            "Не более 50 мм.",
-            "Не более 60 мм."
-        ]
-    },
-    {
-        "questionText": "При каком уровне рабочей жидкости бак с рабочей жидкостью системы гидрооборудования считается заправленным?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "На верхнем уровне смотрового окна.",
-            "На уровне середины смотрового окна.",
-            "В нижней части смотрового окна."
-        ]
-    },
-    {
-        "questionText": "С какой целью на асфальтоукладчике предусмотрено два сиденья?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Для работы двух операторов.",
-            "Для осуществления управления асфальтоукладчиком в транспортном и рабочем режимах.",
-            "Для управления движением передним и задним ходом."
-        ]
-    },
-    {
-        "questionText": "При какой частоте вращения коленчатого вала двигателя на пульте управления асфальтоукладчика должна погаснуть лампа авариного давления масла в двигателе?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "1800 об/мин.",
-            "2100 об/мин.",
-            "2500 об/мин."
-        ]
-    },
-    {
-        "questionText": "Ротор турбокомпрессора не вращается (отсутствует характерный звук высокого тона). Какова вероятная причина?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Малые обороты двигателя.",
-            "Заклинило ротор в подшипнике.",
-            "Большие обороты двигателя."
-        ]
-    },
-    {
-        "questionText": "При нулевом положении рычага управления ходом не обеспечивается остановка машин. Какова возможная причина?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Нарушена регулировка соединения тяги управления с рычагом управления.",
-            "Высота температура рабочей жидкости.",
-            "Рабочая жидкость не прогрета."
-        ]
-    },
-    {
-        "questionText": "Какова вместимость системы смазки двигателя Д-245?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "15 л (19 л с радиатором).",
-            "18 л (20 л с радиатором).",
-            "19 л (25 л с радиатором)."
-        ]
-    },
-    {
-        "questionText": "Когда положено сливать воду из системы охлаждения при эксплуатации асфальтоукладчика в зимних условиях?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Сразу после остановки дизеля.",
-            "При остывании дизеля до 50 - 55 °C.",
-            "При полном остывании дизеля."
-        ]
-    },
-    {
-        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-        "questionImage": "data:image/png;base64,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",
-        "rightAnswer": 0,
-        "answers": [
-            "Подъем и опускание рабочей плиты.",
-            "Разгрузка и поджим рабочей плиты.",
-            "Трамбующий брус."
-        ]
-    }
-]
+        {
+            "questionText": "Что может быть причиной выхода из строя системы автоматического контроля профиля покрытия при работе асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Низкое напряжение в электрической цепи.",
+                "Высокое напряжение в электрической цепи.",
+                "Отключение аккумуляторной батареи."
+            ]
+        },
+        {
+            "questionText": "Каким должен быть прогиб цепи привода ведущих колес асфальтоукладчика от усилия 150 - 170 Н?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Не более 40 мм.",
+                "Не более 50 мм.",
+                "Не более 60 мм."
+            ]
+        },
+        {
+            "questionText": "При каком уровне рабочей жидкости бак с рабочей жидкостью системы гидрооборудования считается заправленным?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "На верхнем уровне смотрового окна.",
+                "На уровне середины смотрового окна.",
+                "В нижней части смотрового окна."
+            ]
+        },
+        {
+            "questionText": "С какой целью на асфальтоукладчике предусмотрено два сиденья?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Для работы двух операторов.",
+                "Для осуществления управления асфальтоукладчиком в транспортном и рабочем режимах.",
+                "Для управления движением передним и задним ходом."
+            ]
+        },
+        {
+            "questionText": "При какой частоте вращения коленчатого вала двигателя на пульте управления асфальтоукладчика должна погаснуть лампа аварийного давления масла в двигателе?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "1800 об/мин.",
+                "2100 об/мин.",
+                "2500 об/мин."
+            ]
+        },
+        {
+            "questionText": "Ротор турбокомпрессора не вращается (отсутствует характерный звук высокого тона). Какова вероятная причина?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Малые обороты двигателя.",
+                "Заклинило ротор в подшипнике.",
+                "Большие обороты двигателя."
+            ]
+        },
+        {
+            "questionText": "При нулевом положении рычага управления ходом не обеспечивается остановка машин. Какова возможная причина?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Нарушена регулировка соединения тяги управления с рычагом управления.",
+                "Высота температура рабочей жидкости.",
+                "Рабочая жидкость не прогрета."
+            ]
+        },
+        {
+            "questionText": "Какова вместимость системы смазки двигателя Д-245?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "15 л (19 л с радиатором).",
+                "18 л (20 л с радиатором).",
+                "19 л (25 л с радиатором)."
+            ]
+        },
+        {
+            "questionText": "Когда положено сливать воду из системы охлаждения при эксплуатации асфальтоукладчика в зимних условиях?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Сразу после остановки дизеля.",
+                "При остывании дизеля до 50 - 55 °C.",
+                "При полном остывании дизеля."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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",
+            "rightAnswer": 2,
+            "answers": [
+                "Подъем и опускание рабочей плиты.",
+                "Разгрузка и поджим рабочей плиты.",
+                "Трамбующий брус."
+            ]
+        }
+    ]
+    

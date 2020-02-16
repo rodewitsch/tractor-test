@@ -1,104 +1,105 @@
 [
-    {
-        "questionText": "При транспортных переездах асфальтоукладчика в каком положении должен быть находиться шнек?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Должен быть опущен.",
-            "По возможности поднят.",
-            "Положение не имеет значения."
-        ]
-    },
-    {
-        "questionText": "Каким должно быть давление в шинах передних колес ведущей тележки асфальтоукладчика?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "0,25 МПа.",
-            "0,38 МПа.",
-            "0,45 МПа."
-        ]
-    },
-    {
-        "questionText": "Какое масло должно заливаться в планетарные редукторы шнекового механизма асфальтоукладчика?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Дизельное масло.",
-            "Трансмиссионное масло.",
-            "Автол."
-        ]
-    },
-    {
-        "questionText": "На каком расстоянии друг от друга устанавливаются стойки с поперечными штангами для поддержки копирного троса?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "2 - 3 м.",
-            "5 - 7 м.",
-            "7 - 8 м."
-        ]
-    },
-    {
-        "questionText": "При транспортных переездах асфальтоукладчика когда возможно переключение с одной передачи на другую?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "На ходу при выжатом сцеплении.",
-            "С применением перегазовки.",
-            "Только при полной остановке машины."
-        ]
-    },
-    {
-        "questionText": "Когда должна производиться замена фильтроэлементов во всех фильтрах асфальтоукладчика?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "По мере необходимости.",
-            "При техническом обслуживании ТО-2.",
-            "При ТО-1.",
-            "При втором ТО-1."
-        ]
-    },
-    {
-        "questionText": "Работа гидросистемы сопровождается повышенным уровнем шума. Каковы возможные причины?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Низкий уровень масла в баке.",
-            "Насос засасывает в гидросистему воздух.",
-            "Большие обороты дизеля.",
-            "Правильные ответы 1 и 2."
-        ]
-    },
-    {
-        "questionText": "Каким должен быть зазор между выпускным клапаном и коромыслом на холодном двигателе Д-245?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "0,25 - 0,30 мм.",
-            "0,30 - 0,40 мм.",
-            "0,40 - 0,45 мм."
-        ]
-    },
-    {
-        "questionText": "По какой из указанных причин двигатель перегревается?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Неправильно установлен угол опережения впрыска топлива.",
-            "Недостаточное натяжение приводного ремня вентилятора.",
-            "Велик зазор между клапанами и коромыслами."
-        ]
-    },
-    {
-        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-        "questionImage": "data:image/png;base64,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SEYAAJGMAAAiGQEARDICAIgut9vtPgIAPMJuBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAACSP/74P49eHOsUO3EPAAAAAElFTkSuQmCC",
-        "rightAnswer": 0,
-        "answers": [
-            "Шнек левый.",
-            "Выдвинут левый уширитель.",
-            "Поворот налево."
-        ]
-    }
-]
+        {
+            "questionText": "При транспортных переездах асфальтоукладчика в каком положении должен быть находиться шнек?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Должен быть опущен.",
+                "По возможности поднят.",
+                "Положение не имеет значения."
+            ]
+        },
+        {
+            "questionText": "Каким должно быть давление в шинах передних колес ведущей тележки асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "0,25 МПа.",
+                "0,38 МПа.",
+                "0,45 МПа."
+            ]
+        },
+        {
+            "questionText": "Какое масло должно заливаться в планетарные редукторы шнекового механизма асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Дизельное масло.",
+                "Трансмиссионное масло.",
+                "Автол."
+            ]
+        },
+        {
+            "questionText": "На каком расстоянии друг от друга устанавливаются стойки с поперечными штангами для поддержки копирного троса?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "2 - 3 м.",
+                "5 - 7 м.",
+                "7 - 8 м."
+            ]
+        },
+        {
+            "questionText": "При транспортных переездах асфальтоукладчика когда возможно переключение с одной передачи на другую?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "На ходу при выжатом сцеплении.",
+                "С применением перегазовки.",
+                "Только при полной остановке машины."
+            ]
+        },
+        {
+            "questionText": "Когда должна производиться замена фильтроэлементов во всех фильтрах асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "По мере необходимости.",
+                "При техническом обслуживании ТО-2.",
+                "При ТО-1.",
+                "При втором ТО-1."
+            ]
+        },
+        {
+            "questionText": "Работа гидросистемы сопровождается повышенным уровнем шума. Каковы возможные причины?",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Низкий уровень масла в баке.",
+                "Насос засасывает в гидросистему воздух.",
+                "Большие обороты дизеля.",
+                "Правильные ответы 1 и 2."
+            ]
+        },
+        {
+            "questionText": "Каким должен быть зазор между выпускным клапаном и коромыслом на холодном двигателе Д-245?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "0,25 - 0,30 мм.",
+                "0,30 - 0,40 мм.",
+                "0,40 - 0,45 мм."
+            ]
+        },
+        {
+            "questionText": "По какой из указанных причин двигатель перегревается?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Неправильно установлен угол опережения впрыска топлива.",
+                "Недостаточное натяжение приводного ремня вентилятора.",
+                "Велик зазор между клапанами и коромыслами."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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SEYAAJGMAAAiGQEARDICAIgut9vtPgIAPMJuBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAAAiGQEARDICAIhkBAAQyQgAIJIRAEAkIwCASEYAAJGMAACSP/74P49eHOsUO3EPAAAAAElFTkSuQmCC",
+            "rightAnswer": 2,
+            "answers": [
+                "Шнек левый.",
+                "Выдвинут левый уширитель.",
+                "Поворот налево."
+            ]
+        }
+    ]
+    

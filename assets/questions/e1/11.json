@@ -1,103 +1,104 @@
 [
-    {
-        "questionText": "В каком положении при транспортных переездах должна находиться плита асфальтоукладчика?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Плита должна быть поднята.",
-            "Плита должна быть поднята и зафиксирована.",
-            "Положение плиты не имеет значения."
-        ]
-    },
-    {
-        "questionText": "С каким усилием необходимо проивзодить затяжку (дозатяжку) гаек крепления колес ведущей тележки асфальтоукладчика?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "100 - 200 Нм.",
-            "200 - 300 Нм.",
-            "300 - 400 Нм."
-        ]
-    },
-    {
-        "questionText": "Сколько должен составлять прогиб в цепи цепного редуктора привода шнекового механизма асфальтоукладчика Асф-К-2-05 при приложении усилия 10-12 кгс в середине цепи?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "2 - 5 мм.",
-            "5 - 10 мм.",
-            "10 - 15 мм."
-        ]
-    },
-    {
-        "questionText": "Что может служить эталоном в системе нивелирования при укладке слоя асфальтоукладчиком?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Натянутый трос или струна.",
-            "Поверхность подготовленного для укладки дорожного полотна.",
-            "В качестве копира могут быть использованы оба варианта."
-        ]
-    },
-    {
-        "questionText": "В случае перегона асфальтоукладчика с установленными на рабочей плите дополнительными уширителями что необходимо сделать для лучшей управляемости асфальтоукладчиком?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Положить в пустой бункер груз массой 2 т.",
-            "Полностью очистить бункер.",
-            "Сдвинуть уширители плиты."
-        ]
-    },
-    {
-        "questionText": "В каких пределах должен быть прогиб цепей привода питателей и привода хода асфальтоукладчика Афс-К-3-04 при усилии 100 - 120 Н (10 - 12 кгс)?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "0 - 5 мм.",
-            "5 - 10 мм.",
-            "10 - 15 мм."
-        ]
-    },
-    {
-        "questionText": "Не работает указатель поворота. Каковы возможные причины?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Малое напряжение в цепи.",
-            "Вышел из строя реле-прерыватель.",
-            "Правильны оба ответа.",
-            "Правильный ответ 2."
-        ]
-    },
-    {
-        "questionText": "Какая общая емкость системы охлаждения двигателя Д-245?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "10 л.",
-            "19 л.",
-            "30 л."
-        ]
-    },
-    {
-        "questionText": "По каокй причине не запускается дизель?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Воздух в топливной системе.",
-            "Недостаточная подача воздуха.",
-            "Попадание воды в топливо."
-        ]
-    },
-    {
-        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-        "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsUAAAGmCAIAAAAbIW4mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABJISURBVHhe7d0/b1zV1gdg8r49RJrINJMWGpAihSaUNAjJkWiclioFZfgEfAK7REpFHZeOkgrKoYmlSKSB1m4cxZ8h9yQ+F3I9E2fmrNnn7D/PU3DnRChS0Gznd9c6a69rr1+//ggAIOD/+v8FABhKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJoHdwcNB/AtjQtdevX/cfgYadnp7evHnz5ORkPp/3vwSwNvUJ4I0ffvih++f3339/8QiwEXkCeNPp+P3337sPx8fHh4eHF78IsD79DmjdRaejf3hL1wPYlPoEtO7HH3/sP/3X8q8AXE2egKYdHh4+fvy4f/iv7ld0PYCN6HdA065du9Z/+l+z2ez58+e6HsCa1CegXffu3es/LTk/P9f1ANYnT0CjDt/qH1bR9QDWp98Bjbpx48b5+Xn/8B6z2ezVq1f9A8D7qU9Ai3766acPholO9+90/2b/APB+6hPQnD/++OPrr7/uH9bgOgrgg+QJaM7nn3/+999/9w9r2NnZOTs76x8AVtHvgLYcHBxsFCY6L1++tHoUuJr6BDRk+Wrt9el6AFdQn4CGXCwRHcbqUeAK8gS04vDw8GKJ6DBWjwJX0O+AJkQ6He/S9QBWUp+AJmzr8myXcAMryRNQv8NVS0SHcQk3sJJ+B9TvfUtEh7F6FFimPgGVu2KJ6DBWjwLL1CegZoeHh1vPExcWi8WdO3f6B6B58gTUbJ0losNYPQq8S78DqrXmEtFhrB4F3qU+AXXa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",
-        "rightAnswer": 0,
-        "answers": [
-            "Шнек правый.",
-            "Бункер закрыт.",
-            "Правый уширитель."
-        ]
-    }
-]
+        {
+            "questionText": "В каком положении при транспортных переездах должна находиться плита асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Плита должна быть поднята.",
+                "Плита должна быть поднята и зафиксирована.",
+                "Положение плиты не имеет значения."
+            ]
+        },
+        {
+            "questionText": "С каким усилием необходимо производить затяжку (дозатяжку) гаек крепления колес ведущей тележки асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "100 - 200 Нм.",
+                "200 - 300 Нм.",
+                "300 - 400 Нм."
+            ]
+        },
+        {
+            "questionText": "Сколько должен составлять прогиб в цепи цепного редуктора привода шнекового механизма асфальтоукладчика Асф-К-2-05 при приложении усилия 10-12 кгс в середине цепи?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "2 - 5 мм.",
+                "5 - 10 мм.",
+                "10 - 15 мм."
+            ]
+        },
+        {
+            "questionText": "Что может служить эталоном в системе нивелирования при укладке слоя асфальтоукладчиком?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Натянутый трос или струна.",
+                "Поверхность подготовленного для укладки дорожного полотна.",
+                "В качестве копира могут быть использованы оба варианта."
+            ]
+        },
+        {
+            "questionText": "В случае перегона асфальтоукладчика с установленными на рабочей плите дополнительными уширителями что необходимо сделать для лучшей управляемости асфальтоукладчиком?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Положить в пустой бункер груз массой 2 т.",
+                "Полностью очистить бункер.",
+                "Сдвинуть уширители плиты."
+            ]
+        },
+        {
+            "questionText": "В каких пределах должен быть прогиб цепей привода питателей и привода хода асфальтоукладчика Афс-К-3-04 при усилии 100 - 120 Н (10 - 12 кгс)?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "0 - 5 мм.",
+                "5 - 10 мм.",
+                "10 - 15 мм."
+            ]
+        },
+        {
+            "questionText": "Не работает указатель поворота. Каковы возможные причины?",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Малое напряжение в цепи.",
+                "Вышел из строя реле-прерыватель.",
+                "Правильны оба ответа.",
+                "Правильный ответ 2."
+            ]
+        },
+        {
+            "questionText": "Какая общая ёмкость системы охлаждения двигателя Д-245?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "10 л.",
+                "19 л.",
+                "30 л."
+            ]
+        },
+        {
+            "questionText": "По какой причине не запускается дизель?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Воздух в топливной системе.",
+                "Недостаточная подача воздуха.",
+                "Попадание воды в топливо."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsUAAAGmCAIAAAAbIW4mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABJISURBVHhe7d0/b1zV1gdg8r49RJrINJMWGpAihSaUNAjJkWiclioFZfgEfAK7REpFHZeOkgrKoYmlSKSB1m4cxZ8h9yQ+F3I9E2fmrNnn7D/PU3DnRChS0Gznd9c6a69rr1+//ggAIOD/+v8FABhKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJACBKngAAouQJoHdwcNB/AtjQtdevX/cfgYadnp7evHnz5ORkPp/3vwSwNvUJ4I0ffvih++f3339/8QiwEXkCeNPp+P3337sPx8fHh4eHF78IsD79DmjdRaejf3hL1wPYlPoEtO7HH3/sP/3X8q8AXE2egKYdHh4+fvy4f/iv7ld0PYCN6HdA065du9Z/+l+z2ez58+e6HsCa1CegXffu3es/LTk/P9f1ANYnT0CjDt/qH1bR9QDWp98Bjbpx48b5+Xn/8B6z2ezVq1f9A8D7qU9Ai3766acPholO9+90/2b/APB+6hPQnD/++OPrr7/uH9bgOgrgg+QJaM7nn3/+999/9w9r2NnZOTs76x8AVtHvgLYcHBxsFCY6L1++tHoUuJr6BDRk+Wrt9el6AFdQn4CGXCwRHcbqUeAK8gS04vDw8GKJ6DBWjwJX0O+AJkQ6He/S9QBWUp+AJmzr8myXcAMryRNQv8NVS0SHcQk3sJJ+B9TvfUtEh7F6FFimPgGVu2KJ6DBWjwLL1CegZoeHh1vPExcWi8WdO3f6B6B58gTUbJ0losNYPQq8S78DqrXmEtFhrB4F3qU+AXXa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",
+            "rightAnswer": 1,
+            "answers": [
+                "Шнек правый.",
+                "Бункер закрыт.",
+                "Правый уширитель."
+            ]
+        }
+    ]
+    

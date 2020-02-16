@@ -1,104 +1,105 @@
 [
-    {
-        "questionText": "На асфальтоукладчике предусмотрены места под установку:",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Огнетушителя.",
-            "Огнетушителя и аптечки первой помощи.",
-            "Термоса с питьевой водой и крючка для одежды.",
-            "Всего перечисленного."
-        ]
-    },
-    {
-        "questionText": "Как приводится в действие рабочий тормоз асфальтоукладчика?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Тормозной педалью.",
-            "Рычагом."
-        ]
-    },
-    {
-        "questionText": "Когда в процессе работы необходимо производить замену заправочного фильтра гидросистемы при повышении давления по показанию манометра, устанавливаемого на крышке фильтра взамен пробки?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Свыше 0,15 МПа.",
-            "Свыше 0,25 МПа.",
-            "Свыше 0,35 МПа."
-        ]
-    },
-    {
-        "questionText": "Для наблюдений за разгрузкой самосвала и работой бункера оператор должен:",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Встать со своего сиденья.",
-            "Пересесть на сиденье с левого борта.",
-            "Пересесть на сиденье с правого борта.",
-            "Сиденье может выдвигать в сторону."
-        ]
-    },
-    {
-        "questionText": "Перед отъездом от асфальтоукладчика в каком положении должен быть кузов самосвала?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Полностью поднят.",
-            "Опущен в горизонтальное положение.",
-            "Положение кузова не имеет значение."
-        ]
-    },
-    {
-        "questionText": "Снизилось давление наддува (дизель дымит и не развивает полной мощности). Какова вероятная причина?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Нарушена герметичность крепления турбокомпрессора.",
-            "Загрязнен маслянный фильтр.",
-            "Засорился воздухоочиститель.",
-            "Вероятны 1 и 3 причины."
-        ]
-    },
-    {
-        "questionText": "Что необходимо сделать, если при вращении рукоятки регулятора расхода не достигается изменение числа оборотов выходных валов гидромоторов?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Повысить уровень рабочей жидкости в гидробаке.",
-            "Отремонтировать или заменить регулятор.",
-            "Правильны оба варианта ответов."
-        ]
-    },
-    {
-        "questionText": "Запуская двигатель Д-260 при низких температурах, нужно ли придерживать клавишу ЛВЖ (легковоспламеняющаяся жидкость) до начала устройчивой работы?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Нет.",
-            "По желанию оператора асфальтоукладчика.",
-            "Да."
-        ]
-    },
-    {
-        "questionText": "По какой из указанных причин по всей высоте блока дизеля прослушиваются глухие удары?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Изношены вкладыши и шатунные шейки коленчатого вала.",
-            "Слабо натянут ремень вентилятора.",
-            "Недостаточная компрессия."
-        ]
-    },
-    {
-        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-        "questionImage": "data:image/png;base64,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",
-        "rightAnswer": 0,
-        "answers": [
-            "Разгрузка и подъем рабочей плиты.",
-            "Трамбующий брус.",
-            "Толщина слоя."
-        ]
-    }
-]
+        {
+            "questionText": "На асфальтоукладчике предусмотрены места под установку:",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Огнетушителя.",
+                "Огнетушителя и аптечки первой помощи.",
+                "Термоса с питьевой водой и крючка для одежды.",
+                "Всего перечисленного."
+            ]
+        },
+        {
+            "questionText": "Как приводится в действие рабочий тормоз асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Тормозной педалью.",
+                "Рычагом."
+            ]
+        },
+        {
+            "questionText": "Когда в процессе работы необходимо производить замену заправочного фильтра гидросистемы при повышении давления по показанию манометра, устанавливаемого на крышке фильтра взамен пробки?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Свыше 0,15 МПа.",
+                "Свыше 0,25 МПа.",
+                "Свыше 0,35 МПа."
+            ]
+        },
+        {
+            "questionText": "Для наблюдений за разгрузкой самосвала и работой бункера оператор должен:",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Встать со своего сиденья.",
+                "Пересесть на сиденье с левого борта.",
+                "Пересесть на сиденье с правого борта.",
+                "Сиденье может выдвигать в сторону."
+            ]
+        },
+        {
+            "questionText": "Перед отъездом от асфальтоукладчика в каком положении должен быть кузов самосвала?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Полностью поднят.",
+                "Опущен в горизонтальное положение.",
+                "Положение кузова не имеет значение."
+            ]
+        },
+        {
+            "questionText": "Снизилось давление наддува (дизель дымит и не развивает полной мощности). Какова вероятная причина?",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Нарушена герметичность крепления турбокомпрессора.",
+                "Загрязнён масляный фильтр.",
+                "Засорился воздухоочиститель.",
+                "Вероятны 1 и 3 причины."
+            ]
+        },
+        {
+            "questionText": "Что необходимо сделать, если при вращении рукоятки регулятора расхода не достигается изменение числа оборотов выходных валов гидромоторов?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Повысить уровень рабочей жидкости в гидробаке.",
+                "Отремонтировать или заменить регулятор.",
+                "Правильны оба варианта ответов."
+            ]
+        },
+        {
+            "questionText": "Запуская двигатель Д-260 при низких температурах, нужно ли придерживать клавишу ЛВЖ (легковоспламеняющаяся жидкость) до начала устойчивой работы?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Нет.",
+                "По желанию оператора асфальтоукладчика.",
+                "Да."
+            ]
+        },
+        {
+            "questionText": "По какой из указанных причин по всей высоте блока дизеля прослушиваются глухие удары?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Изношены вкладыши и шатунные шейки коленчатого вала.",
+                "Слабо натянут ремень вентилятора.",
+                "Недостаточная компрессия."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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",
+            "rightAnswer": 2,
+            "answers": [
+                "Разгрузка и подъем рабочей плиты.",
+                "Трамбующий брус.",
+                "Толщина слоя."
+            ]
+        }
+    ]
+    

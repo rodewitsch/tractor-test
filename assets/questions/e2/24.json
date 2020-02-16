@@ -1,102 +1,103 @@
 [
-    {
-        "questionText": "Для чего в системе охлаждения двигателя автогрейдера установлен паровоздушный клапан?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Для ускорения пуска двигателя.",
-            "Для сообщения внутренней полости радиатора с атмосферой.",
-            "Для повышения температуры кипения воды в системе охлаждения."
-        ]
-    },
-    {
-        "questionText": "По какой причине из выпускной трубы автогрейдера идет сизый дым?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "Плохой распыл топлива форсунками.",
-            "Избыток масла в картере двигателя.",
-            "Засорен воздухоочиститель дизеля."
-        ]
-    },
-    {
-        "questionText": "Какова виличина свободного хода педали тормоза при наличии сжатого воздуха в пневмосистеме скрепера МоАЗ-6014?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "20 - 40 мм.",
-            "30 - 45 мм.",
-            "35 - 50 мм."
-        ]
-    },
-    {
-        "questionText": "Какую общую емкость системы охлаждения имеет двигатель Д-260?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "10 л.",
-            "25 л.",
-            "31 л."
-        ]
-    },
-    {
-        "questionText": "Какая габаритная высота (без сигнального маяка) у самоходного вибрационного катка ВГ-Н2-2?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "3100 мм.",
-            "3270 мм.",
-            "3600 мм."
-        ]
-    },
-    {
-        "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-        "questionImage": "data:image/png;base64,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",
-        "rightAnswer": 0,
-        "answers": [
-            "Толщина слоя.",
-            "Подъем - опускание.",
-            "Разгрузка и поджим рабочей плиты."
-        ]
-    },
-    {
-        "questionText": "Какая амплитуда колебаний вибратора прямого хода у самоходного вибрационного катка ВГ-12-2?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "1,1 мм.",
-            "1,8 мм.",
-            "2 мм."
-        ]
-    },
-    {
-        "questionText": "Какое напряжение в сети автогрейдера ДЗ-122А?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "12 В.",
-            "24 В.",
-            "36 В."
-        ]
-    },
-    {
-        "questionText": "В каких пределах по ширине обеспечивает укладку покрытия асфальтоукладчик Асф-К-2-05?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "2,5 - 4,0 м.",
-            "3,0 - 4,5 м.",
-            "3,5 - 5,0 м."
-        ]
-    },
-    {
-        "questionText": "Какое минимальное количество моточасов нужно обкатывать новый каток ДС-31?",
-        "questionImage": "",
-        "rightAnswer": 0,
-        "answers": [
-            "20 мото/ч.",
-            "30 мото/ч.",
-            "40 мото/ч."
-        ]
-    }
-]
+        {
+            "questionText": "Для чего в системе охлаждения двигателя автогрейдера установлен паровоздушный клапан?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Для ускорения пуска двигателя.",
+                "Для сообщения внутренней полости радиатора с атмосферой.",
+                "Для повышения температуры кипения воды в системе охлаждения."
+            ]
+        },
+        {
+            "questionText": "По какой причине из выпускной трубы автогрейдера идёт сизый дым?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Плохой распыл топлива форсунками.",
+                "Избыток масла в картере двигателя.",
+                "Засорён воздухоочиститель дизеля."
+            ]
+        },
+        {
+            "questionText": "Какова величина свободного хода педали тормоза при наличии сжатого воздуха в пневмосистеме скрепера МоАЗ-6014?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "20 - 40 мм.",
+                "30 - 45 мм.",
+                "35 - 50 мм."
+            ]
+        },
+        {
+            "questionText": "Какую общую ёмкость системы охлаждения имеет двигатель Д-260?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "10 л.",
+                "25 л.",
+                "31 л."
+            ]
+        },
+        {
+            "questionText": "Какая габаритная высота (без сигнального маяка) у самоходного вибрационного катка ВГ-Н2-2?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "3100 мм.",
+                "3270 мм.",
+                "3600 мм."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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",
+            "rightAnswer": 1,
+            "answers": [
+                "Толщина слоя.",
+                "Подъём - опускание.",
+                "Разгрузка и поджим рабочей плиты."
+            ]
+        },
+        {
+            "questionText": "Какая амплитуда колебаний вибратора прямого хода у самоходного вибрационного катка ВГ-12-2?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "1,1 мм.",
+                "1,8 мм.",
+                "2 мм."
+            ]
+        },
+        {
+            "questionText": "Какое напряжение в сети автогрейдера ДЗ-122А?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "12 В.",
+                "24 В.",
+                "36 В."
+            ]
+        },
+        {
+            "questionText": "В каких пределах по ширине обеспечивает укладку покрытия асфальтоукладчик Асф-К-2-05?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "2,5 - 4,0 м.",
+                "3,0 - 4,5 м.",
+                "3,5 - 5,0 м."
+            ]
+        },
+        {
+            "questionText": "Какое минимальное количество моточасов нужно обкатывать новый каток ДС-31?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "20 мото/ч.",
+                "30 мото/ч.",
+                "40 мото/ч."
+            ]
+        }
+    ]
+    
