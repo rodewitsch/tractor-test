@@ -9,7 +9,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.1",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
@@ -26,7 +26,7 @@
     "android": {
       "permissions": [],
       "package": "com.rdm.tracktortest",
-      "versionCode": 3
+      "versionCode": 4
     }
   }
 }
