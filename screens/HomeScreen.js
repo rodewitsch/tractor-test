@@ -29,7 +29,7 @@ export default class HomeScreen extends React.Component {
             renderItem={({ item }) => <Item props={this.props} disabled={item.disabled} category={item.category} image={item.image} description={item.description} />}
             keyExtractor={item => item.id}
           />
-          <Text style={{textAlign: 'center', color: 'gray'}}>Версия приложения 1.1.1</Text>
+          <Text style={{textAlign: 'center', color: 'gray'}}>Версия приложения 1.1.3</Text>
         </View>
       </SafeAreaView>
     )

@@ -1,104 +1,104 @@
 [
-        {
-            "questionText": "В какое положение после остановки машины должен быть поставлен рычаг управления ХОД?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Вперёд.",
-                "Нейтральное положение.",
-                "Назад."
-            ]
-        },
-        {
-            "questionText": "Каким должно быть давление в шинах задних колес ведущей тележки асфальтоукладчика?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "0,25 МПа.",
-                "0,32 МПа.",
-                "0,42 МПа."
-            ]
-        },
-        {
-            "questionText": "Чем отличается гидрооборудование асфальтоукладчика Асф-К-2-05 от гидрооборудования Асф-К-3-04?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Ёмкостью гидробака.",
-                "Отсутствием вибраторов на рабочей плите.",
-                "Способом очистки рабочей жидкости."
-            ]
-        },
-        {
-            "questionText": "Каким образом производится окончательная натяжка копирного троса системы нивелирования асфальтоукладчика?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "Вручную.",
-                "Балансирным грузом.",
-                "Винтом талрепа."
-            ]
-        },
-        {
-            "questionText": "Разрешается ли включение блокировки дифференциала асфальтоукладчика при транспортных переездах?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Разрешается при движении без поворотов.",
-                "Запрещается при транспортных переездах и на поворотах."
-            ]
-        },
-        {
-            "questionText": "Когда необходимо производить промывку сапуна гидробака?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "При ТО-1.",
-                "При ТО-2.",
-                "При текущем ремонте."
-            ]
-        },
-        {
-            "questionText": "Рабочая жидкость гидросистемы нагревается выше 80 °C?",
-            "questionImage": "",
-            "rightAnswer": 5,
-            "answers": [
-                "Высокий уровень масла в баке.",
-                "Низкий уровень масла в баке.",
-                "Засорён калорифер.",
-                "Все ответы правильные.",
-                "Правильные ответы 2 и 3."
-            ]
-        },
-        {
-            "questionText": "Какой нижний предел давления масла двигателя Д-245 в номинальном режиме при нормальной температуре?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "0,08 МПа.",
-                "0,20 МПа.",
-                "0,30 МПа."
-            ]
-        },
-        {
-            "questionText": "Когда следует проверять уровень масла в картере двигателя Д-269?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "Сразу после остановки двигателя.",
-                "Во время работы.",
-                "Через 3-5 минут после остановки двигателя."
-            ]
-        },
-        {
-            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-            "questionImage": "data:image/png;base64,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",
-            "rightAnswer": 1,
-            "answers": [
-                "Выдвинут правый уширитель.",
-                "Увеличение толщины слоя.",
-                "Поворот направо."
-            ]
-        }
+        {
+            "questionText": "В какое положение после остановки машины должен быть поставлен рычаг управления ХОД?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Вперёд.",
+                "Нейтральное положение.",
+                "Назад."
+            ]
+        },
+        {
+            "questionText": "Каким должно быть давление в шинах задних колес ведущей тележки асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "0,25 МПа.",
+                "0,32 МПа.",
+                "0,42 МПа."
+            ]
+        },
+        {
+            "questionText": "Чем отличается гидрооборудование асфальтоукладчика Асф-К-2-05 от гидрооборудования Асф-К-3-04?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Ёмкостью гидробака.",
+                "Отсутствием вибраторов на рабочей плите.",
+                "Способом очистки рабочей жидкости."
+            ]
+        },
+        {
+            "questionText": "Каким образом производится окончательная натяжка копирного троса системы нивелирования асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Вручную.",
+                "Балансирным грузом.",
+                "Винтом талрепа."
+            ]
+        },
+        {
+            "questionText": "Разрешается ли включение блокировки дифференциала асфальтоукладчика при транспортных переездах?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Разрешается при движении без поворотов.",
+                "Запрещается при транспортных переездах и на поворотах."
+            ]
+        },
+        {
+            "questionText": "Когда необходимо производить промывку сапуна гидробака?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "При ТО-1.",
+                "При ТО-2.",
+                "При текущем ремонте."
+            ]
+        },
+        {
+            "questionText": "Рабочая жидкость гидросистемы нагревается выше 80 °C?",
+            "questionImage": "",
+            "rightAnswer": 5,
+            "answers": [
+                "Высокий уровень масла в баке.",
+                "Низкий уровень масла в баке.",
+                "Засорён калорифер.",
+                "Все ответы правильные.",
+                "Правильные ответы 2 и 3."
+            ]
+        },
+        {
+            "questionText": "Какой нижний предел давления масла двигателя Д-245 в номинальном режиме при нормальной температуре?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "0,08 МПа.",
+                "0,20 МПа.",
+                "0,30 МПа."
+            ]
+        },
+        {
+            "questionText": "Когда следует проверять уровень масла в картере двигателя Д-269?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Сразу после остановки двигателя.",
+                "Во время работы.",
+                "Через 3-5 минут после остановки двигателя."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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",
+            "rightAnswer": 1,
+            "answers": [
+                "Выдвинут правый уширитель.",
+                "Увеличение толщины слоя.",
+                "Поворот направо."
+            ]
+        }
     ]
     

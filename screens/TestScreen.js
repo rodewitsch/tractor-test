@@ -160,7 +160,7 @@ export default class TestScreen extends React.Component {
         <Text style={{ fontSize: 18, paddingHorizontal: 20, paddingVertical: 10, fontStyle: 'italic', fontWeight: 'bold' }}>Вопрос:</Text>
 
         <View style={styles.questionArea}>
-          <Text style={{ fontSize: 18, textAlign: 'justify', flexWrap: 'wrap' }}>{this.getQuestionItem().questionText}</Text>
+          <Text style={{ flex: 1, flexWrap: 'nowrap', fontSize: 18, textAlign: 'justify' }}>{this.getQuestionItem().questionText}</Text>
         </View>
 
         <ScrollView style={{ height: '50%' }}>

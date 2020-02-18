@@ -1,102 +1,102 @@
 [
-        {
-            "questionText": "Разрешается ли работать оператору асфальтоукладчика без противошумных наушников?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Запрещается.",
-                "Разрешается.",
-                "Зависит от состояния здоровья оператора."
-            ]
-        },
-        {
-            "questionText": "Трансмиссия какого трактора (задний мост) доработана под конструкцию асфальтоукладчика Асф-К-2-05?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "МТЗ-80.",
-                "Т-150К.",
-                "К-700"
-            ]
-        },
-        {
-            "questionText": "Когда должна производиться первая замена фильтроэлементов?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "Через 100 мото/ч работы асфальтоукладчика.",
-                "Через 200 мото/ч работы асфальтоукладчика.",
-                "Через 250 мото/ч работы асфальтоукладчика."
-            ]
-        },
-        {
-            "questionText": "При транспортном режиме как необходимо производить управление асфальтоукладчиком?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "С левого борта.",
-                "С правого борта.",
-                "Допустимы оба варианта."
-            ]
-        },
-        {
-            "questionText": "Как должны при совместном движении двигаться асфальтоукладчик и самосвал с асфальтобетонной смесью?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Скорость в коробке передач самосвала должна совпадать со скоростью движения асфальтоукладчика.",
-                "Скорость в коробке передач самосвала и тормоз должны быть выключены.",
-                "Водитель самосвала сам регулирует скорость движения."
-            ]
-        },
-        {
-            "questionText": "Ротор турбокомпрессора не развивает нужной частоты вращения (постоянный шум в турбокомпрессоре, дизель не развивает полной мощности). Какова вероятная причина?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "Заклинило ротор в подшипнике.",
-                "Недостаточно смазаны подшипники.",
-                "Задевает колесо турбокомпрессора."
-            ]
-        },
-        {
-            "questionText": "Гидропривод трамбующих брусьев и вибраторов не работает при включении тумблера. Каковы возможные причины?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Регулятор расхода полностью открыт на слив.",
-                "Регулятор расхода закрыт."
-            ]
-        },
-        {
-            "questionText": "Через сколько часов проверяют и регулируют зазор между клапанами и коромыслами дизеля Д-245?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "80 - 125 ч.",
-                "500 ч.",
-                "1000 ч."
-            ]
-        },
-        {
-            "questionText": "Как следует производить очистку основного фильтрующего элемента воздухоочистителя дизеля Д-260?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Продуть сжатым воздухом и при необходимости промыть в дизельном топливе.",
-                "Продуть сжатым воздухом и при необходимости промыть в моющем растворе.",
-                "Продуть выхлопными газами."
-            ]
-        },
-        {
-            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-            "questionImage": "data:image/png;base64,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",
-            "rightAnswer": 3,
-            "answers": [
-                "Обороты дизеля.",
-                "Стояночный тормоз.",
-                "Вибраторы."
-            ]
-        }
+        {
+            "questionText": "Разрешается ли работать оператору асфальтоукладчика без противошумных наушников?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Запрещается.",
+                "Разрешается.",
+                "Зависит от состояния здоровья оператора."
+            ]
+        },
+        {
+            "questionText": "Трансмиссия какого трактора (задний мост) доработана под конструкцию асфальтоукладчика Асф-К-2-05?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "МТЗ-80.",
+                "Т-150К.",
+                "К-700"
+            ]
+        },
+        {
+            "questionText": "Когда должна производиться первая замена фильтроэлементов?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Через 100 мото/ч работы асфальтоукладчика.",
+                "Через 200 мото/ч работы асфальтоукладчика.",
+                "Через 250 мото/ч работы асфальтоукладчика."
+            ]
+        },
+        {
+            "questionText": "При транспортном режиме как необходимо производить управление асфальтоукладчиком?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "С левого борта.",
+                "С правого борта.",
+                "Допустимы оба варианта."
+            ]
+        },
+        {
+            "questionText": "Как должны при совместном движении двигаться асфальтоукладчик и самосвал с асфальтобетонной смесью?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Скорость в коробке передач самосвала должна совпадать со скоростью движения асфальтоукладчика.",
+                "Скорость в коробке передач самосвала и тормоз должны быть выключены.",
+                "Водитель самосвала сам регулирует скорость движения."
+            ]
+        },
+        {
+            "questionText": "Ротор турбокомпрессора не развивает нужной частоты вращения (постоянный шум в турбокомпрессоре, дизель не развивает полной мощности). Какова вероятная причина?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Заклинило ротор в подшипнике.",
+                "Недостаточно смазаны подшипники.",
+                "Задевает колесо турбокомпрессора."
+            ]
+        },
+        {
+            "questionText": "Гидропривод трамбующих брусьев и вибраторов не работает при включении тумблера. Каковы возможные причины?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Регулятор расхода полностью открыт на слив.",
+                "Регулятор расхода закрыт."
+            ]
+        },
+        {
+            "questionText": "Через сколько часов проверяют и регулируют зазор между клапанами и коромыслами дизеля Д-245?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "80 - 125 ч.",
+                "500 ч.",
+                "1000 ч."
+            ]
+        },
+        {
+            "questionText": "Как следует производить очистку основного фильтрующего элемента воздухоочистителя дизеля Д-260?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Продуть сжатым воздухом и при необходимости промыть в дизельном топливе.",
+                "Продуть сжатым воздухом и при необходимости промыть в моющем растворе.",
+                "Продуть выхлопными газами."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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",
+            "rightAnswer": 3,
+            "answers": [
+                "Обороты дизеля.",
+                "Стояночный тормоз.",
+                "Вибраторы."
+            ]
+        }
     ]
     

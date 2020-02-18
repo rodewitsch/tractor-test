@@ -1,104 +1,104 @@
 [
-        {
-            "questionText": "Требуется ли установка дорожных предупредительных знаков вблизи проведения работ асфальтоукладчиком?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Необходимо.",
-                "По решению ответственного по выполнению работ.",
-                "Можно знаки не выставлять."
-            ]
-        },
-        {
-            "questionText": "Каким образом производиться натяжение цепи привода ведущих колес асфальтоукладчика Асф-К-3-04?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Путём изменения межцентрового расстояния между звёздочками.",
-                "Перестановкой звёздочек местами.",
-                "Натяжным роликом."
-            ]
-        },
-        {
-            "questionText": "На какое давление должен быть отрегулирован сливной клапан гидробака асфальтоукладчика?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "0,15 МПа.",
-                "0,25 МПа.",
-                "0,30 МПа."
-            ]
-        },
-        {
-            "questionText": "Как проверяется правильность натяжения копирного троса?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Прямой рейкой.",
-                "Провисание троса не должно быть видно на глаз.",
-                "Нивелиром."
-            ]
-        },
-        {
-            "questionText": "Что должен проверить оператор перед началом укладки асфальтобетонной смеси?",
-            "questionImage": "",
-            "rightAnswer": 4,
-            "answers": [
-                "Наличие аптечки.",
-                "Аптечки и огнетушителей.",
-                "Дорожных предупреждающих знаков.",
-                "Всего перечисленного."
-            ]
-        },
-        {
-            "questionText": "Разрешается ли производить смешивание смазочных масел при обслуживании асфальтоукладчика?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Разрешено только консистентных смазок.",
-                "Запрещено.",
-                "Разрешено с одинаковой вязкостью."
-            ]
-        },
-        {
-            "questionText": "Гидропривод хода асфальтоукладчика в рабочем режиме не работает ни в одном направлении при перемещении рычага управления ходом. Каковы возможные причины?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Нарушена механическая связь рычага управления с управляющим рычагом на насосе.",
-                "Малые обороты двигателя.",
-                "Низкий уровень рабочей жидкости в баке."
-            ]
-        },
-        {
-            "questionText": "Какое нормальное давление должно иметь масло в системе смазки двигателя Д-245?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "0,1 - 0,2 МПа.",
-                "0,2 - 0,3 МПа.",
-                "0,3 - 0,4 МПа."
-            ]
-        },
-        {
-            "questionText": "В каком режиме должен быть включён вентилятор дизеля Д-260 при работающем компрессоре?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Принудительном.",
-                "Автоматическом.",
-                "Не имеет значения."
-            ]
-        },
-        {
-            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-            "questionImage": "data:image/png;base64,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",
-            "rightAnswer": 2,
-            "answers": [
-                "Трамбующий брус.",
-                "Подъем и опускание рабочей плиты.",
-                "Вибраторы."
-            ]
-        }
+        {
+            "questionText": "Требуется ли установка дорожных предупредительных знаков вблизи проведения работ асфальтоукладчиком?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Необходимо.",
+                "По решению ответственного по выполнению работ.",
+                "Можно знаки не выставлять."
+            ]
+        },
+        {
+            "questionText": "Каким образом производиться натяжение цепи привода ведущих колес асфальтоукладчика Асф-К-3-04?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Путём изменения межцентрового расстояния между звёздочками.",
+                "Перестановкой звёздочек местами.",
+                "Натяжным роликом."
+            ]
+        },
+        {
+            "questionText": "На какое давление должен быть отрегулирован сливной клапан гидробака асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "0,15 МПа.",
+                "0,25 МПа.",
+                "0,30 МПа."
+            ]
+        },
+        {
+            "questionText": "Как проверяется правильность натяжения копирного троса?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Прямой рейкой.",
+                "Провисание троса не должно быть видно на глаз.",
+                "Нивелиром."
+            ]
+        },
+        {
+            "questionText": "Что должен проверить оператор перед началом укладки асфальтобетонной смеси?",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Наличие аптечки.",
+                "Аптечки и огнетушителей.",
+                "Дорожных предупреждающих знаков.",
+                "Всего перечисленного."
+            ]
+        },
+        {
+            "questionText": "Разрешается ли производить смешивание смазочных масел при обслуживании асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Разрешено только консистентных смазок.",
+                "Запрещено.",
+                "Разрешено с одинаковой вязкостью."
+            ]
+        },
+        {
+            "questionText": "Гидропривод хода асфальтоукладчика в рабочем режиме не работает ни в одном направлении при перемещении рычага управления ходом. Каковы возможные причины?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Нарушена механическая связь рычага управления с управляющим рычагом на насосе.",
+                "Малые обороты двигателя.",
+                "Низкий уровень рабочей жидкости в баке."
+            ]
+        },
+        {
+            "questionText": "Какое нормальное давление должно иметь масло в системе смазки двигателя Д-245?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "0,1 - 0,2 МПа.",
+                "0,2 - 0,3 МПа.",
+                "0,3 - 0,4 МПа."
+            ]
+        },
+        {
+            "questionText": "В каком режиме должен быть включён вентилятор дизеля Д-260 при работающем компрессоре?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Принудительном.",
+                "Автоматическом.",
+                "Не имеет значения."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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",
+            "rightAnswer": 2,
+            "answers": [
+                "Трамбующий брус.",
+                "Подъем и опускание рабочей плиты.",
+                "Вибраторы."
+            ]
+        }
     ]
     

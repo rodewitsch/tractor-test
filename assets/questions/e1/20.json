@@ -1,105 +1,105 @@
 [
-        {
-            "questionText": "Какую должны обеспечивать ровность покрытия с автоматической системой нивелирования (просвет под трехметровой рейкой) асфальтоукладчики типа Асф-К-3-04 и Асф-К-2-05?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Не более 2 мм.",
-                "Не более 3 мм.",
-                "Не более 5 мм."
-            ]
-        },
-        {
-            "questionText": "Что необходимо сделать во время регулировки хода педали рабочего тормоза асфальтоукладчика?",
-            "questionImage": "",
-            "rightAnswer": 4,
-            "answers": [
-                "Изменять длину стяжки.",
-                "Вращать регулировочный болт.",
-                "Регулировать датчик срабатывания тормозов.",
-                "Производить все перечисленные действия."
-            ]
-        },
-        {
-            "questionText": "Разрешается ли запуск двигателя асфальтоукладчика при отсутствии требуемого уровня рабочей жидкости в гидробаке?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "Разрешается для работы на холостом ходу.",
-                "Разрешается при обкате асфальтоукладчика.",
-                "Запрещается."
-            ]
-        },
-        {
-            "questionText": "Какую грузоподъёмность должен иметь прицеп-тяжеловоз для перевозки асфальтоукладчика?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Не менее 15 т.",
-                "Не менее 25 т.",
-                "Не менее 30 т."
-            ]
-        },
-        {
-            "questionText": "В чем основная причина дефекта асфальтобетонного покрытия, выразившаяся задиранием (частичным или сплошным) на поверхности укладываемого слоя?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Асфальтобетонная смесь прилипла к поверхности выглаживающей плиты.",
-                "Попадание в смесь крупного щебня."
-            ]
-        },
-        {
-            "questionText": "Корпус редуктора насосов перегревается, слышен шум и стуки. Каковы вероятные причины?",
-            "questionImage": "",
-            "rightAnswer": 4,
-            "answers": [
-                "Повышенный уровень масла.",
-                "Износ подшипников.",
-                "Пониженный уровень масла.",
-                "Вероятны вторая и третья причины."
-            ]
-        },
-        {
-            "questionText": "Каким способом осуществляется изменение температурного режима двигателя Д-245?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Перестановкой дросселирующего диска вентилятора.",
-                "Шторкой радиатора.",
-                "Термостатом."
-            ]
-        },
-        {
-            "questionText": "Прежде чем остановить двигатель Д-260 после нагрузки нужно ли давать ему поработать при 1000 об/мин?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "Нет.",
-                "Да, в течение 5 - 10 мин.",
-                "Да, в течение 3 - 5 мин."
-            ]
-        },
-        {
-            "questionText": "Должен ли в соответствии с правилами дорожного движения асфальтоукладчик быть укомплектован медицинской аптечкой?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Должен по ПДД.",
-                "Должен по правилам безопасности при работе на асфальтоукладчике.",
-                "Должен в обоих случаях.",
-                "Не должен."
-            ]
-        },
-        {
-            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-            "questionImage": "data:image/png;base64,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",
-            "rightAnswer": 2,
-            "answers": [
-                "Управление шнеком двумя ручками.",
-                "Управление шнеком и питателем от двух лопаток.",
-                "Подъем и опускание трамбующего бруса."
-            ]
-        }
+        {
+            "questionText": "Какую должны обеспечивать ровность покрытия с автоматической системой нивелирования (просвет под трехметровой рейкой) асфальтоукладчики типа Асф-К-3-04 и Асф-К-2-05?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Не более 2 мм.",
+                "Не более 3 мм.",
+                "Не более 5 мм."
+            ]
+        },
+        {
+            "questionText": "Что необходимо сделать во время регулировки хода педали рабочего тормоза асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Изменять длину стяжки.",
+                "Вращать регулировочный болт.",
+                "Регулировать датчик срабатывания тормозов.",
+                "Производить все перечисленные действия."
+            ]
+        },
+        {
+            "questionText": "Разрешается ли запуск двигателя асфальтоукладчика при отсутствии требуемого уровня рабочей жидкости в гидробаке?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Разрешается для работы на холостом ходу.",
+                "Разрешается при обкате асфальтоукладчика.",
+                "Запрещается."
+            ]
+        },
+        {
+            "questionText": "Какую грузоподъёмность должен иметь прицеп-тяжеловоз для перевозки асфальтоукладчика?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Не менее 15 т.",
+                "Не менее 25 т.",
+                "Не менее 30 т."
+            ]
+        },
+        {
+            "questionText": "В чем основная причина дефекта асфальтобетонного покрытия, выразившаяся задиранием (частичным или сплошным) на поверхности укладываемого слоя?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Асфальтобетонная смесь прилипла к поверхности выглаживающей плиты.",
+                "Попадание в смесь крупного щебня."
+            ]
+        },
+        {
+            "questionText": "Корпус редуктора насосов перегревается, слышен шум и стуки. Каковы вероятные причины?",
+            "questionImage": "",
+            "rightAnswer": 4,
+            "answers": [
+                "Повышенный уровень масла.",
+                "Износ подшипников.",
+                "Пониженный уровень масла.",
+                "Вероятны вторая и третья причины."
+            ]
+        },
+        {
+            "questionText": "Каким способом осуществляется изменение температурного режима двигателя Д-245?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Перестановкой дросселирующего диска вентилятора.",
+                "Шторкой радиатора.",
+                "Термостатом."
+            ]
+        },
+        {
+            "questionText": "Прежде чем остановить двигатель Д-260 после нагрузки нужно ли давать ему поработать при 1000 об/мин?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Нет.",
+                "Да, в течение 5 - 10 мин.",
+                "Да, в течение 3 - 5 мин."
+            ]
+        },
+        {
+            "questionText": "Должен ли в соответствии с правилами дорожного движения асфальтоукладчик быть укомплектован медицинской аптечкой?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Должен по ПДД.",
+                "Должен по правилам безопасности при работе на асфальтоукладчике.",
+                "Должен в обоих случаях.",
+                "Не должен."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,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",
+            "rightAnswer": 2,
+            "answers": [
+                "Управление шнеком двумя ручками.",
+                "Управление шнеком и питателем от двух лопаток.",
+                "Подъем и опускание трамбующего бруса."
+            ]
+        }
     ]
     

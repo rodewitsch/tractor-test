@@ -1,103 +1,103 @@
 [
-        {
-            "questionText": "По какой из указанных причин прослушиваются глухие удары по всей высоте блока двигателя автогрейдера?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Изношены вкладыши и шатунные шейки коленчатого вала.",
-                "Изношена шатунно-поршневая группа.",
-                "Недостаточная компрессия."
-            ]
-        },
-        {
-            "questionText": "Какая из перечисленных неисправностей возникает в двигателе автогрейдера при засорении топливных фильтров?",
-            "questionImage": "",
-            "rightAnswer": 1,
-            "answers": [
-                "Двигатель не развивает полной мощности.",
-                "Из выхлопной трубы идёт синий дым.",
-                "Двигатель перегревается."
-            ]
-        },
-        {
-            "questionText": "Какую зазор между впускным клапаном и коромыслом в двигателе Д-260?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "15000 кг.",
-                "18000 кг.",
-                "20000 кг."
-            ]
-        },
-        {
-            "questionText": "Какой зазор между впускным клапаном и коромыслом в двигателе Д-260?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "0,20 - 0,25 мм.",
-                "0,30 - 0,35 мм.",
-                "0,25 - 0,30 мм."
-            ]
-        },
-        {
-            "questionText": "Какая марка двигателя у самоходного вибрационного катка ВГ-12-2?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "Д-260.",
-                "Д-245.",
-                "Д-65."
-            ]
-        },
-        {
-            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
-            "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAs8AAAGwCAIAAADZjB9pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAd8SURBVHhe7djBEYMwDABBlP57Vj5u4QZIdj+oANvcaHb3AgDIfM4XAKChNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AIDW7O4ZeaGZOdOtnCLg3ufIK/RwdhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC0ZnfPyAvNzJn4UW5owcX5PW7Kw9ltAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANCa3T0jAEDAbgMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWrO7Z+SFZuZMAH/Mv+zh7DYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGjN7p4RACBgtwEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEDpur79PyRJ9PcWxgAAAABJRU5ErkJggg==",
-            "rightAnswer": 2,
-            "answers": [
-                "Трамбующий брус.",
-                "Бункер открыт.",
-                "Уширители."
-            ]
-        },
-        {
-            "questionText": "Какая частота вращения дебаланса реверса вибратора у самоходного вибрационного катка ВГ-12-2?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "20,2 Гц.",
-                "40,0 Гц.",
-                "45,0 Гц."
-            ]
-        },
-        {
-            "questionText": "Когда можно производить переключение диапазонов КП автогрейдеров?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "На ходу.",
-                "На небольшой скорости.",
-                "После полной остановки."
-            ]
-        },
-        {
-            "questionText": "В каких пределах по ширине обеспечивает укладку покрытия асфальтоукладчик Асф-К-3-04 со сменными вставками (уширителям)?",
-            "questionImage": "",
-            "rightAnswer": 2,
-            "answers": [
-                "3,0 - 4,0 м.",
-                "4,0 - 6,2 м.",
-                "5,0 - 7,0 м."
-            ]
-        },
-        {
-            "questionText": "Можно ли работать на автогрейдере с неисправным замком дверей?",
-            "questionImage": "",
-            "rightAnswer": 3,
-            "answers": [
-                "Можно.",
-                "Можно при работах со скоростью до 10 км/ч.",
-                "Нельзя."
-            ]
-        }
+        {
+            "questionText": "По какой из указанных причин прослушиваются глухие удары по всей высоте блока двигателя автогрейдера?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Изношены вкладыши и шатунные шейки коленчатого вала.",
+                "Изношена шатунно-поршневая группа.",
+                "Недостаточная компрессия."
+            ]
+        },
+        {
+            "questionText": "Какая из перечисленных неисправностей возникает в двигателе автогрейдера при засорении топливных фильтров?",
+            "questionImage": "",
+            "rightAnswer": 1,
+            "answers": [
+                "Двигатель не развивает полной мощности.",
+                "Из выхлопной трубы идёт синий дым.",
+                "Двигатель перегревается."
+            ]
+        },
+        {
+            "questionText": "Какую зазор между впускным клапаном и коромыслом в двигателе Д-260?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "15000 кг.",
+                "18000 кг.",
+                "20000 кг."
+            ]
+        },
+        {
+            "questionText": "Какой зазор между впускным клапаном и коромыслом в двигателе Д-260?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "0,20 - 0,25 мм.",
+                "0,30 - 0,35 мм.",
+                "0,25 - 0,30 мм."
+            ]
+        },
+        {
+            "questionText": "Какая марка двигателя у самоходного вибрационного катка ВГ-12-2?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "Д-260.",
+                "Д-245.",
+                "Д-65."
+            ]
+        },
+        {
+            "questionText": "Какое смысловое значение имеет символ органа управления асфальтоукладчика, показанный на рисунке?",
+            "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAs8AAAGwCAIAAADZjB9pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAd8SURBVHhe7djBEYMwDABBlP57Vj5u4QZIdj+oANvcaHb3AgDIfM4XAKChNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AIDW7O4ZeaGZOdOtnCLg3ufIK/RwdhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC0ZnfPyAvNzJn4UW5owcX5PW7Kw9ltAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANCa3T0jAEDAbgMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWrO7Z+SFZuZMAH/Mv+zh7DYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGipDQCgpTYAgJbaAABaagMAaKkNAKClNgCAltoAAFpqAwBoqQ0AoKU2AICW2gAAWmoDAGjN7p4RACBgtwEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEBLbQAALbUBALTUBgDQUhsAQEttAAAttQEAtNQGANBSGwBAS20AAC21AQC01AYA0FIbAEDpur79PyRJ9PcWxgAAAABJRU5ErkJggg==",
+            "rightAnswer": 2,
+            "answers": [
+                "Трамбующий брус.",
+                "Бункер открыт.",
+                "Уширители."
+            ]
+        },
+        {
+            "questionText": "Какая частота вращения дебаланса реверса вибратора у самоходного вибрационного катка ВГ-12-2?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "20,2 Гц.",
+                "40,0 Гц.",
+                "45,0 Гц."
+            ]
+        },
+        {
+            "questionText": "Когда можно производить переключение диапазонов КП автогрейдеров?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "На ходу.",
+                "На небольшой скорости.",
+                "После полной остановки."
+            ]
+        },
+        {
+            "questionText": "В каких пределах по ширине обеспечивает укладку покрытия асфальтоукладчик Асф-К-3-04 со сменными вставками (уширителям)?",
+            "questionImage": "",
+            "rightAnswer": 2,
+            "answers": [
+                "3,0 - 4,0 м.",
+                "4,0 - 6,2 м.",
+                "5,0 - 7,0 м."
+            ]
+        },
+        {
+            "questionText": "Можно ли работать на автогрейдере с неисправным замком дверей?",
+            "questionImage": "",
+            "rightAnswer": 3,
+            "answers": [
+                "Можно.",
+                "Можно при работах со скоростью до 10 км/ч.",
+                "Нельзя."
+            ]
+        }
     ]
     
