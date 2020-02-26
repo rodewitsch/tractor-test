@@ -5,7 +5,10 @@ import {
   Image,
   View,
   TouchableOpacity,
-  ScrollView
+  ScrollView,
+  BackHandler,
+  Alert,
+  AsyncStorage
 } from 'react-native';
 import Modal from 'react-native-modalbox';
 
@@ -15,21 +18,58 @@ import * as D from '../assets/questions/d/index';
 import * as E1 from '../assets/questions/e1/index';
 import * as E2 from '../assets/questions/e2/index';
 import * as F from '../assets/questions/f/index';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default class TestScreen extends React.Component {
 
   constructor(props) {
     super(props);
-    this.currentCategory = props.navigation.state.params.category
+    this.currentCategory = props.navigation.state.params.category;
+    this.selectedTicket = props.navigation.state.params.ticket;
     this.timer = null;
     this.state = {};
     this.state.examStatus = 'inProgress';
-    this.state.ticketNumber = this.randomInteger(0, this.getCategoryTickets(this.currentCategory).default.length - 1);
+    this.state.ticketNumber = this.selectedTicket != undefined ? this.selectedTicket : this.randomInteger(0, this.getCategoryTickets(this.currentCategory).default.length - 1);
     this.state.questionNumber = 0;
     this.state.timer = '10:00';
     this.state.answers = new Array(this.getCategoryTickets(this.currentCategory).default[this.state.ticketNumber].length)
       .fill(null)
       .map((item, index) => ({ rightAnswer: (this.getQuestionItem(this.state.ticketNumber, index).rightAnswer - 1), userAnswer: null }));
+  }
+
+  refreshState() {
+    AsyncStorage.getItem('settings').then(data => {
+      if (data) this.setState({ ...this.state, settings: JSON.parse(data) })
+    })
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    this.backHandler.remove()
+  }
+
+  handleBackPress = () => {
+    if (!this.state.settings.requestExamExit) return this.props.navigation.navigate('Home');
+    Alert.alert(
+      '',
+      'Выйти из экзамена',
+      [
+        {
+          text: 'Отмена',
+          onPress: () => true,
+          style: 'cancel',
+        },
+        { text: 'Выйти', onPress: () => this.props.navigation.navigate('Home') },
+      ],
+      { cancelable: false }
+    );
+    return true;
+  }
+
+  componentDidMount() {
+    this.refreshState();
+    this.startTimer(600);
+    this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
   }
 
   getCategoryTickets(category) {
@@ -54,13 +94,6 @@ export default class TestScreen extends React.Component {
     return Math.floor(rand);
   }
 
-  componentDidMount() {
-    this.startTimer(600);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
 
   getQuestionItem(ticketNumber = this.state.ticketNumber, questionNumber = this.state.questionNumber) {
     return this.getCategoryTickets(this.currentCategory).default[ticketNumber][questionNumber];
@@ -130,8 +163,10 @@ export default class TestScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-
-        <Modal style={styles.modal} position={"center"} ref={"modal3"}>
+        
+        
+        <Modal style={styles.modal} backButtonClose={'true'} position={"center"} ref={"modal3"}>
+        {this.state.examStatus == 'passed' ? <Icon style={{ fontSize: 80, color: 'green' }} name='md-checkmark-circle-outline' /> : <Icon style={{ fontSize: 80, color: 'red' }} name='md-close-circle-outline' />}
           <Text style={{ fontSize: 30, color: this.state.examStatus == 'passed' ? 'green' : 'red' }}>
             {this.state.examStatus == 'passed' ? 'Экзамен сдан' : 'Экзамен не сдан'}
           </Text>

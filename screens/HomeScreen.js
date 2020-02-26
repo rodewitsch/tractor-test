@@ -7,7 +7,10 @@ import {
   SafeAreaView,
   FlatList,
   View,
-  StatusBar
+  StatusBar,
+  AsyncStorage,
+  BackHandler,
+  Alert
 } from 'react-native';
 
 import Modal from 'react-native-modalbox';
@@ -15,8 +18,47 @@ import DATA from '../constants/MenuItems';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { About } from '../components/About';
 import { Settings } from '../components/Settings';
+import { Tickets } from '../components/Tickets';
 
 export default class HomeScreen extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { selectedCategory: null, settings: {} };
+  }
+
+  refreshState() {
+    AsyncStorage.getItem('settings').then(data => {
+      if (data) this.setState({ ...this.state, settings: JSON.parse(data) })
+    })
+  }
+
+  componentWillUnmount() {
+    this.backHandler.remove()
+  }
+
+  handleBackPress = () => {
+    if (!this.state.settings.requestAppExit) return false;
+    Alert.alert(
+      '',
+      'Закрыть приложение',
+      [
+        {
+          text: 'Отмена',
+          onPress: () => true,
+          style: 'cancel',
+        },
+        { text: 'Выйти', onPress: () => BackHandler.exitApp() },
+      ],
+      { cancelable: false }
+    );
+    return true;
+  }
+
+  componentDidMount() {
+    this.refreshState();
+    this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+  }
 
   render() {
     return (
@@ -24,14 +66,17 @@ export default class HomeScreen extends React.Component {
         <View
           style={{ width: '100%', height: '100%' }}>
 
-          <Modal style={styles.modal} position={"center"} ref={"about"}>
+          <Modal position={"center"} backButtonClose={'true'} style={styles.about} ref={"about"}>
             <About></About>
           </Modal>
 
-          <Modal style={styles.modal} position={"center"} ref={"settings"}>
+          <Modal position={"center"} backButtonClose={'true'} onClosed={() => this.refreshState()} style={styles.settings} ref={"settings"}>
             <Settings></Settings>
           </Modal>
 
+          <Modal position={"center"} backButtonClose={'true'} style={styles.tickets} ref={"tickets"}>
+            <Tickets navigation={this.props.navigation} category={this.state.selectedCategory}></Tickets>
+          </Modal>
 
           <StatusBar hidden={true} />
 
@@ -51,7 +96,7 @@ export default class HomeScreen extends React.Component {
           <FlatList
             style={{ height: '80%' }}
             data={DATA}
-            renderItem={({ item }) => <Item props={this.props} disabled={item.disabled} category={item.category} image={item.image} description={item.description} />}
+            renderItem={({ item }) => <Item parent={this} ticketsModal={this.refs.tickets} requestTicketNumber={this.state.settings.requestTicketNumber} category={item.category} image={item.image} description={item.description} />}
             keyExtractor={item => item.id}
           />
         </View>
@@ -60,10 +105,21 @@ export default class HomeScreen extends React.Component {
   };
 }
 
-function Item({ props, category, image, disabled, description }) {
+function Item({ parent, category, image, description, requestTicketNumber, ticketsModal }) {
+
+  function startTest(category) {
+    parent.setState({ ...parent.state, selectedCategory: category });
+    if (requestTicketNumber) {
+      ticketsModal.open();
+    } else {
+      parent.props.navigation.navigate('Test', { category })
+    }
+  }
+
+
   return (
-    <TouchableOpacity disabled={disabled} onPress={() => props.navigation.navigate('Test', { category })}>
-      <View style={{ ...styles.item, backgroundColor: disabled ? 'white' : 'white' }}>
+    <TouchableOpacity onPress={() => startTest(category)}>
+      <View style={styles.item}>
         <View style={{ flexDirection: 'row' }}>
           <Image resizeMode='contain' style={styles.itemImage} source={{ uri: image }}></Image>
           <Text style={styles.itemCategory}>{category.substr(0, 1)}</Text>
@@ -118,11 +174,23 @@ const styles = StyleSheet.create({
     width: 50,
     marginLeft: 10
   },
-  modal: {
-    justifyContent: 'center',
+  settings: {
     alignItems: 'center',
     padding: 10,
-    height: 400,
+    height: 250,
+    width: 300
+  },
+  about: {
+    alignItems: 'center',
+    padding: 10,
+    height: 350,
+    width: 300
+  },
+  tickets: {
+    backgroundColor: '#e8e8e8',
+    alignItems: 'center',
+    padding: 10,
+    height: 420,
     width: 300
   }
 });
