@@ -24,12 +24,20 @@ export default class HomeScreen extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { selectedCategory: null, settings: {} };
+    this.state = {
+      selectedCategory: null,
+      settings: {
+        requestTicketNumber: false,
+        requestAppExit: false,
+        requestExamExit: true
+      }
+    };
   }
 
   refreshState() {
     AsyncStorage.getItem('settings').then(data => {
-      if (data) this.setState({ ...this.state, settings: JSON.parse(data) })
+      if (data) this.setState({ ...this.state, settings: JSON.parse(data) });
+      if (!data) AsyncStorage.setItem('settings', JSON.stringify(this.state.settings));
     })
   }
 
@@ -66,15 +74,15 @@ export default class HomeScreen extends React.Component {
         <View
           style={{ width: '100%', height: '100%' }}>
 
-          <Modal position={"center"} backButtonClose={'true'} style={styles.about} ref={"about"}>
+          <Modal swipeToClose={false} position={"center"} backButtonClose={true} style={styles.about} ref={"about"}>
             <About></About>
           </Modal>
 
-          <Modal position={"center"} backButtonClose={'true'} onClosed={() => this.refreshState()} style={styles.settings} ref={"settings"}>
+          <Modal swipeToClose={false} position={"center"} backButtonClose={true} onClosed={() => this.refreshState()} style={styles.settings} ref={"settings"}>
             <Settings></Settings>
           </Modal>
 
-          <Modal position={"center"} backButtonClose={'true'} style={styles.tickets} ref={"tickets"}>
+          <Modal swipeToClose={false} position={"center"} backButtonClose={true} style={styles.tickets} ref={"tickets"}>
             <Tickets navigation={this.props.navigation} category={this.state.selectedCategory}></Tickets>
           </Modal>
 

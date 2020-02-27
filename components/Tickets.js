@@ -31,11 +31,9 @@ export class Tickets extends React.Component {
     return (
       <View style={{ padding: 12 }}>
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', height: 340 }}>
-          {this.state.tickets.map((item, index) => <TouchableOpacity style={styles.item} onPress={() => this.props.navigation.navigate('Test', { category: this.props.category, ticket: index })}><Text style={{ fontSize: 20 }}>{`${index + 1}`}</Text></TouchableOpacity>)}
+          {this.state.tickets.map((item, index) => <TouchableOpacity key={index} style={styles.item} onPress={() => this.props.navigation.navigate('Test', { category: this.props.category, ticket: index })}><Text style={{ fontSize: 20 }}>{`${index + 1}`}</Text></TouchableOpacity>)}
         </View >
-        <View style={{ margin: 3, width: 270 }}>
-          <Button onPress={() => this.props.navigation.navigate('Test', { category: this.props.category })} title="Случайный билет"></Button>
-        </View>
+        <TouchableOpacity style={{ ...styles.item, width: 270 }} onPress={() => this.props.navigation.navigate('Test', { category: this.props.category })}><Text style={{fontWeight: 'bold'}}>Случайный билет</Text></TouchableOpacity>
       </View>
     );
   }
