@@ -14,11 +14,16 @@ import {
 } from 'react-native';
 
 import Modal from 'react-native-modalbox';
-import DATA from '../constants/MenuItems';
 import Icon from 'react-native-vector-icons/Ionicons';
+
 import { About } from '../components/About';
 import { Settings } from '../components/Settings';
 import { Tickets } from '../components/Tickets';
+
+import DATA from '../constants/MenuItems';
+import COLORS from '../constants/Colors';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+
 
 export default class HomeScreen extends React.Component {
 
@@ -94,10 +99,10 @@ export default class HomeScreen extends React.Component {
 
           <View style={{ justifyContent: 'flex-end', flexDirection: 'row', marginRight: 15 }}>
             <TouchableOpacity onPress={() => this.refs.about.open()} style={{ height: 40, width: 40 }} >
-              <Icon style={{ fontSize: 35, color: 'gray' }} name='md-information-circle-outline' />
+              <Icon style={{ fontSize: 35, color: COLORS.settingsButtonColor }} name='md-information-circle-outline' />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => this.refs.settings.open()} >
-              <Icon style={{ fontSize: 35, color: 'gray', marginLeft: 10 }} name='md-settings' />
+              <Icon style={{ fontSize: 35, color: COLORS.settingsButtonColor, marginLeft: 10 }} name='md-settings' />
             </TouchableOpacity>
           </View>
 
@@ -145,18 +150,18 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#e8e8e8'
+    backgroundColor: COLORS.background
   },
   title: {
     height: '18%',
-    color: 'black',
+    color: COLORS.text,
     fontWeight: 'bold',
     textAlign: 'center',
     fontSize: 20,
     textAlignVertical: 'center'
   },
   item: {
-    backgroundColor: 'white',
+    backgroundColor: COLORS.selectItemsBackground,
     marginVertical: 4,
     flexDirection: "row",
     minHeight: 70
@@ -168,10 +173,11 @@ const styles = StyleSheet.create({
     height: 107,
     right: 90,
     bottom: -13,
-    color: '#e8e8e8',
+    color: COLORS.background,
     position: 'absolute'
   },
   itemDescription: {
+    color: COLORS.text,
     paddingLeft: 15,
     paddingRight: 130,
     fontSize: 18,
@@ -195,7 +201,7 @@ const styles = StyleSheet.create({
     width: 300
   },
   tickets: {
-    backgroundColor: '#e8e8e8',
+    backgroundColor: COLORS.background,
     alignItems: 'center',
     padding: 10,
     height: 420,

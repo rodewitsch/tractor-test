@@ -12,6 +12,8 @@ import {
 } from 'react-native';
 import Modal from 'react-native-modalbox';
 
+import COLORS from '../constants/Colors';
+
 import * as A from '../assets/questions/a/index';
 import * as B from '../assets/questions/b/index';
 import * as D from '../assets/questions/d/index';
@@ -126,19 +128,19 @@ export default class TestScreen extends React.Component {
   }
 
   getQuestionStatusColor(number) {
-    if (number == this.state.questionNumber) return '#618cc1';
-    if (this.state.answers[number].userAnswer == null) return 'gray';
-    if (this.state.answers[number].rightAnswer == this.state.answers[number].userAnswer) return '#6bc161';
-    return '#c16161';
+    if (number == this.state.questionNumber) return COLORS.questionStatusActiveBackground;
+    if (this.state.answers[number].userAnswer == null) return COLORS.questionStatusDefaultBackground;
+    if (this.state.answers[number].rightAnswer == this.state.answers[number].userAnswer) return COLORS.questionStatusSuccessBackground;
+    return COLORS.questionStatusWrongBackground;
   }
 
   getAnswerStatusColor(number) {
     const rightAnswer = this.getQuestionItem().rightAnswer - 1;
     const userAnswer = this.state.answers[this.state.questionNumber].userAnswer;
     if (userAnswer == null) return 'white';
-    if (number == userAnswer && userAnswer == rightAnswer) return '#6bc161';
-    if (number != userAnswer && number == rightAnswer) return '#6bc161';
-    if (number == userAnswer && number != rightAnswer) return '#c16161';
+    if (number == userAnswer && userAnswer == rightAnswer) return COLORS.questionStatusSuccessBackground;
+    if (number != userAnswer && number == rightAnswer) return COLORS.questionStatusSuccessBackground;
+    if (number == userAnswer && number != rightAnswer) return COLORS.questionStatusWrongBackground;
     return 'white';
   }
 
@@ -163,10 +165,10 @@ export default class TestScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        
-        
+
+
         <Modal style={styles.modal} backButtonClose={true} position={"center"} ref={"modal3"}>
-        {this.state.examStatus == 'passed' ? <Icon style={{ fontSize: 80, color: 'green' }} name='md-checkmark-circle-outline' /> : <Icon style={{ fontSize: 80, color: 'red' }} name='md-close-circle-outline' />}
+          {this.state.examStatus == 'passed' ? <Icon style={{ fontSize: 80, color: 'green' }} name='md-checkmark-circle-outline' /> : <Icon style={{ fontSize: 80, color: 'red' }} name='md-close-circle-outline' />}
           <Text style={{ fontSize: 30, color: this.state.examStatus == 'passed' ? 'green' : 'red' }}>
             {this.state.examStatus == 'passed' ? 'Экзамен сдан' : 'Экзамен не сдан'}
           </Text>
@@ -224,7 +226,7 @@ TestScreen.navigationOptions = {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#e8e8e8',
+    backgroundColor: COLORS.background,
     height: '100%'
   },
   title: {
@@ -239,7 +241,7 @@ const styles = StyleSheet.create({
   },
   questionNumberStatus: {
     textAlign: 'center',
-    color: 'white',
+    color: COLORS.whiteText,
     fontSize: 18
   },
   timer: {

@@ -1,14 +1,12 @@
-const tintColor = '#2f95dc';
-
 export default {
-  tintColor,
-  tabIconDefault: '#ccc',
-  tabIconSelected: tintColor,
-  tabBar: '#fefefe',
-  errorBackground: 'red',
-  errorText: '#fff',
-  warningBackground: '#EAEB5E',
-  warningText: '#666804',
-  noticeBackground: tintColor,
-  noticeText: '#fff',
-};
+    background: '#e8e8e8',
+    text: '#000000',
+    selectItemsBackground: '#fff',
+    settingsButtonColor: '#808080',
+    whiteText: '#fff',
+    questionStatusDefaultBackground: '#808080',
+    questionStatusSuccessBackground: '#6bc161',
+    questionStatusActiveBackground: '#618cc1',
+    questionStatusWrongBackground: '#c16161'
+  };
+
