@@ -22,7 +22,7 @@ export function About() {
       <View style={{ marginTop: 15 }}>
         <Button title="Оставить отзыв в Google play" onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=com.rdm.tracktortest')}></Button>
       </View>
-      <Text style={{ textAlign: 'center', marginTop: 15, color: 'gray' }}>Версия приложения 1.2.1</Text>
+      <Text style={{ textAlign: 'center', marginTop: 15, color: 'gray' }}>Версия приложения 1.2.3</Text>
     </View>
   );
 }
