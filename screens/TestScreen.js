@@ -11,6 +11,7 @@ import {
   AsyncStorage
 } from 'react-native';
 import Modal from 'react-native-modalbox';
+import GestureRecognizer from 'react-native-swipe-gestures';
 
 import COLORS from '../constants/Colors';
 
@@ -96,7 +97,6 @@ export default class TestScreen extends React.Component {
     return Math.floor(rand);
   }
 
-
   getQuestionItem(ticketNumber = this.state.ticketNumber, questionNumber = this.state.questionNumber) {
     return this.getCategoryTickets(this.currentCategory).default[ticketNumber][questionNumber];
   }
@@ -163,9 +163,20 @@ export default class TestScreen extends React.Component {
   }
 
   render() {
-    return (
-      <View style={styles.container}>
 
+    const config = {
+      velocityThreshold: 0.3,
+      directionalOffsetThreshold: 50
+    };
+
+    return (
+
+      <GestureRecognizer
+        onSwipeLeft={() => this.setQuestion(this.state.questionNumber + 1)}
+        onSwipeRight={() => this.setQuestion(this.state.questionNumber - 1)}
+        config={config}
+        style={styles.container}
+      >
 
         <Modal style={styles.modal} backButtonClose={true} position={"center"} ref={"modal3"}>
           {this.state.examStatus == 'passed' ? <Icon style={{ fontSize: 80, color: 'green' }} name='md-checkmark-circle-outline' /> : <Icon style={{ fontSize: 80, color: 'red' }} name='md-close-circle-outline' />}
@@ -215,7 +226,7 @@ export default class TestScreen extends React.Component {
               </TouchableOpacity>
             ))}
         </ScrollView>
-      </View >
+      </GestureRecognizer>
     )
   };
 }

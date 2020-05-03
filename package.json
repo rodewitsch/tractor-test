@@ -1,9 +1,10 @@
 {
   "main": "node_modules/expo/AppEntry.js",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "build:android": "expo build:android -t app-bundle",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
@@ -28,6 +29,7 @@
     "react-native-modalbox": "^2.0.0",
     "react-native-reanimated": "~1.4.0",
     "react-native-screens": "2.0.0-alpha.12",
+    "react-native-swipe-gestures": "^1.0.5",
     "react-native-web": "~0.11.7",
     "react-navigation": "~4.0.10",
     "react-navigation-stack": "~1.10.3",

@@ -22,7 +22,6 @@ import { Tickets } from '../components/Tickets';
 
 import DATA from '../constants/MenuItems';
 import COLORS from '../constants/Colors';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
 export default class HomeScreen extends React.Component {
