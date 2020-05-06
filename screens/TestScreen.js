@@ -162,21 +162,32 @@ export default class TestScreen extends React.Component {
     }, 1000, this);
   }
 
+  onSwipe(gestureName, gestureState) {
+    if (gestureName == null) {
+      const { dx } = gestureState;
+      if (dx > 0) {
+        this.setQuestion(this.state.questionNumber - 1)
+      }
+      else if (dx < 0) {
+        this.setQuestion(this.state.questionNumber + 1)
+      }
+    } else {
+      switch (gestureName) {
+        case "SWIPE_RIGHT":
+          this.setQuestion(this.state.questionNumber - 1)
+          break;
+        case "SWIPE_LEFT":
+          this.setQuestion(this.state.questionNumber + 1)
+          break;
+      }
+    }
+  }
+
   render() {
-
-    const config = {
-      velocityThreshold: 0.3,
-      directionalOffsetThreshold: 50
-    };
-
     return (
-
       <GestureRecognizer
-        onSwipeLeft={() => this.setQuestion(this.state.questionNumber + 1)}
-        onSwipeRight={() => this.setQuestion(this.state.questionNumber - 1)}
-        config={config}
-        style={styles.container}
-      >
+        onSwipe={(direction, state) => this.onSwipe(direction, state)}
+        style={styles.container}>
 
         <Modal style={styles.modal} backButtonClose={true} position={"center"} ref={"modal3"}>
           {this.state.examStatus == 'passed' ? <Icon style={{ fontSize: 80, color: 'green' }} name='md-checkmark-circle-outline' /> : <Icon style={{ fontSize: 80, color: 'red' }} name='md-close-circle-outline' />}
