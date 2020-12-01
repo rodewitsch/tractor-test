@@ -16,12 +16,12 @@ import {
 import Modal from 'react-native-modalbox';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import { About } from '../components/About';
-import { Settings } from '../components/Settings';
-import { Tickets } from '../components/Tickets';
+import { About } from '../../components/About';
+import { Settings } from '../../components/Settings';
+import { Tickets } from '../../components/Tickets';
 
-import DATA from '../constants/MenuItems';
-import COLORS from '../constants/Colors';
+import DATA from '../../constants/MenuItems';
+import COLORS from '../../constants/Colors';
 
 
 export default class HomeScreen extends React.Component {

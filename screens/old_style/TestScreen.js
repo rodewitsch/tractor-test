@@ -13,14 +13,14 @@ import {
 import Modal from 'react-native-modalbox';
 import GestureRecognizer from 'react-native-swipe-gestures';
 
-import COLORS from '../constants/Colors';
+import COLORS from '../../constants/Colors';
 
-import * as A from '../assets/questions/a/index';
-import * as B from '../assets/questions/b/index';
-import * as D from '../assets/questions/d/index';
-import * as E1 from '../assets/questions/e1/index';
-import * as E2 from '../assets/questions/e2/index';
-import * as F from '../assets/questions/f/index';
+import * as A from '../../assets/questions/a/index';
+import * as B from '../../assets/questions/b/index';
+import * as D from '../../assets/questions/d/index';
+import * as E1 from '../../assets/questions/e1/index';
+import * as E2 from '../../assets/questions/e2/index';
+import * as F from '../../assets/questions/f/index';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default class TestScreen extends React.Component {
@@ -104,8 +104,9 @@ export default class TestScreen extends React.Component {
   setAnswer(number) {
     if (this.state.examStatus != 'inProgress') return;
     if (this.state.answers[this.state.questionNumber].userAnswer != null) {
-      if (this.state.questionNumber < 9) {
-        this.setState({ questionNumber: this.state.answers.findIndex((item, index) => item.userAnswer == null && index > this.state.questionNumber) });
+      const EMPTY_ANSWER = this.state.answers.findIndex((item, index) => item.userAnswer == null && index > this.state.questionNumber);
+      if (this.state.questionNumber < 9 && EMPTY_ANSWER != -1) {
+        this.setState({ questionNumber: EMPTY_ANSWER });
       } else {
         this.setState({ questionNumber: this.state.answers.findIndex(item => item.userAnswer == null) });
       }
