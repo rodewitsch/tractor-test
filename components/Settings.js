@@ -54,6 +54,15 @@ export class Settings extends React.Component {
           <Text style={{ marginTop: 5, fontSize: 16 }}>Запрашивать подтверждение при выходе из приложения</Text>
         </View>
 
+        <View style={styles.checkItem}>
+          <Switch
+            style={styles.checkbox}
+            onValueChange={() => this.setState({ oldStyle: !this.state.oldStyle })}
+            value={this.state.oldStyle}
+          />
+          <Text style={{ marginTop: 5, fontSize: 16 }}>Старый стиль</Text>
+        </View>
+
       </View >
     );
   }

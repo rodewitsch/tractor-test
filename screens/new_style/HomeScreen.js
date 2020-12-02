@@ -77,7 +77,10 @@ export default class HomeScreen extends React.Component {
       settings: {
         requestTicketNumber: false,
         requestAppExit: false,
-        requestExamExit: true
+        requestExamExit: true,
+        confirmAnswer: false,
+        oldStyle: false,
+        darkTheme: true
       }
     };
   }
@@ -90,7 +93,7 @@ export default class HomeScreen extends React.Component {
   }
 
   componentWillUnmount() {
-    this.backHandler.remove()
+    this.backHandler.remove();
   }
 
   handleBackPress = () => {
@@ -112,7 +115,7 @@ export default class HomeScreen extends React.Component {
   }
 
   goToSettings() {
-    this.props.navigation.navigate('Settings');
+    AsyncStorage.getItem('settings').then(data => this.props.navigation.navigate('Settings', { settings: JSON.parse(data) }));
   }
 
   componentDidMount() {
@@ -145,7 +148,7 @@ export default class HomeScreen extends React.Component {
             style={{ height: '80%', display: 'flex', marginTop: 15 }}
             contentContainerStyle={{ justifyContent: 'center', alignItems: 'center' }}
             data={DATA}
-            renderItem={({ item }) => <Item parent={this} ticketsModal={this.refs.tickets} requestTicketNumber={this.state.settings.requestTicketNumber} category={item.category} image={item.image} description={item.description} />}
+            renderItem={({ item }) => <Item parent={this} requestTicketNumber={this.state.settings.requestTicketNumber} category={item.category} image={item.image} description={item.description} />}
             keyExtractor={item => item.id}
           />
         </View>
@@ -154,12 +157,13 @@ export default class HomeScreen extends React.Component {
   };
 }
 
-function Item({ parent, category, image, description, requestTicketNumber, ticketsModal }) {
+function Item({ parent, category, image, description, requestTicketNumber }) {
 
   function startTest(category) {
     parent.setState({ ...parent.state, selectedCategory: category });
     if (requestTicketNumber) {
-      ticketsModal.open();
+      // TODO: выбор номера билета
+      parent.props.navigation.navigate('TestNew', { category });
     } else {
       parent.props.navigation.navigate('TestNew', { category })
     }
@@ -178,9 +182,7 @@ function Item({ parent, category, image, description, requestTicketNumber, ticke
   );
 }
 
-HomeScreen.navigationOptions = {
-  header: null
-};
+HomeScreen.navigationOptions = { header: null };
 
 const styles = StyleSheet.create({
   container: {

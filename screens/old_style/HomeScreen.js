@@ -40,7 +40,10 @@ export default class HomeScreen extends React.Component {
 
   refreshState() {
     AsyncStorage.getItem('settings').then(data => {
-      if (data) this.setState({ ...this.state, settings: JSON.parse(data) });
+      if (data) {
+        this.setState({ ...this.state, settings: JSON.parse(data) });
+        if (!this.state.settings.oldStyle) this.props.navigation.navigate('HomeNew');
+      }
       if (!data) AsyncStorage.setItem('settings', JSON.stringify(this.state.settings));
     })
   }
@@ -142,9 +145,7 @@ function Item({ parent, category, image, description, requestTicketNumber, ticke
   );
 }
 
-HomeScreen.navigationOptions = {
-  header: null
-};
+HomeScreen.navigationOptions = { header: null };
 
 const styles = StyleSheet.create({
   container: {
@@ -190,7 +191,7 @@ const styles = StyleSheet.create({
   settings: {
     alignItems: 'center',
     padding: 10,
-    height: 250,
+    height: 280,
     width: 300
   },
   about: {
