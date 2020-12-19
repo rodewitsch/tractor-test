@@ -12,17 +12,13 @@ import {
   BackHandler,
   Alert
 } from 'react-native';
-
 import Modal from 'react-native-modalbox';
 import Icon from 'react-native-vector-icons/Ionicons';
-
-import { About } from '../../components/About';
-import { Settings } from '../../components/Settings';
-import { Tickets } from '../../components/Tickets';
-
+import { About } from '../../components/old/About';
+import { Settings } from '../../components/old/Settings';
+import { Tickets } from '../../components/old/Tickets';
 import DATA from '../../constants/MenuItems';
 import COLORS from '../../constants/Colors';
-
 
 export default class HomeScreen extends React.Component {
 
@@ -81,15 +77,15 @@ export default class HomeScreen extends React.Component {
         <View
           style={{ width: '100%', height: '100%' }}>
 
-          <Modal swipeToClose={false} position={"center"} backButtonClose={true} style={styles.about} ref={"about"}>
+          <Modal useNativeDriver={true} swipeToClose={false} position={"center"} backButtonClose={true} style={styles.about} ref={"about"}>
             <About></About>
           </Modal>
 
-          <Modal swipeToClose={false} position={"center"} backButtonClose={true} onClosed={() => this.refreshState()} style={styles.settings} ref={"settings"}>
+          <Modal useNativeDriver={true} swipeToClose={false} position={"center"} backButtonClose={true} onClosed={() => this.refreshState()} style={styles.settings} ref={"settings"}>
             <Settings></Settings>
           </Modal>
 
-          <Modal swipeToClose={false} position={"center"} backButtonClose={true} style={styles.tickets} ref={"tickets"}>
+          <Modal useNativeDriver={true} swipeToClose={false} position={"center"} backButtonClose={true} style={styles.tickets} ref={"tickets"}>
             <Tickets navigation={this.props.navigation} category={this.state.selectedCategory}></Tickets>
           </Modal>
 

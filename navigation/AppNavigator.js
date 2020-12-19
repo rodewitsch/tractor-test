@@ -6,6 +6,7 @@ import HomeScreenNew from '../screens/new_style/HomeScreen';
 import TestScreenNew from '../screens/new_style/TestScreen';
 import ResultScreen from '../screens/new_style/ResultScreen';
 import SettingsScreen from '../screens/new_style/SettingsScreen';
+import { TicketsScreen } from '../screens/new_style/TicketsScreen';
 
 export default (initialRouteName) =>
   createAppContainer(
@@ -16,7 +17,8 @@ export default (initialRouteName) =>
         Test: TestScreen,
         TestNew: TestScreenNew,
         Result: ResultScreen,
-        Settings: SettingsScreen
+        Settings: SettingsScreen,
+        Tickets: TicketsScreen
       },
       {
         initialRouteName

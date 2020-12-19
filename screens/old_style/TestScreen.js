@@ -190,7 +190,7 @@ export default class TestScreen extends React.Component {
         onSwipe={(direction, state) => this.onSwipe(direction, state)}
         style={styles.container}>
 
-        <Modal style={styles.modal} backButtonClose={true} position={"center"} ref={"modal3"}>
+        <Modal useNativeDriver={true} style={styles.modal} backButtonClose={true} position={"center"} ref={"modal3"}>
           {this.state.examStatus == 'passed' ? <Icon style={{ fontSize: 80, color: 'green' }} name='md-checkmark-circle-outline' /> : <Icon style={{ fontSize: 80, color: 'red' }} name='md-close-circle-outline' />}
           <Text style={{ fontSize: 30, color: this.state.examStatus == 'passed' ? 'green' : 'red' }}>
             {this.state.examStatus == 'passed' ? 'Экзамен сдан' : 'Экзамен не сдан'}

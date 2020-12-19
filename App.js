@@ -33,15 +33,13 @@ async function loadResourcesAsync() {
     ]),
     Font.loadAsync({
       // This is the font that we are using for our tab bar
-      ...Ionicons.font,
-      // We include SpaceMono because we use it in HomeScreen.js. Feel free to
-      // remove this if you are not using it in your app
-      'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+      ...Ionicons.font
     }),
     new Promise((resolve) => {
       AsyncStorage.getItem('settings').then(data => {
         if (data) {
           const PARAMS = JSON.parse(data);
+          global.darkTheme = PARAMS.darkTheme;
           if (PARAMS.oldStyle) NavigatorComponent = AppNavigator('Home'); else NavigatorComponent = AppNavigator('HomeNew');
         } else {
           NavigatorComponent = AppNavigator('HomeNew');

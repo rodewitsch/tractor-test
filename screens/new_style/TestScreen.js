@@ -7,11 +7,12 @@ import {
   TouchableOpacity,
   ScrollView,
   BackHandler,
-  Alert,
   AsyncStorage,
   Dimensions
 } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
+import Modal from 'react-native-modalbox';
+import ThemeColors from '../../constants/ThemeColors';
 
 import COLORS from '../../constants/Colors';
 
@@ -25,9 +26,10 @@ import * as F from '../../assets/questions/f/index';
 const screen = Dimensions.get("screen");
 const screenWidth = screen.width;
 const smallScreen = screenWidth <= 320;
-
+import gs from '../../styles/global';
 import BackSvg from '../../assets/svg/back.svg';
 import TimerSvg from '../../assets/svg/timer.svg';
+import PromptModal from '../../components/new/PromptModal';
 
 export default class TestScreen extends React.Component {
 
@@ -36,15 +38,17 @@ export default class TestScreen extends React.Component {
     this.currentCategory = props.navigation.state.params.category;
     this.selectedTicket = props.navigation.state.params.ticket;
     this.timer = null;
-    this.state = {};
-    this.state.examStatus = 'inProgress';
-    this.state.ticketNumber = this.selectedTicket != undefined ? this.selectedTicket : this.randomInteger(0, this.getCategoryTickets(this.currentCategory).default.length - 1);
-    this.state.questionNumber = 0;
-    this.state.timer = '10:00';
-    this.deactivateBackPressHandler = false;
+    this.state = {
+      examStatus: 'inProgress',
+      ticketNumber: this.selectedTicket != undefined ? this.selectedTicket : this.randomInteger(0, this.getCategoryTickets(this.currentCategory).default.length - 1),
+      questionNumber: 0,
+      timer: '10:00'
+    };
     this.state.answers = new Array(this.getCategoryTickets(this.currentCategory).default[this.state.ticketNumber].length)
       .fill(null)
       .map((item, index) => ({ rightAnswer: (this.getQuestionItem(this.state.ticketNumber, index).rightAnswer - 1), userAnswer: null }));
+    this.colors = ThemeColors(global.darkTheme);
+    this.styles = this.getStyles();
   }
 
   refreshState() {
@@ -63,7 +67,9 @@ export default class TestScreen extends React.Component {
         answers: new Array(this.getCategoryTickets(this.props.navigation.state.params.category).default[this.props.navigation.state.params.ticket].length)
           .fill(null)
           .map((item, index) => ({ rightAnswer: (this.getQuestionItem(this.props.navigation.state.params.ticket, index).rightAnswer - 1), userAnswer: null }))
-      })
+      });
+      this.startTimer(600);
+      this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
     }
     this.props.navigation.state.params.retry = false;
   }
@@ -74,21 +80,8 @@ export default class TestScreen extends React.Component {
   }
 
   handleBackPress = () => {
-    if (this.deactivateBackPressHandler) return false;
     if (!this.state.settings.requestExamExit) return this.props.navigation.navigate('HomeNew');
-    Alert.alert(
-      '',
-      'Выйти из экзамена',
-      [
-        {
-          text: 'Отмена',
-          onPress: () => true,
-          style: 'cancel',
-        },
-        { text: 'Выйти', onPress: () => this.props.navigation.navigate('HomeNew') },
-      ],
-      { cancelable: false }
-    );
+    this.refs.exitModal.open();
     return true;
   }
 
@@ -138,15 +131,10 @@ export default class TestScreen extends React.Component {
       this.state.examStatus = this.getExamStatus();
       if (this.state.examStatus != 'inProgress') {
         clearInterval(this.timer);
-        this.deactivateBackPressHandler = true;
         return this.props.navigation.navigate('Result', { examStatus: this.state.examStatus, ticketNumber: this.state.ticketNumber, answers: this.state.answers, category: this.currentCategory });
       }
       this.setState({ answers: this.state.answers });
     }
-  }
-
-  goBack() {
-    return this.props.navigation.navigate('HomeNew');
   }
 
   getExamStatus() {
@@ -158,7 +146,7 @@ export default class TestScreen extends React.Component {
 
   getQuestionStatusColor(number) {
     if (number == this.state.questionNumber) return 'white';
-    if (this.state.answers[number].userAnswer == null) return COLORS.questionStatusDefaultBackground
+    if (this.state.answers[number].userAnswer == null) return this.colors.questionNumber;
     if (this.state.answers[number].rightAnswer == this.state.answers[number].userAnswer) return COLORS.questionStatusSuccessBackground;
     return COLORS.questionStatusWrongBackground;
   }
@@ -166,11 +154,11 @@ export default class TestScreen extends React.Component {
   getAnswerStatusColor(number) {
     const rightAnswer = this.getQuestionItem().rightAnswer - 1;
     const userAnswer = this.state.answers[this.state.questionNumber].userAnswer;
-    if (userAnswer == null) return '#1F1F1F';
+    if (userAnswer == null) return this.colors.defaultAnswerColor;
     if (number == userAnswer && userAnswer == rightAnswer) return COLORS.questionStatusSuccessBackground;
     if (number != userAnswer && number == rightAnswer) return COLORS.questionStatusSuccessBackground;
     if (number == userAnswer && number != rightAnswer) return COLORS.questionStatusWrongBackground;
-    return '#1F1F1F';
+    return this.colors.defaultAnswerColor;
   }
 
   startTimer(duration) {
@@ -214,35 +202,42 @@ export default class TestScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View style={{ backgroundColor: '#1F1F1F', paddingBottom: 15 }}>
-          <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', padding: 20 }}>
-            <TouchableOpacity onPress={() => this.goBack()}>
-              <BackSvg width={smallScreen ? 24 : 24} height={smallScreen ? 24 : 24} style={{ marginRight: 10 }}></BackSvg>
+      <GestureRecognizer
+        onSwipe={(direction, state) => this.onSwipe(direction, state)}
+        style={this.styles.container}>
+
+        <Modal useNativeDriver={true} style={gs.modal} backButtonClose={true} position={"center"} ref={"exitModal"}>
+          <PromptModal success={() => this.props.navigation.navigate('HomeNew')} cancel={() => this.refs.exitModal.close()} title={'Выйти из экзамена'} successButton={'Выйти'} cancelButton={'Отмена'} />
+        </Modal>
+
+        <View style={this.styles.header}>
+          <View style={this.styles.headerTitle}>
+            <TouchableOpacity onPress={() => this.handleBackPress()}>
+              <BackSvg width={smallScreen ? 24 : 24} height={smallScreen ? 24 : 24} style={{ marginRight: 10 }} fill={this.colors.text} />
             </TouchableOpacity>
             <View style={{ width: '63%', marginLeft: 3 }}>
-              <Text style={{ color: 'white', fontSize: smallScreen ? 16 : 18, fontWeight: 'bold' }}>Билет {this.state.ticketNumber + 1}</Text>
+              <Text style={{ color: this.colors.text, fontSize: smallScreen ? 15 : 18 }}>Билет {this.state.ticketNumber + 1}</Text>
               <Text style={{ color: '#5a5a5a', fontSize: smallScreen ? 12 : 14, fontWeight: 'bold' }}>Категория {this.currentCategory.substr(0, 1)}</Text>
             </View>
-            <View style={{ display: 'flex', position: 'absolute', left: screenWidth - 90, flexDirection: 'row', alignItems: 'center', width: '37%' }}>
-              <TimerSvg width={smallScreen ? 20 : 24} height={smallScreen ? 20 : 24}></TimerSvg>
-              <Text style={{ color: 'white', marginLeft: 5, fontWeight: 'bold', fontSize: smallScreen ? 16 : 18 }}>{this.state.timer}</Text>
+            <View style={{ ...gs.flexRow, position: 'absolute', left: screenWidth - 90, alignItems: 'center', width: '37%' }}>
+              <TimerSvg width={smallScreen ? 20 : 24} height={smallScreen ? 20 : 24} fill={this.colors.text} />
+              <Text style={{ color: this.colors.text, marginLeft: 5, fontWeight: 'bold', fontSize: smallScreen ? 16 : 18 }}>{this.state.timer}</Text>
             </View>
           </View>
 
-          <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 10 }}>
+          <View style={{ ...gs.flexRow, justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 10 }}>
             {Array(10).fill(null).map((item, index) => (
               <TouchableOpacity key={index} onPress={() => this.setQuestion(index)}>
-                <View style={{ width: screenWidth / 13, height: screenWidth / 13, borderRadius: 10, borderWidth: 1, borderStyle: 'solid', borderColor: this.getQuestionStatusColor(index), backgroundColor: '#343434', display: 'flex', marginRight: 5, justifyContent: 'center' }}>
-                  <Text style={{ ...styles.questionNumberStatus, color: 'white' }}>{index + 1}</Text>
+                <View style={{ width: screenWidth / 13, height: screenWidth / 13, borderRadius: 10, borderWidth: 1, borderStyle: 'solid', borderColor: this.getQuestionStatusColor(index), backgroundColor: this.colors.questionNumber, display: 'flex', marginRight: 5, justifyContent: 'center' }}>
+                  <Text style={{ ...this.styles.questionNumberStatus, color: this.colors.text }}>{index + 1}</Text>
                 </View>
               </TouchableOpacity>
             ))}
           </View>
         </View>
 
-        <View style={styles.questionArea}>
-          <Text style={{ flex: 1, flexWrap: 'nowrap', fontSize: smallScreen ? 16 : 18, color: 'white' }}>{this.getQuestionItem().questionText}</Text>
+        <View style={this.styles.questionArea}>
+          <Text style={{ flex: 1, flexWrap: 'nowrap', fontSize: smallScreen ? 16 : 18, color: this.colors.text }}>{this.getQuestionItem().questionText}</Text>
         </View>
 
         <ScrollView style={{ height: '50%', marginTop: 20 }}>
@@ -253,50 +248,60 @@ export default class TestScreen extends React.Component {
           {
             this.getQuestionItem().answers.map((answer, index) => (
               <TouchableOpacity key={index} disabled={this.state.examStatus != 'inProgress'} onPress={() => this.setAnswer(index)}>
-                <View style={{ borderStyle: 'solid', borderWidth: 1, backgroundColor: '#1F1F1F', borderColor: this.getAnswerStatusColor(index), paddingVertical: 8, marginVertical: 5, paddingHorizontal: 20, marginHorizontal: 20, borderRadius: 10 }}>
-                  <Text style={{ fontSize: smallScreen ? 14 : 16, color: 'white' }}>{index + 1}. {answer}</Text>
+                <View style={{ borderStyle: 'solid', borderWidth: 1, backgroundColor: this.colors.defaultAnswerColor, borderColor: this.getAnswerStatusColor(index), paddingVertical: 8, marginVertical: 5, paddingHorizontal: 20, marginHorizontal: 20, borderRadius: 10 }}>
+                  <Text style={{ fontSize: smallScreen ? 14 : 16, color: this.colors.text }}>{index + 1}. {answer}</Text>
                 </View>
               </TouchableOpacity>
             ))}
         </ScrollView>
-      </View>
+      </GestureRecognizer>
     )
   };
+
+  getStyles = () => StyleSheet.create({
+    container: {
+      backgroundColor: this.colors.background,
+      height: '100%'
+    },
+    header: {
+      backgroundColor: this.colors.middleground,
+      paddingBottom: 15
+    },
+    headerTitle: {
+      ...gs.flexRow,
+      alignItems: 'center',
+      padding: 20
+    },
+    examProcess: {
+      height: 25,
+      flexDirection: 'row',
+      backgroundColor: 'gray',
+      justifyContent: 'center'
+    },
+    questionNumberStatus: {
+      textAlign: 'center',
+      color: COLORS.whiteText,
+      fontSize: smallScreen ? 16 : 18
+    },
+    timer: {
+      marginLeft: 7,
+      textAlign: "right",
+      fontSize: smallScreen ? 16 : 18
+    },
+    questionArea: {
+      flexDirection: 'row',
+      marginHorizontal: 20,
+      marginTop: 20
+    },
+    exitModal: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: 10,
+      height: '100%',
+      width: '100%',
+      backgroundColor: 'black'
+    }
+  })
 }
 
 TestScreen.navigationOptions = { header: null };
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#101010',
-    height: '100%'
-  },
-  examProcess: {
-    height: 25,
-    flexDirection: 'row',
-    backgroundColor: 'gray',
-    justifyContent: 'center'
-  },
-  questionNumberStatus: {
-    textAlign: 'center',
-    color: COLORS.whiteText,
-    fontSize: smallScreen ? 16 : 18
-  },
-  timer: {
-    marginLeft: 7,
-    textAlign: "right",
-    fontSize: smallScreen ? 16 : 18
-  },
-  questionArea: {
-    flexDirection: 'row',
-    marginHorizontal: 20,
-    marginTop: 20
-  },
-  modal: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 10,
-    height: 300,
-    width: 300
-  }
-});
