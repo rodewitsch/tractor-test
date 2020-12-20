@@ -6,45 +6,39 @@ import {
   TouchableOpacity,
   BackHandler,
   Linking,
-  Dimensions,
   AsyncStorage
 } from 'react-native';
 
 import ThemeColors from '../../constants/ThemeColors';
 import gs from '../../styles/global';
-
-const screen = Dimensions.get("screen");
-const screenWidth = screen.width;
-const screenHeight = screen.height;
-const smallScreen = screenWidth <= 320;
-
 import BackSvg from '../../assets/svg/back.svg';
 import { ScrollView } from 'react-native-gesture-handler';
-
 import SettingsItem from '../../components/new/SettingsItem';
-
 export default class SettingsScreen extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = props.navigation.state.params.settings;
-    this.colors = ThemeColors(global.darkTheme);
+    this.state = global.appSettings;
+    this.colors = ThemeColors(global.appSettings.darkTheme);
     this.styles = this.getStyles();
   }
 
   componentDidMount() {
-    AsyncStorage.getItem('settings').then(data => this.setState(JSON.parse(data)));
+    this.setState(global.appSettings);
     this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
   }
 
   componentWillUnmount = () => this.backHandler.remove();
 
-  componentDidUpdate = () => AsyncStorage.setItem('settings', JSON.stringify(this.state));
+  componentDidUpdate = () => {
+    AsyncStorage.setItem('settings', JSON.stringify(this.state));
+    global.appSettings = this.state;
+  };
 
   handleBackPress = () => this.props.navigation.navigate('HomeNew');
 
   shouldComponentUpdate() {
-    this.colors = ThemeColors(global.darkTheme);
+    this.colors = ThemeColors(global.appSettings.darkTheme);
     this.styles = this.getStyles();
     return true;
   }
@@ -54,7 +48,7 @@ export default class SettingsScreen extends React.Component {
 
       <View style={this.styles.header}>
         <TouchableOpacity onPress={() => this.handleBackPress()}>
-          <BackSvg width={smallScreen ? 20 : 24} height={smallScreen ? 20 : 24} style={{ marginRight: 10 }} fill={this.colors.text}></BackSvg>
+          <BackSvg width={global.smallScreen ? 20 : 24} height={global.smallScreen ? 20 : 24} style={{ marginRight: 10 }} fill={this.colors.text}/>
         </TouchableOpacity>
         <Text style={this.styles.headerTitle}>Настройки</Text>
       </View>
@@ -93,8 +87,8 @@ export default class SettingsScreen extends React.Component {
             title={'Темная тема'}
             value={this.state.darkTheme}
             onPress={() => {
-              global.darkTheme = !this.state.darkTheme;
               this.setState({ darkTheme: !this.state.darkTheme })
+              global.appSettings.darkTheme = !this.state.darkTheme;
             }} />
 
           <TouchableOpacity onPress={() => {
@@ -114,8 +108,8 @@ export default class SettingsScreen extends React.Component {
         </View>
 
         <View style={{ padding: 20, ...gs.flexRow, justifyContent: 'space-between' }}>
-          <Text style={{ color: this.colors.text, fontSize: smallScreen ? 13 : 15 }}>{'Версия приложения'}</Text>
-          <Text style={{ color: this.colors.text, fontSize: smallScreen ? 13 : 15 }}>{'1.3.2'}</Text>
+          <Text style={{ color: this.colors.text, fontSize: global.smallScreen ? 13 : 15 }}>Версия приложения</Text>
+          <Text style={{ color: this.colors.text, fontSize: global.smallScreen ? 13 : 15 }}>1.3.2</Text>
         </View>
       </ScrollView>
     </View>)
@@ -134,7 +128,7 @@ export default class SettingsScreen extends React.Component {
     },
     headerTitle: {
       color: this.colors.text,
-      fontSize: smallScreen ? 15 : 18
+      fontSize: global.smallScreen ? 15 : 18
     },
     settingsGroup: {
       backgroundColor: this.colors.middleground,
@@ -143,12 +137,12 @@ export default class SettingsScreen extends React.Component {
     },
     settingsGroupTitle: {
       color: '#BD0008',
-      fontSize: smallScreen ? 13 : 15,
+      fontSize: global.smallScreen ? 13 : 15,
       fontWeight: 'bold'
     },
     settingLabel: {
       color: this.colors.text,
-      fontSize: smallScreen ? 13 : 15,
+      fontSize: global.smallScreen ? 13 : 15,
       marginTop: 15
     }
   })

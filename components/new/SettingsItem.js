@@ -1,23 +1,19 @@
 import { withNavigation } from "react-navigation";
 import React from "react";
-import { View, TouchableOpacity, Text, Switch, StyleSheet, Dimensions } from "react-native";
+import { View, TouchableOpacity, Text, Switch, StyleSheet } from "react-native";
 import ThemeColors from '../../constants/ThemeColors';
 import gs from '../../styles/global';
-
-const screen = Dimensions.get("screen");
-const screenWidth = screen.width;
-const smallScreen = screenWidth <= 320;
 
 class SettingsItem extends React.Component {
     constructor(props) {
         super(props);
         this.props = props;
-        this.colors = ThemeColors(global.darkTheme);
+        this.colors = ThemeColors(global.appSettings.darkTheme);
         this.styles = this.getStyles();
     }
 
     shouldComponentUpdate = () => {
-        this.colors = ThemeColors(global.darkTheme);
+        this.colors = ThemeColors(global.appSettings.darkTheme);
         this.styles = this.getStyles();
         return true;
     }
@@ -41,7 +37,7 @@ class SettingsItem extends React.Component {
     getStyles = () => StyleSheet.create({
         settingLabel: {
             color: this.colors.text,
-            fontSize: smallScreen ? 13 : 15,
+            fontSize: global.smallScreen ? 13 : 15,
             marginTop: 15
         },
         checkbox: {

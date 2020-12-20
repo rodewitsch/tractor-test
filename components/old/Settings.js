@@ -60,7 +60,7 @@ export class Settings extends React.Component {
             onValueChange={() => this.setState({ oldStyle: !this.state.oldStyle })}
             value={this.state.oldStyle}
           />
-          <Text style={{ marginTop: 5, fontSize: 16 }}>Старый стиль</Text>
+          <Text style={{ marginTop: 5, fontSize: 16 }}>Старый дизайн</Text>
         </View>
 
       </View >

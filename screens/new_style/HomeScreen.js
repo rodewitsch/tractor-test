@@ -7,9 +7,7 @@ import {
   FlatList,
   View,
   StatusBar,
-  AsyncStorage,
-  BackHandler,
-  Dimensions
+  BackHandler
 } from 'react-native';
 import Modal from 'react-native-modalbox';
 import IconLightSvg from '../../assets/svg/icon_light.svg';
@@ -28,30 +26,16 @@ import MenuItem from '../../components/new/MenuItem';
 import PromptModal from '../../components/new/PromptModal';
 import ThemeColors from '../../constants/ThemeColors';
 
-const screen = Dimensions.get("screen");
-const screenWidth = screen.width;
-const smallScreen = screenWidth <= 320;
-
 export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
-    this.colors = ThemeColors(global.darkTheme);
-    this.state = {
-      selectedCategory: null,
-      settings: {
-        requestTicketNumber: false,
-        requestAppExit: false,
-        requestExamExit: true,
-        confirmAnswer: false,
-        oldStyle: false,
-        darkTheme: true
-      }
-    };
+    this.colors = ThemeColors(global.appSettings.darkTheme);
+    this.state = { selectedCategory: null };
     this.styles = this.getStyles();
     this.didBlurSubscription = this.props.navigation.addListener(
       'willFocus',
       payload => {
-        this.colors = ThemeColors(global.darkTheme);
+        this.colors = ThemeColors(global.appSettings.darkTheme);
         this.setState({ ...this.state });
       }
     );
@@ -62,34 +46,34 @@ export default class HomeScreen extends React.Component {
       {
         category: 'A',
         description: 'колесные трактора \nмощностью до 80\u00A0кВт',
-        image: <CategoryASvg width={smallScreen ? 39 : 49} height={smallScreen ? 26 : 36} fill={this.colors.text} />
+        image: <CategoryASvg width={global.smallScreen ? 39 : 49} height={global.smallScreen ? 26 : 36} fill={this.colors.text} />
       },
       {
         category: 'B',
         description: 'колесные трактора \nмощностью свыше 80\u00A0кВт',
-        image: <CategoryBSvg width={smallScreen ? 39 : 49} height={smallScreen ? 33 : 43} fill={this.colors.text} />
+        image: <CategoryBSvg width={global.smallScreen ? 39 : 49} height={global.smallScreen ? 33 : 43} fill={this.colors.text} />
       },
       {
         category: 'D',
         description: 'самоходные машины \nсельского назначения',
-        image: <CategoryDSvg width={smallScreen ? 40 : 50} height={smallScreen ? 28 : 38} fill={this.colors.text} />
+        image: <CategoryDSvg width={global.smallScreen ? 40 : 50} height={global.smallScreen ? 28 : 38} fill={this.colors.text} />
       },
       {
         category: 'E1',
         description: 'дорожно-строительные \nмашины (асфальтоукладчики)',
-        image: global.darkTheme
-          ? <CategoryE1LightSvg width={smallScreen ? 41 : 51} height={smallScreen ? 23 : 33} />
-          : <CategoryE1DarkSvg width={smallScreen ? 41 : 51} height={smallScreen ? 23 : 33} />
+        image: global.appSettings.darkTheme
+          ? <CategoryE1LightSvg width={global.smallScreen ? 41 : 51} height={global.smallScreen ? 23 : 33} />
+          : <CategoryE1DarkSvg width={global.smallScreen ? 41 : 51} height={global.smallScreen ? 23 : 33} />
       },
       {
         category: 'E2',
         description: 'дорожно-строительные машины \n(грейдеры, скреперы, катки)',
-        image: <CategoryE2Svg width={smallScreen ? 40 : 50} height={smallScreen ? 31 : 41} fill={this.colors.text} />
+        image: <CategoryE2Svg width={global.smallScreen ? 40 : 50} height={global.smallScreen ? 31 : 41} fill={this.colors.text} />
       },
       {
         category: 'F',
         description: 'экскаваторы с вместимостью \nковша до 1 м³ и спец. погрузчики',
-        image: <CategoryFSvg width={smallScreen ? 40 : 50} height={smallScreen ? 31 : 41} fill={this.colors.text} />
+        image: <CategoryFSvg width={global.smallScreen ? 40 : 50} height={global.smallScreen ? 31 : 41} fill={this.colors.text} />
       },
     ];
     this.styles = this.getStyles();
@@ -101,57 +85,46 @@ export default class HomeScreen extends React.Component {
     this.backHandler.remove();
   }
 
-  handleBackPress = () => {
-    AsyncStorage.getItem('settings').then(data => {
-      JSON.parse(data).requestAppExit ? this.refs.exitModal.open() : BackHandler.exitApp();
-    });
-    return true;
-  };
+  handleBackPress = () => (global.appSettings.requestAppExit ? this.refs.exitModal.open() : BackHandler.exitApp()) || true;
 
-  goToSettings = () => AsyncStorage.getItem('settings').then(data => this.props.navigation.navigate('Settings', { settings: JSON.parse(data) }));
+  goToSettings = () => this.props.navigation.navigate('Settings');
 
-  componentDidMount() {
-    AsyncStorage.getItem('settings').then(data => {
-      if (data) this.setState({ ...this.state, settings: JSON.parse(data) });
-      if (!data) AsyncStorage.setItem('settings', JSON.stringify(this.state.settings));
-    })
-    this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
-  }
+  componentDidMount = () => this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
 
   render() {
     return (
       <SafeAreaView style={this.styles.container} >
         <StatusBar hidden={true} />
 
-        <Modal useNativeDriver={true} style={gs.modal} backButtonClose={true} position={"center"} ref={"exitModal"}>
+        <Modal style={gs.modal} backButtonClose={true} position='center' ref='exitModal'>
           <PromptModal
             success={() => {
               this.refs.exitModal.close();
               setTimeout(() => BackHandler.exitApp(), 300);
             }}
             cancel={() => this.refs.exitModal.close()}
-            title={'Выйти из приложения'} 
-            successButton={'Выйти'} 
-            cancelButton={'Отмена'}/>
+            title='Выйти из приложения'
+            successButton='Выйти'
+            cancelButton='Отмена' />
         </Modal>
 
         <View style={this.styles.header}>
           <View style={gs.flexRow}>
             <View style={this.styles.titleArea}>
-              {global.darkTheme ? <IconLightSvg /> : <IconDarkSvg />}
-              <Text style={this.styles.title}>{'TractorTest'}</Text>
+              {global.appSettings.darkTheme ? <IconLightSvg /> : <IconDarkSvg />}
+              <Text style={this.styles.title}>TractorTest</Text>
             </View>
             <TouchableOpacity onPress={() => this.goToSettings()} style={this.styles.settingsButton}>
-              <GearSvg fill={this.colors.text}></GearSvg>
+              <GearSvg fill={this.colors.text}/>
             </TouchableOpacity>
           </View>
           <Text style={this.styles.description}>{'Тесты по правилам технической \n эксплуатации для получения профессии \n тракториста-машиниста \n категории A, B, D, E, F'}</Text>
         </View>
+
         <FlatList
           contentContainerStyle={{ justifyContent: 'center', alignItems: 'center' }}
           data={this.menuItems}
-          extraData={this.state.settings.darkTheme}
-          renderItem={({ item }) => <MenuItem ticketsModal={this.refs.ticketsModal} requestTicketNumber={this.state.settings.requestTicketNumber} {...item} />}
+          renderItem={({ item }) => <MenuItem ticketsModal={this.refs.ticketsModal} {...item} />}
           keyExtractor={item => item.category}
         />
       </SafeAreaView >
@@ -176,14 +149,15 @@ export default class HomeScreen extends React.Component {
     },
     titleArea: {
       ...gs.flexRow,
+      paddingLeft: 10,
       alignItems: 'center',
       justifyContent: 'center',
       width: '80%'
     },
     title: {
       color: this.colors.text,
-      fontSize: smallScreen ? 18 : 24,
-      fontWeight: "bold",
+      fontSize: global.smallScreen ? 18 : 24,
+      fontWeight: 'bold',
       marginLeft: 10
     },
     settingsButton: {
@@ -194,8 +168,8 @@ export default class HomeScreen extends React.Component {
     description: {
       textAlign: 'center',
       color: this.colors.text,
-      fontSize: smallScreen ? 13 : 16,
-      marginTop: smallScreen ? 13 : 15
+      fontSize: global.smallScreen ? 13 : 16,
+      marginTop: global.smallScreen ? 13 : 15
     }
   })
 }

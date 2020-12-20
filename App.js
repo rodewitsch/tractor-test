@@ -3,8 +3,10 @@ import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import React, { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
-
-import { AsyncStorage } from 'react-native';
+import {
+  AsyncStorage,
+  Dimensions
+} from 'react-native';
 
 import AppNavigator from './navigation/AppNavigator';
 
@@ -12,6 +14,11 @@ let NavigatorComponent;
 
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
+
+  const screen = Dimensions.get('screen');
+  global.screenWidth = screen.width;
+  global.screenHeight = screen.height;
+  global.smallScreen = screenWidth <= 320;
 
   if (!isLoadingComplete && !props.skipLoadingScreen) {
     return (
@@ -39,7 +46,7 @@ async function loadResourcesAsync() {
       AsyncStorage.getItem('settings').then(data => {
         if (data) {
           const PARAMS = JSON.parse(data);
-          global.darkTheme = PARAMS.darkTheme;
+          global.appSettings = PARAMS;
           if (PARAMS.oldStyle) NavigatorComponent = AppNavigator('Home'); else NavigatorComponent = AppNavigator('HomeNew');
         } else {
           NavigatorComponent = AppNavigator('HomeNew');

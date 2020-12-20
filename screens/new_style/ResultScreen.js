@@ -4,14 +4,8 @@ import {
   StyleSheet,
   View,
   TouchableOpacity,
-  BackHandler,
-  Dimensions
+  BackHandler
 } from 'react-native';
-
-const screen = Dimensions.get("screen");
-const screenWidth = screen.width;
-const screenHeight = screen.height;
-const smallScreen = screenWidth <= 320;
 
 import CloseSvg from '../../assets/svg/close.svg';
 import SuccessDarkSvg from '../../assets/svg/success_dark.svg';
@@ -28,19 +22,15 @@ export default class ResultScreen extends React.Component {
     this.answers = this.props.navigation.state.params.answers;
     this.ticketNumber = this.props.navigation.state.params.ticketNumber;
     this.category = this.props.navigation.state.params.category;
-    this.colors = ThemeColors(global.darkTheme);
+    this.colors = ThemeColors(global.appSettings.darkTheme);
     this.styles = this.getStyles();
   }
 
-  componentWillUnmount() {
-    this.backHandler.remove();
-  }
+  componentWillUnmount = () => this.backHandler.remove();
 
   handleBackPress = () => this.props.navigation.navigate('TestNew');
 
-  componentDidMount() {
-    this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
-  }
+  componentDidMount = () => this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
 
   getTicketsCount = (category) => {
     switch (category) {
@@ -77,35 +67,33 @@ export default class ResultScreen extends React.Component {
     }
   }
 
-  goBack() {
-    return this.props.navigation.navigate('TestNew');
-  }
+  goBack = () => this.props.navigation.navigate('TestNew');
 
   render() {
     return (<View style={this.styles.container}>
       <View style={this.styles.header}>
         <TouchableOpacity onPress={() => this.goBack()} >
-          <CloseSvg width={smallScreen ? 16 : 18} height={smallScreen ? 16 : 18} style={{ marginHorizontal: 20, marginTop: 3 }} fill={this.colors.text}></CloseSvg>
+          <CloseSvg width={global.smallScreen ? 16 : 18} height={global.smallScreen ? 16 : 18} style={{ marginHorizontal: 20, marginTop: 3 }} fill={this.colors.text} />
         </TouchableOpacity>
         <Text style={this.styles.headerTitle}>Результат</Text>
       </View>
       <View style={this.styles.body}>
         <View style={{ marginTop: -40 }}>
           {this.examStatus == 'passed'
-            ? global.darkTheme
-              ? <SuccessDarkSvg width={screenWidth} height={screenWidth + 80}></SuccessDarkSvg>
-              : <SuccessLightSvg width={screenWidth} height={screenWidth + 80}></SuccessLightSvg>
-            : global.darkTheme
-              ? <UnsuccessDarkSvg width={screenWidth} height={screenWidth + 80}></UnsuccessDarkSvg>
-              : <UnsuccessLightSvg width={screenWidth} height={screenWidth + 80}></UnsuccessLightSvg>
+            ? global.appSettings.darkTheme
+              ? <SuccessDarkSvg width={global.screenWidth} height={global.screenWidth + 80} />
+              : <SuccessLightSvg width={global.screenWidth} height={global.screenWidth + 80} />
+            : global.appSettings.darkTheme
+              ? <UnsuccessDarkSvg width={global.screenWidth} height={global.screenWidth + 80} />
+              : <UnsuccessLightSvg width={global.screenWidth} height={global.screenWidth + 80} />
           }
         </View>
-        <View style={{ marginTop: smallScreen ? -50 : 5 }}>
+        <View style={{ marginTop: global.smallScreen ? -50 : 5 }}>
           <Text style={this.styles.resultLabel}>{this.examStatus == 'passed' ? 'Поздравляем!' : 'Экзамен не сдан'}</Text>
           <Text style={this.styles.examResultLabel}>{this.getExamResultLabel()}</Text>
         </View>
-        <TouchableOpacity onPress={() => this.resultAction()} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: this.colors.middleground, width: '90%', marginTop: 20, borderRadius: 10, height: smallScreen ? 40 : 50 }}>
-          <Text style={{ color: this.colors.text, textAlign: 'center', fontSize: smallScreen ? 16 : 18 }}>{this.examStatus == 'passed' ? 'Следующий билет' : 'Пройти еще раз'}</Text>
+        <TouchableOpacity onPress={() => this.resultAction()} style={this.styles.button}>
+          <Text style={{ color: this.colors.text, textAlign: 'center', fontSize: global.smallScreen ? 16 : 18 }}>{this.examStatus == 'passed' ? 'Следующий билет' : 'Пройти еще раз'}</Text>
         </TouchableOpacity>
       </View>
     </View>)
@@ -121,11 +109,12 @@ export default class ResultScreen extends React.Component {
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center',
-      paddingTop: 15
+      paddingTop: 25,
+      marginBottom: -15
     },
     headerTitle: {
       color: this.colors.text,
-      fontSize: smallScreen ? 15 : 18
+      fontSize: global.smallScreen ? 15 : 18
     },
     body: {
       zIndex: 1,
@@ -135,14 +124,24 @@ export default class ResultScreen extends React.Component {
     },
     resultLabel: {
       color: this.colors.text,
-      fontSize: smallScreen ? 30 : 40,
+      fontSize: global.smallScreen ? 30 : 40,
       textAlign: 'center'
     },
     examResultLabel: {
       marginTop: 5,
       color: this.examStatus == 'passed' ? '#007234' : '#BD0008',
-      fontSize: smallScreen ? 16 : 20,
+      fontSize: global.smallScreen ? 16 : 20,
       textAlign: 'center'
+    },
+    button: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: this.colors.middleground,
+      width: '90%',
+      marginTop: 20,
+      borderRadius: 10,
+      height: global.smallScreen ? 40 : 50
     }
   })
 }

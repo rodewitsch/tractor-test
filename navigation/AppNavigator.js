@@ -21,7 +21,8 @@ export default (initialRouteName) =>
         Tickets: TicketsScreen
       },
       {
-        initialRouteName
+        initialRouteName,
+        cardStyle: { backgroundColor: global.appSettings.darkTheme ? '#101010' : '#FFFFFF' }
       }
     )
   )

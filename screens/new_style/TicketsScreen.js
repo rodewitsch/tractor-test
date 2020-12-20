@@ -2,17 +2,12 @@ import React from 'react';
 import {
   StyleSheet,
   Text,
-  View,
+  ScrollView,
   BackHandler,
-  Dimensions
+  View
 } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import ThemeColors from '../../constants/ThemeColors';
-
-const screen = Dimensions.get("screen");
-const screenWidth = screen.width;
-const screenHeight = screen.height;
-const smallScreen = screenWidth <= 320;
 
 export class TicketsScreen extends React.Component {
 
@@ -20,9 +15,9 @@ export class TicketsScreen extends React.Component {
     super(props);
     this.category = props.navigation.state.params.category;
     this.state = { tickets: Array(this.getTicketsCount(this.category)).fill(1).map((item, index) => index + 1) };
-    this.colors = ThemeColors(global.darkTheme);
+    this.colors = ThemeColors(global.appSettings.darkTheme);
     this.styles = this.getStyles();
-    this.colsCount = Math.floor((screenWidth - 60) / 55);
+    this.colsCount = Math.floor((global.screenWidth - 60) / 55);
     this.rowsCount = Math.ceil(this.getTicketsCount(this.category) / this.colsCount);
     if (this.colsCount * this.rowsCount > this.getTicketsCount(this.category)) this.state.tickets.push(...Array(this.colsCount * this.rowsCount - this.getTicketsCount(this.category)));
   }
@@ -40,57 +35,61 @@ export class TicketsScreen extends React.Component {
     }
   }
 
-  componentDidMount() {
-    this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
-  }
+  componentDidMount = () => { this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress) }
 
   handleBackPress = () => this.props.navigation.navigate('HomeNew');
 
   render() {
     return (
-      <View style={this.styles.container}>
-        {this.state.tickets.map((item, index) =>
-          <TouchableOpacity key={index} style={{ ...this.styles.item, ...(!item ? this.styles.hiddenItem : null) }} onPress={() => item ? this.props.navigation.navigate('TestNew', { category: this.category, ticket: index }) : false}>
-            <Text style={this.styles.itemLabel}>{`${index + 1}`}</Text>
-          </TouchableOpacity>)
-        }
-        <TouchableOpacity style={{ ...this.styles.item, ...this.styles.button }} onPress={() => this.props.navigation.navigate('TestNew', { category: this.category })}>
-          <Text style={this.styles.buttonLabel}>Случайный билет</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={{ ...this.styles.item, ...this.styles.button, backgroundColor: this.colors.questionNumber, marginTop: 25 }} onPress={() => this.props.navigation.navigate('HomeNew')}>
-          <Text style={this.styles.buttonLabel}>Отмена</Text>
-        </TouchableOpacity>
-      </View >
+      <View style={this.styles.wrapper}>
+        <ScrollView contentContainerStyle={this.styles.container}>
+          {this.state.tickets.map((item, index) =>
+            <TouchableOpacity key={index} style={{ ...this.styles.item, ...(item || this.styles.hiddenItem) }} onPress={() => !item || this.props.navigation.navigate('TestNew', { category: this.category, ticket: index })}>
+              <Text style={this.styles.itemLabel}>{`${index + 1}`}</Text>
+            </TouchableOpacity>)
+          }
+          <TouchableOpacity style={{ ...this.styles.item, ...this.styles.button }} onPress={() => this.props.navigation.navigate('TestNew', { category: this.category })}>
+            <Text style={this.styles.buttonLabel}>Случайный билет</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={{ ...this.styles.item, ...this.styles.button, backgroundColor: this.colors.questionNumber, marginTop: 25 }} onPress={() => this.props.navigation.navigate('HomeNew')}>
+            <Text style={this.styles.buttonLabel}>Отмена</Text>
+          </TouchableOpacity>
+        </ScrollView >
+      </View>
     );
   }
 
   getStyles = () => StyleSheet.create({
+    wrapper: {
+      height: '100%',
+      width: '100%',
+      backgroundColor: this.colors.background
+    },
     container: {
       backgroundColor: this.colors.background,
       flexDirection: 'row',
       flexWrap: 'wrap',
       justifyContent: 'space-between',
       alignItems: 'center',
-      height: '100%',
-      paddingTop: '25%',
+      paddingTop: global.screenHeight <= 540 ? '15%' : '25%',
       paddingHorizontal: 30
     },
     item: {
-      width: 45,
+      width: global.smallScreen ? 35 : 45,
       margin: 5,
       backgroundColor: this.colors.middleground,
-      height: screenWidth / 12,
+      height: global.screenWidth / 12,
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 10
     },
     itemLabel: {
-      fontSize: smallScreen ? 16 : 20,
+      fontSize: global.smallScreen ? 16 : 20,
       color: this.colors.text
     },
     button: {
-      height: screenWidth / 10,
-      width: screenWidth / 1.22
+      height: global.screenWidth / 10,
+      width: global.screenWidth / 1.22
     },
     buttonLabel: {
       fontWeight: 'bold',

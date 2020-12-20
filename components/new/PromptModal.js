@@ -1,18 +1,13 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { withNavigation } from 'react-navigation';
 import ThemeColors from '../../constants/ThemeColors';
-
-const screen = Dimensions.get("screen");
-const screenWidth = screen.width;
-const smallScreen = screenWidth <= 320;
-
 
 class PromptModal extends React.Component {
     constructor(props) {
         super(props);
         this.props = props;
-        this.colors = ThemeColors(global.darkTheme);
+        this.colors = ThemeColors(global.appSettings.darkTheme);
         this.styles = this.getStyles();
     }
 
@@ -36,13 +31,13 @@ class PromptModal extends React.Component {
         container: {
             backgroundColor: this.colors.background,
             height: '100%',
-            width: screenWidth,
+            width: global.screenWidth,
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center'
         },
         title: {
-            fontSize: smallScreen ? 18 : 22,
+            fontSize: global.smallScreen ? 18 : 22,
             color: this.colors.text,
             textAlign: 'center'
         },
@@ -55,8 +50,8 @@ class PromptModal extends React.Component {
         button: {
             display: 'flex',
             backgroundColor: this.colors.middleground,
-            height: smallScreen ? 38 : 45,
-            width: smallScreen ? 130 : 160,
+            height: global.smallScreen ? 38 : 45,
+            width: global.smallScreen ? 130 : 160,
             borderRadius: 10,
             marginHorizontal: 5,
             alignItems: 'center',
@@ -65,7 +60,7 @@ class PromptModal extends React.Component {
         label: {
             color: this.colors.text,
             textAlign: 'center',
-            fontSize: smallScreen ? 14 : 17
+            fontSize: global.smallScreen ? 14 : 17
         }
     })
 }
