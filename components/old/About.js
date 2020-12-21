@@ -12,7 +12,7 @@ export function About() {
 
   return (
     <View style={{justifyContent: 'center', alignItems: 'center'}}>
-      <Image resizeMode='contain' style={{ height: 100, marginVertical: 5 }} source={require('../assets/images/icon.png')}/>
+      <Image resizeMode='contain' style={{ height: 100, marginVertical: 5 }} source={require('../../assets/images/icon.png')}/>
       <Text style={{ textAlign: 'center', fontSize: 15 }}>
         Тесты по правилам технической эксплуатации для получения профессии тракториста-машиниста категорий A,{'\u00A0'}B,{'\u00A0'}D,{'\u00A0'}E,{'\u00A0'}F
       </Text>
@@ -22,7 +22,7 @@ export function About() {
       <View style={{ marginTop: 15 }}>
         <Button title="Оставить отзыв в Google play" onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=com.rdm.tracktortest')}></Button>
       </View>
-      <Text style={{ textAlign: 'center', marginTop: 15, color: 'gray' }}>Версия приложения 1.3.1</Text>
+      <Text style={{ textAlign: 'center', marginTop: 15, color: 'gray' }}>Версия приложения 2.0.0</Text>
     </View>
   );
 }

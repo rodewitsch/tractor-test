@@ -12,17 +12,13 @@ import {
   BackHandler,
   Alert
 } from 'react-native';
-
 import Modal from 'react-native-modalbox';
 import Icon from 'react-native-vector-icons/Ionicons';
-
-import { About } from '../components/About';
-import { Settings } from '../components/Settings';
-import { Tickets } from '../components/Tickets';
-
-import DATA from '../constants/MenuItems';
-import COLORS from '../constants/Colors';
-
+import { About } from '../../components/old/About';
+import { Settings } from '../../components/old/Settings';
+import { Tickets } from '../../components/old/Tickets';
+import DATA from '../../constants/MenuItems';
+import COLORS from '../../constants/Colors';
 
 export default class HomeScreen extends React.Component {
 
@@ -40,7 +36,10 @@ export default class HomeScreen extends React.Component {
 
   refreshState() {
     AsyncStorage.getItem('settings').then(data => {
-      if (data) this.setState({ ...this.state, settings: JSON.parse(data) });
+      if (data) {
+        this.setState({ ...this.state, settings: JSON.parse(data) });
+        if (!this.state.settings.oldStyle) this.props.navigation.navigate('HomeNew');
+      }
       if (!data) AsyncStorage.setItem('settings', JSON.stringify(this.state.settings));
     })
   }
@@ -78,15 +77,15 @@ export default class HomeScreen extends React.Component {
         <View
           style={{ width: '100%', height: '100%' }}>
 
-          <Modal swipeToClose={false} position={"center"} backButtonClose={true} style={styles.about} ref={"about"}>
+          <Modal useNativeDriver={true} swipeToClose={false} position={"center"} backButtonClose={true} style={styles.about} ref={"about"}>
             <About></About>
           </Modal>
 
-          <Modal swipeToClose={false} position={"center"} backButtonClose={true} onClosed={() => this.refreshState()} style={styles.settings} ref={"settings"}>
+          <Modal useNativeDriver={true} swipeToClose={false} position={"center"} backButtonClose={true} onClosed={() => this.refreshState()} style={styles.settings} ref={"settings"}>
             <Settings></Settings>
           </Modal>
 
-          <Modal swipeToClose={false} position={"center"} backButtonClose={true} style={styles.tickets} ref={"tickets"}>
+          <Modal useNativeDriver={true} swipeToClose={false} position={"center"} backButtonClose={true} style={styles.tickets} ref={"tickets"}>
             <Tickets navigation={this.props.navigation} category={this.state.selectedCategory}></Tickets>
           </Modal>
 
@@ -142,9 +141,7 @@ function Item({ parent, category, image, description, requestTicketNumber, ticke
   );
 }
 
-HomeScreen.navigationOptions = {
-  header: null
-};
+HomeScreen.navigationOptions = { header: null };
 
 const styles = StyleSheet.create({
   container: {
@@ -190,7 +187,7 @@ const styles = StyleSheet.create({
   settings: {
     alignItems: 'center',
     padding: 10,
-    height: 250,
+    height: 280,
     width: 300
   },
   about: {
