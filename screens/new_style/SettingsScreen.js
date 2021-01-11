@@ -109,7 +109,7 @@ export default class SettingsScreen extends React.Component {
 
         <View style={{ padding: 20, ...gs.flexRow, justifyContent: 'space-between' }}>
           <Text style={{ color: this.colors.text, fontSize: global.smallScreen ? 13 : 15 }}>Версия приложения</Text>
-          <Text style={{ color: this.colors.text, fontSize: global.smallScreen ? 13 : 15 }}>2.0.0</Text>
+          <Text style={{ color: this.colors.text, fontSize: global.smallScreen ? 13 : 15 }}>2.0.1</Text>
         </View>
       </ScrollView>
     </View>)

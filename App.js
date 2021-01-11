@@ -46,9 +46,24 @@ async function loadResourcesAsync() {
       AsyncStorage.getItem('settings').then(data => {
         if (data) {
           const PARAMS = JSON.parse(data);
-          global.appSettings = PARAMS;
+          global.appSettings = {
+            darkTheme: false,
+            requestAppExit: true,
+            requestExamExit: true,
+            requestTicketNumber: false,
+            oldStyle: false,
+            ...PARAMS
+          };
           if (PARAMS.oldStyle) NavigatorComponent = AppNavigator('Home'); else NavigatorComponent = AppNavigator('HomeNew');
         } else {
+          global.appSettings = {
+            darkTheme: false,
+            requestAppExit: true,
+            requestExamExit: true,
+            requestTicketNumber: false,
+            oldStyle: false
+          };
+          AsyncStorage.setItem('settings', JSON.stringify(global.appSettings));
           NavigatorComponent = AppNavigator('HomeNew');
         }
         return resolve();
