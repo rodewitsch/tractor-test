@@ -30,13 +30,12 @@ export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.colors = ThemeColors(global.appSettings.darkTheme);
-    this.state = { selectedCategory: null };
     this.styles = this.getStyles();
     this.didBlurSubscription = this.props.navigation.addListener(
       'willFocus',
       payload => {
         this.colors = ThemeColors(global.appSettings.darkTheme);
-        this.setState({ ...this.state });
+        this.setState({ selectedCategory: null });
       }
     );
   }

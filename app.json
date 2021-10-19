@@ -41,7 +41,7 @@
     "android": {
       "permissions": [],
       "package": "com.rdm.tracktortest",
-      "versionCode": 17
+      "versionCode": 19
     }
   }
 }
