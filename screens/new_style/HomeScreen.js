@@ -38,9 +38,6 @@ export default class HomeScreen extends React.Component {
         this.setState({ selectedCategory: null });
       }
     );
-  }
-
-  shouldComponentUpdate() {
     this.menuItems = [
       {
         category: 'A',
@@ -75,6 +72,9 @@ export default class HomeScreen extends React.Component {
         image: <CategoryFSvg width={global.smallScreen ? 40 : 50} height={global.smallScreen ? 31 : 41} fill={this.colors.text} />
       },
     ];
+  }
+
+  shouldComponentUpdate() {
     this.styles = this.getStyles();
     return true;
   }
