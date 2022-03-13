@@ -23,20 +23,5 @@ export default [
     require(`./22.json`),
     require(`./23.json`),
     require(`./24.json`),
-    require(`./25.json`),
-    require(`./26.json`),
-    require(`./27.json`),
-    require(`./28.json`),
-    require(`./29.json`),
-    require(`./30.json`),
-    require(`./31.json`),
-    require(`./32.json`),
-    require(`./33.json`),
-    require(`./34.json`),
-    require(`./35.json`),
-    require(`./36.json`),
-    require(`./37.json`),
-    require(`./38.json`),
-    require(`./39.json`),
-    require(`./40.json`)
+    require(`./25.json`)
 ]

@@ -1,10 +1,10 @@
 [
     {
-        "questionText": "Назовите операцию, входящую в перечень операций при ТО-3 (через 1000 часов работы трактора \"Беларус-1005\")?",
+        "questionText": "Отметьте операцию, выполняемую при проведении ТО-3.",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "Замена топливного насоса.",
+            "Замена масла в корпусе регулятора топливного насоса.",
             "Проверка натяжения ремня вентилятора.",
             "Очистка ротора центробежного масляного фильтра."
         ]
@@ -15,8 +15,7 @@
         "rightAnswer": 2,
         "answers": [
             "От себя.",
-            "На себя.",
-            "Не имеет значения."
+            "На себя."
         ]
     },
     {
@@ -52,7 +51,7 @@
     {
         "questionText": "Какова максимально допустимая продолжительность непрерывной работы стартера за одно включение?",
         "questionImage": "",
-        "rightAnswer": 3,
+        "rightAnswer": 2,
         "answers": [
             "5 с.",
             "15 с.",
@@ -60,44 +59,42 @@
         ]
     },
     {
-        "questionText": "Когда на тракторах \"Беларус-800\" и \"Беларус-820\" применяется \"плавающее положение гидросистемы?\"",
-        "questionImage": "",
-        "rightAnswer": 2,
-        "answers": [
-            "При работе с навесным орудием без опорных колес.",
-            "При работе с навесным орудием с использованием опорных колес.",
-            "При работе с прицепным орудием."
-        ]
-    },
-    {
-        "questionText": "Где на тракторе устанавливаются световозвращатели красного цвета, а где белого?",
+        "questionText": "Каким из указанных смазочных материалов смазываются оси поворотных кулаков трактора Т-30А?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "Сзади - красного, спереди - белого.",
-            "Спереди - красного, сзади - белого.",
-            "Можно ставить где угодно любые."
+            "Солидол жировой.",
+            "Масло трансмиссионное.",
+            "Масло моторное автотракторное."
         ]
     },
     {
-        "questionText": "В каких случаях разрешается эксплуатация самоходной машины?",
+        "questionText": "В каких из указанных случаев автоматическая блокировка дифференциала трактора МТЗ-80 выключается автоматически?",
         "questionImage": "",
         "rightAnswer": 3,
         "answers": [
-            "На одной оси установлены шины разного размера.",
-            "Шина заднего колеса имеет повреждения, обнажающие корд.",
-            "Шина заднего колеса имеет местные порезы, не обнажающие корд.",
-            "Не разрешается во всех случаях."
+            "При скорости более 30 км/ч.",
+            "При работе на склонах.",
+            "При повороте передних колес на угол более 8°."
         ]
     },
     {
-        "questionText": "Разрешается ли пользоваться задней навеской тракторов \"Беларус\" серии \"900\" при установленном на трактор буксирном устройстве?",
+        "questionText": "Какое давление воздуха в шинах задних колес при работе на поле?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "Запрещается.",
-            "Допускается в любом случае.",
-            "Допускается только с лёгким навесным орудием."
+            "1,0 кг/см2.",
+            "2,0 кг/см2.",
+            "3,0 кг/см2."
+        ]
+    },
+    {
+        "questionText": "Каково значение международного символа, касающегося применения приборов и органов управления?",
+        "questionImage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAGQAZADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKY0ip1OKgk1K3j+8+KALVFZz+ILGP70wFQP4s0uP71yooA2KK59/HWix/evFFIvjzRH6XimgDoaKwR430c9LtamTxZpkn3blTQBsUVnJr1lJ92YGrCahBJ9180AWaKYsiv0OafQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFJQAtFVLy+W1XcWFcD4s+L9n4YVjJIox9KAPRpZBEpYnAFc1qHxA0vTZCk0+0j6V89eLv20NI0q3mRp4wcEdBXyD8Tf2yIL3UpjBdgA9MGgD9DvF3x28PaTbsz3oXH0/wAa8S8S/tXaBGziLUB+Y/xr80fil+0hea3ZukF4+Tno5r54u/iNrVxKxN5Lgn/noaAP1h8SftbWa7vJvs/8Cry3xH+13cLv8m8z/wADr85JPGmqSfeuZD/wM1Wk8SX0n3pnP/AjQB9o+Iv2wNcUt5NyT/20NU9B/bA18/625I/7aGvjGTVLiX70jH8aampTx9JGH40Afelr+19q/nLuuuM/89DXoHhz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qgUEbulAH5qXEJt5mjPVajq1qj+ZfSt71VoAK+sv2ELNrvxjbgf89P618taRZG/vEiAzmvvr9hHwC1j4ktpyn8eenvQB+uXgvS3s9OtCf+eS/wDoIrrqraZGE061AHSJB+gq1QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABWB43V38O3AQZbHH5Gt+orm3S6iMbjKmgD8s/2kvCeua1d3ccVsXQ59f8K+QLX9nnW7zUGaSwOC3ofX6V+7mqfCfQtWYtcQBievyisuP4B+Fo23Larn/cFAH5QfDf8AZOkvpoPtNljnn5a+2vg/+xvodnaxXEluFkUA/cFfTdj8KtD04gwwBcf7IrqLHTotPj2RDC0Acl4Y+G9n4bjjSFcBfau1jXZGqjsMU6igAooooAKKKKACiiigAooooAKKKKACo5jtjJqSo5uYyKAPDvj94iuLHwld+UeQrd/avxL+PnjDWNW8YX8BUlM+p9TX7h/F3wpPrui3EMabiwP8q/Ojx9+yXquqeJrm4WzyG/2T6mgD83ryynhYtKmKqgFjgda+yfiJ+yB4gjjfyLMjr/Ca8pg/ZZ8Tw3sayWpxn0NAHD/Cvw1c6r4mtUWPcrNX61fsn/DGXR1s7hodvAPSvnf9nX9lTU7PWLO5urQ7VIJ+U1+p3w58CWeg6HbKItsiovb2oA7i1Xbawr6Io/SpaRRtUAdqWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkI3UtFAEEtnFMuHUEfSqEnhfTpGLNbqT9BWtRQBxPiD4fabqCsPsqH/gI/wrz69+CNhLeLItouAc/dFe7UYHpQByfhPwVY6PaKq26qwHoK6qOMRrtUYFOpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==",
+        "rightAnswer": 1,
+        "answers": [
+            "Медленно.",
+            "Назад.."
         ]
     }
 ]

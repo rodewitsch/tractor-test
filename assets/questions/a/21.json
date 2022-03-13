@@ -20,17 +20,17 @@
         ]
     },
     {
-        "questionText": "Сколько фильтров очистки масла в дизеле Д-240?",
+        "questionText": "Какова вместимость системы смазки двигателя Д-240?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "1.",
-            "2.",
-            "3."
+            "15 л.",
+            "18 л.",
+            "19 л."
         ]
     },
     {
-        "questionText": "При какой из указанных причин стартер при включении вращается с малой частотой?",
+        "questionText": "По какой из указанных причин стартер при включении вращается с малой частотой?",
         "questionImage": "",
         "rightAnswer": 2,
         "answers": [
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "questionText": "В каких пределах устанавливается сходимость передних колес при заводской регулировке трактора \"Беларус-800\"?",
+        "questionText": "В каких пределах устанавливается сходимость передних колес при заводской регулировке трактора МТЗ-80.1?",
         "questionImage": "",
         "rightAnswer": 2,
         "answers": [
@@ -50,7 +50,7 @@
         ]
     },
     {
-        "questionText": "Каково нормальное давление масла в системе питания работающего дизеля воздуха или воды?",
+        "questionText": "Каково нормальное давление масла в системе смазки двигателя Д-245?",
         "questionImage": "",
         "rightAnswer": 2,
         "answers": [
@@ -60,43 +60,42 @@
         ]
     },
     {
-        "questionText": "К чему может привести попадание в систему питания работающего дизеля воздуха или воды?",
+        "questionText": "Можно ли по правилам эксплуатации изменять колею путем разворачивания колес на осях трактора?",
         "questionImage": "",
-        "rightAnswer": 1,
+        "rightAnswer": 2,
         "answers": [
-            "Двигатель не развивает полную мощность.",
-            "Двигатель перегревается.",
-            "Двигатель стучит."
+            "Можно.",
+            "Нельзя."
         ]
     },
     {
-        "questionText": "Сколько человек можно перевозить в кабине трактора Т-30А?",
+        "questionText": "В каком положении необходимо устанавливать рукоятку гидроувеличителя сцепного веса при переезде тракторного агрегата на большие расстояния?",
         "questionImage": "",
         "rightAnswer": 3,
         "answers": [
-            "Одного.",
-            "Двух.",
-            "Перевозка людей запрещена."
+            "ГСВ включен.",
+            "Сброс давления.",
+            "Заперто."
         ]
     },
     {
-        "questionText": "При каком числе фар можно эксплуатировать трактор \"Беларус-800\"?",
+        "questionText": "Какова величина полного хода педалей управления тормозами трактора Т-30А?",
         "questionImage": "",
-        "rightAnswer": 2,
+        "rightAnswer": 3,
         "answers": [
-            "Спереди - три, сзади - одна.",
-            "Спереди - две, сзади - одна.",
-            "Спереди - одна, сзади - три."
+            "50-70 мм.",
+            "700-90 мм.",
+            "90-110 мм."
         ]
     },
     {
-        "questionText": "При работе с какой из сельскохозяйственных машин необходимо устанавливать дополнительные грузы к переднему брусу трактора \"Беларус-820\"?",
-        "questionImage": "",
-        "rightAnswer": 2,
+        "questionText": "Каково значение международного символа, касающегося применения приборов и органов управления?",
+        "questionImage": "data:image/png;base64,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",
+        "rightAnswer": 1,
         "answers": [
-            "Прицеп 2ПТС-4.",
-            "Разбрасыватель 1МРГ-4.",
-            "Плуг ПЛН-3-35."
+            "Зарядка аккумулятора.",
+            "Напряжение в сети.",
+            "Сила тока при запуске."
         ]
     }
 ]

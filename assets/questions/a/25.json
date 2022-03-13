@@ -10,13 +10,13 @@
         ]
     },
     {
-        "questionText": "В каком из указанных случаев возможна доливка электролита в аккумуляторную батарею?",
+        "questionText": "Каким способом осуществляется изменение температурного режима двигателя Д-240?",
         "questionImage": "",
-        "rightAnswer": 3,
+        "rightAnswer": 2,
         "answers": [
-            "В любом случае.",
-            "Не разрешается.",
-            "Возможно только в случаях, когда известно, что понижение его уровня произошло в результате выплескивания."
+            "Перестановкой дросселирующего диска вентилятора.",
+            "Шторкой радиатора.",
+            "Термостатом."
         ]
     },
     {
@@ -30,7 +30,7 @@
         ]
     },
     {
-        "questionText": "Какой нормальный свободный ход имеет педаль сцепления трактора Т-30А?",
+        "questionText": "Какой нормальный свободный ход имеет педаль сцепления трактора Т-30?",
         "questionImage": "",
         "rightAnswer": 2,
         "answers": [
@@ -45,14 +45,13 @@
         "rightAnswer": 1,
         "answers": [
             "Секционный 3-золотниковый.",
-            "Секционный 4-золотниковый.",
-            "Секционный 5-золотниковый."
+            "Секционный 4-золотниковый."
         ]
     },
     {
-        "questionText": "Каким должно быть регулируемое напряжение у тракторов \"Беларус-1005\" и \"Беларус-1025\" с подключённой аккумуляторной батареей при положении переключателя посезонной регулировки \"лето\"?",
+        "questionText": "Регулируемое напряжение у тракторов МТЗ-100/102 при температуре окружающей среды 20°С, токе нагрузки 10А, номинальной частоте вращения ротора генератора 3600 об/мин с подключенной аккумуляторной батареей при положении переключателя посезонной регулировки «лето» должно быть:",
         "questionImage": "",
-        "rightAnswer": 3,
+        "rightAnswer": 2,
         "answers": [
             "12 - 13 В.",
             "13,2 - 14 В.",
@@ -60,43 +59,41 @@
         ]
     },
     {
-        "questionText": "В каком случае буксирное устройство тракторов \"Беларус-800\" и \"Беларус-820\" устанавливается в верхнее положение?",
+        "questionText": "В каком из приведенных ответов дан технически правильный порядок остановки трактора?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "При работе трактора с валом отбора мощности.",
-            "При работе трактора без использования ВОМ.",
-            "Оба ответа верны."
+            "Выключение сцепления — рычаг КП в нейтральное положение — торможение.",
+            "Выключение сцепления — торможение — рычаг КП в нейтральное положение."
         ]
     },
     {
-        "questionText": "Какое допустимо отклонение тяг механизма навески у трактора \"Беларус-800\" при поднятом плуге после натяжения ограничительных цепей?",
-        "questionImage": "",
-        "rightAnswer": 3,
-        "answers": [
-            "125 мм.",
-            "20 мм.",
-            "Отклонение не допускается."
-        ]
-    },
-    {
-        "questionText": "Когда следует включать синхронный привод вала отбора мощности?",
+        "questionText": "Как можно включить синхронный привод ВОМ трактора типа МТЗ?",
         "questionImage": "",
         "rightAnswer": 2,
         "answers": [
-            "При работающем двигателе.",
             "При неработающем двигателе.",
+            "При работающем двигателе.",
             "Не имеет значения."
         ]
     },
     {
-        "questionText": "В каких случаях не допускается эксплуатация тракторов с двигателем воздушного охлаждения?",
+        "questionText": "Сколько часов необходимо обкатывать новый трактор Т-30А?",
         "questionImage": "",
+        "rightAnswer": 2,
+        "answers": [
+            "50 мото-ч.",
+            "60 мото-ч.",
+            "80 мото-ч."
+        ]
+    },
+    {
+        "questionText": "Каково значение международного символа, касающего применения приборов и органов управления?",
+        "questionImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAACGGAAAhhgEfEMBTAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAwBQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyO34QAAAP90Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWltcXV5fYGFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmqq6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+6wjZNQAAGAFJREFUGBntwQuAjnW+B/Dv+zJjDMOMcYmYGHK/bW3aktsmlxKtS7ZyqFxO6ZSKla3ttjnRhdVlE5VaSyJFzm6SdStFtiiWkntKBrPDMGOu7/fs9ZzMvDPP73nf5515/s/z+3wApZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllCpHXGqzjldcPXzsxEeenjrljlGDr7qsfdPUeChvi2t3/SNvbti271gewyrIPPSXTStmju+TXhXKU6q2Gfrwkp0FlCrcs/K5Cde0iocyXv3BD76xI58RKT6w+sVJfWpDmarjA5uLGa3iHXNGXQhlmmr9fnuIjjn+zpTu1aFM0eDWt8/QaQVbZg1vAuV67R/YHGKsHF58+/lQLtZvDWMstOX+tlCuFDdyOyvE1091DUK5TK2Jh1lxMl4akADlHo2eOMkKdmbpiBQoV2j3aj4rQ+GaOxtDVbaL/hBipSleOSQOqhIlPlXEypXxVCuoytJ7H13gw1GJUJWgzqt0iZOzL4KqaD/PoItsHZ8M9wjUb9XaJdLiEBNN/kCXyZ3fHW7QesqGbwroHqFj257pVRXOCv5XNl1o9701UbmqjP2KbpQ5MxUOavsxXSrzoRRUomt30q2yJleDUwbl0L2yp9dHJYmfRzfb1gTOuLOYrpb7bBNUhvob6W5HL4cDgjPoegUvt0CFS91Lt8vrgaglLKUJil7vgIoVt57ud7wZolT3YxoitLwLKtKLNMGOmohKiz00yOqeqDDdaYbpiMZlx2mWj3qigmymGc42QeSGnKVx3kpHRRhCU8xHxO4ppoHypich9v5EUxSmIEJ30lBHxwQRYymFNMZNiMzAYhprWw/E1giaYwkickkOTfZWOmLpNZojC5FoepRmy5uehNhZS4Mkwb6UL2m8o6ODiJWvaJBWsC1+Pb1gaw/ESDYN8lPYFVhAB509mXF4765tW3YczCxgBVt6AWLiNA1yJeyaSgcc+uPzD44bdFl6DfxAtbrNOnbtN+zWCVMXbz3NCpA9FrGwmwZpA5tGMzon/jRrzGW1YKlhj7FPLt+Zx9haeT6ct44GqQ17+hQycgUb7r84ADuCTfvcMXt7MWMmayQcN5/myIY9rbMZqX3PD0xCZJL7//f6XMbIOw3gsFE0xzLYUmUzI5O3sAeiE3fpxLczGAsnhsNZqUU0xijY8gtGZNc9qXDEhbe88jWdt6QuHLWOpihKhR2tztK+4oXd4KSW920O0WEZ18FJP6cpFsGO4Ee0770OcFyj298voLN+nwLnBD6jGfLTYcc9tG1bb8RG8k1Lz9BJ310N5/ShGWbBjha5tOmbkUHETsK1847TQa/UgmMW0AR7kmFD4APaU/hQAmKsSs852XTMgc5wSsIWut+pNrDjTtrzTVdUhBqjN9MpOTfAKY2+pdsVXQ070s/Qlj+koqJ0ePavdMhTVeCQtG10t6w+sCOwlnYUTAqgAiWM2EBnrK4Dh9RYSjfb3RK23E47Dv4EFa3VU8fohP0d4ZDAiAN0q5ypSbAl7TRt+CAFlSB+2PshRi9nOJwSf9cBulH27IawaR5t2FADlaTFS/mM3hNBOKbzI58cC9FFsr+c0z8edl1YRLl1NVB5Gj+Ty6itSoGT4tI6dXaJljURkYWUW5OISlV/Wjajta8D1A+0K6bY6uqobMkPZTJKZ4ZB/b+lFFuVABeoOel7RmlaEOpfOocotSEB7pAw/iCjszIF6p9WUOrIeXCNuFu+ZlT2tof6uy6UKuwON6l6Zyajcaor1N+sotQv4DJ1nitkFM70gkI3Si2D+7RdxSjk9oVaTaG9teFGA75m5PKuhd+1DFEmtxPcKW7iSUasYCh8biaFboVr1ZtTzEgVjYCvJWRS5n24Wad1jFTxaPjZKMoUtoW7DT7ICIXugI9tpswsuF3SXEZqInyrM2WOJ8P9+h5mhB6AX82hzDiYoPZrjNBU+FOt0xTZGoQZBhxhZJ6GL42nzBUwRZ2FjMzzAfjQdoosgkEGZzAic+E/XSmS2xgmqfsmI/IgfOdFisyGYYafYARC18NngkcpEWoN0zRYxQjkdoG/dKXISpgnOJ0R+D4NvjKDIn1homFnaN8XNeEn+ymxKwAjddhL+/4nCP/oTJH/hKFSVtK+mfCPRymRmQhTBR+nfePgGzsoMQ0GG3KadhVeCZ9oQYnCxjBZuz20K6sV/GEyJRbBbMl/pF17UyEX+Mmj8/+06/ujLrF/45Lf/CwRIpso0QOGCz4Wok0b4iHU+sUjdJ/cdwbCWqMQBTKCMN6QPNr0KkQazimiS31wKazcRom58ICrcmjTFAiMPEMXeyEO5VtMiX7wgm6naE9xD1gJPkl3W18X5TpCgZPx8IRLMmnP4TooX5XldLv9TVCO5pRYAI/ocJT2vIXyzaL7bU1E2W6mxBB4RcvDtGcsyjOaJlgSQJnmUSA3EZ7RdB9tyWmNsqXn0whjUKY9FFgGD2n0JW3ZFo8yvU4zHKmBMpxHif+Al9T7nLbMQFkuCtEQD6MMwyhQkAxPSdlMO0I9UYZFNMWpeIT3HAVWwWOS1tOO3dUQVvwpGqMvwvucAuPhNTU+ox2/Rlh9aI4XEFbtYgp0gOc0PEQb8tsgnGdpjm8Q1tUUOBWE97Q/SRs+DCCMd2mQaghnGgVWwYuuLKANYxHGFzRIM4SzjgIPw5Nupg1ZDVDacRqkK8I5ToGr4E2P0oZFKC2PBumHMBpQoDgJHjWfNlyOUg7SIJ0QRm8KfA6vil9LuU0o5SMapB7CuJsCL8CzkndSbhhKepPmyA8gjJcpMALedcH3FNsbjxIm0hwfIpxPKJAOD/txDsXuRgnNaY6JCCNwmtaOwtNGUywzGSXsoDGaI4xmFHgb3racYk+jhPtoio8RzrUUmAhvq3eUUnlNcK7EIzREd4RzPwWugMddQ7FZKOE2mmEFwnqdAqnwutmUyqmHc1XdShOcaYWwttNaJjwvcTelpqKEtAy6X+hnCCuugNY2wfu6FFIoqxZKuDyfrvcrhNeOAr+DDzxEqSkoqf8putxjKMMACjwAH6iymUJHE1BSm710s9zhKMt4CgyDH7Q4Q6E7UEqdl4voWh92RpmmUaATfGEchfYEUFqbt+lOOweiHAtoLZQIf1hLoZ8inKZ3ry+iy+x+4rIAyrOB1g7DJy4OUeYNlKFm294jJ9ztEuMGXNQAVvbT2hr4xSLK5NeDRwTyaW02/CI9nzKT4BHnUeBe+MYsyuyGR1xCgQHwjbqnKNMT3jCEAi3hH/dT5nV4w920VlgV/pH4HUVya8ATZtDaXvjJGMoMhScsobWN8JMquyjyBjxhE60tg68MpMjpBHjBt7T2EvzlQ4oMhAcEi2ntcfjLEIr8Dh6QQoF74C9xxyiRFQfzpVNgBHzmaYr0g/kupkA/+ExrisyE+XpT4GL4zUZKfA7zDaVAGvzmFkqEUmG8sRSoDr+pkU2JwTDeZFrLgf/MocRzMN40WjsI/+lCiZ0w3mxa+zN8aDslGsB0b9Dau/ChuygxHKZbRWvz4UN1iijwJEy3hdZmwI8+o8B7MN3XtDYFfvQsBY7AdMdpbQz86HpKpMJwhbR2I/yoESV6wWxJFBgKX9pPgQkwW0MKDIQvzafAKzBbGgX6wpfGUWALzNacAr3gS20pcBzniu91669eWPSGS8ybOn5QXZSnNQW6wpcCmRRIwP+L//kbp+g2RRvuaYgydaDAJfCnFRRojn8L3LCf7pTzWBLKcBEFOsKfJlOgO/6l3ad0r4zhCO9SCrSGP/WmwI34p2uz6WqPBxDOFRRIhz91pMBk/MPEYrrcO9UQRi8KnA9/akiBZ/B3I+h+v0cYfShQD/5UNURrb+FvLj1LA9yH0q6hQG341F9pbQ2AWkdoguIeKGUQBRLgU7tp7WMAj9EMnwVQ0lAKBOFTG2ltG9Awh4a4CSXdQGtF8KtltPYV8BuaYj9KGklrufCrubR2EDhMY/wYJYymtSz41VRay8DFNMdjKOE2WsuAX02gtWw8SnN8gRLupLXD8Ksbaa0Qy2mOoio41520dhh+dSOtFWILDdII57qN1jLgVxNoLRvf0iA/xrlG01oW/GoqrWUgnwbpj3ONpLVc+NVcWjuIIzRIF5zrBlorgl8to7Wv8CkN0hjnGkqBIHxqI61twwqao7gqzjWIAgnwqd209jEepzl2oYRrKFAbPvVXWluDS2mOaSihDwXqwZ+qhmjtLQS+ozEuRQm9KHA+/KkhBZ4BnqUpDgVQwhUUSIc/daTAZKDxWRriFpR0KQVaw596U+BGAE/SDDuCKOkiCnSEP02mQHcAKSdohL4opQMFLoE/raBAc/xNr0IaYCpKa02BrvClQCYFEvB3t9H9lgVQWnMK9IIvtaXAcfzTr+l2a2sijDQK9IUvjaPAFvzLTWfpai9URTgNKTAQvjSfAq/g37p8Rfc6OQ7hJVFgKHxpPwUm4P9UGfsd3SlvZirKUkhrN8KPGlGiF36g+s3Lc+k2oU9+mYayHae1MfCj6ymRinMl9h8/dd6y5S7x+tP3Dm+Ecn1Na1PgR89S4AhMt4XWZsCPPqPAezDdKlqbDx+qU0SBJ2G6N2jtXfjQXZQYDtPNprU/w4e2U6IBTDeN1g7Cf7pQYieMN5nWcuA/cyjxHIw3lgLV4Tc1sikxGMYbSoE0+M0tlAilwni9KXAx/GYjJT6H+S6mQD/4TGuKzIT50ikwAj7zNEX6wXwpFLgH/hJ3jBJZcTBfsJjWHoe/DKHIfHjBt7T2EvzlQ4oMghdsorVl8JWBFDmdAC9YQmsb4SdVdlFkMTxhBq3thZ+Mocz18IS7aa2wKvwj8TuKnK0JTxhCgZbwj/spsxjecAkFBsA36p6izJXwhvMocC98YxZl9gTgDYF8WpsNv0jPp8xkeMV+WlsDv1hEmfz68IoNtHYYPnFxiDKL4RkLaC2UCH9YS6Er4RnTKNAJvjCOQnsC8IzxFBgGP2hxhkJ3wDsGUOAB+ECVzRTKqA7vaEeB38EHHqLUL1Gmak1/ct2om13i+h6tasFKXAGtbYL3dSmk0MnaCK/hbe/l02W+ePRHKN92WsuE5yXuptTjCKvpwhBdaeuVKM/rFEiF182mVG59hFFzRh5d692WKNv9FLgCHncNxZ5HGE23081O9keZrqXARHhbvaOUKrgApXU7RncrnoiyNKPA2/C25RSbhdJ+lEPXuwtlCJymtaPwtNEUy6qDUhp8Q/crugpl+IQC6fCwH+dQbCJKCX5EE2Q1Q3gvU2AEvOuC7ym2Px6ljKIZliC8uynwAjwreSflhqOUaodoiC4IqzcFPodXxa+l3CaUNoGmWIewGlCgOAkeNZ82dEVpW2mMNIR1nAJXwZsepQ2LUFoazXEXwlpHgYfhSTfThqwGKO0ummMtwppGgVXwoisLaMNYhLGY5shDWFdT4FQQ3tP+JG34MIAwNtIgdRFO7WIKdIDnNDxEG/LbIJz9NEhHhPU5BcbDa2p8Rjt+jbDO0iB9EdZzFFgFj0laTzt2V0NYmTRIN4Q1jAIFyfCUlM20I9QT4W2nQdIR1nmU+A94Sb3PacsMlOE9GqQ6wttDgWXwkEZf0pZt8SjDb2mO71CGeRTITYRnNN1HW3JaoyzX0BwvoQw3U2IIvKLlYdozFmWqdprGuAZlaE6JBfCIDkdpz1soxxKaIrsaynKEAifj4QmXZNKew3VQji40xVSUaTEl+sELup2iPcU9UK63aIZjtVCm2ygxFx5wVQ5tmoLytSqkEf4LZWsUokBGEMYbkkebXoWVe2iCd4MoxyZK9IDhgo+FaNOGeFh6he63qxbKM5kSi2C25D/Srr2psBa/hm73fQuUqwUlChvDZO320K6sVpCIm0t3+/R8WNhBiWkw2JDTtKvwSgjdVUAXe706rDxKicxEmCr4OO0bB7H0hSG61Ge9Ya0zRf4ThkpZSftmwo7Or52g+xSsGh6AxH5K7ArASB320r7/CcKeKj2fWLJxf9ZJlzjy6YrZN9SG0AyK9IWJhp2hfV/UhJ90pchKmCc4nRH4Pg2+EjxKiVBrmKbBKkYgtwt85kWKzIZhhp9gBELXw2+6UiS3MUxS901G5EH4z3aKLIJBBmcwInPhQ+MpcwVMUWchI/N8AD5U6zRFtgZhhgFHGJmn4U9zKDMOJqj9GiM0FT7VmTLHk+F+fQ8zQg/AtzZTZhbcLmkuIzUR/jWKMoVt4W5DDjJCoTvgYwmZlHkfbtZ5PSNVPBq+NpNCt8K1GrxUzEgVjYC/tQxRJrcT3Kna5FOMWMFQ+N1qCu2tDTf62T5GLu9a+F43Si2D+3Rayyjk9oXCKkr9Ai5Tf04xo3CmFxTQhVKF3eEm8ZNOMRqnukL93QpKHTkPrlHt9gOMyt72UP/QOUSpDQlwhxr3HmF0VqZA/ctSiq1KgAsk/+oEozQtCPVv7Yoptro6Klu9x08xSmeGQf3AQsqtSUSlOv83OYzWvg5QP3RhEeXW1UDlSZ+Tz6itSoE61zzasKEGKkm73xcxek8EoUpIO00bPkhBJUgY8QEdkDMcqrTxtOPgT1DR2j/zVzphf0eoMALraEfBpAAqUOLNH9MZq+tAhdU8h7b8IRUVpdNvT9IhT1VBDCRf0NQl6gcRsQm055uuqAg1x2yhU3JugNNaT9lw8Czdo+j7rc/0qopIBDfSnsKHEhBjVXrOyaZjDnSGs6qM/YpulDkzFRFoeZY2fTMyiNhJuHbecTrolVpw1rU76VZZk6vBvkm0bVtvxEbyTUvP0EnfXQ1nxc+jm21rAtuqbKZ973WA4xrd/n4BnfX7FDir/ka629HLYVvbPNpXvLAbnNTyvs0hOizjOjgsdS/dLq8HbPslI7LrnlQ44sJbXvmazltSFw6LW0/3O94MdlX9lJHJW9gD0Ym7dOLbGYyFE8PhuBdpgh01YVf7M4zUvheuq43IJPf/7/W5jJF3GsBx3WiGabBtQBEjV/jRI5dXhR3Bpn3umL29mDGTNRIx8DHNkNsYto1ndLI/fOH2K5JhqWGPsU8u35nH2Fp5PmJgEE0xD/Y9RQccfvf5B8cNuiy9Bn6gWt1mHbv2G3brhKmLt55mBcgei5h4n6YoqA3bAm/SQWdPZhzeu2vblh0HMwtYwZZegJioXUBj3Aj7Ej6iF2ztgRi5keZYggjU3UPjHR0dRKy8SnNkIRItjtNsedOTEDtraJAkROLyszTZW+mIpS9pkFaIyNAQjbWtB2Irmwb5KSIziYY6OiaIGDtNg1yJCP0yRAPlTU9CzO2mQdogUjfk0ThvpaMCrKNBaiNi3TJplo96okLMpzmyEYVW+2iQ1T1RQUbRHMsQjfqbaYjQ8i6oMKlFNMYoRKX62zRB0esdUJHW0RRFqYhO8Dd0vYKXW6Bi/ZymWISo3VVMV8t9tgkqWuAzmiE/HdEblEP3yp5eH5WgD80wC05o+zFdKvOhFFSOBTTBnmQ4InjnabrQ1/fWRGVJ2EL3O9UGTkl7ly5zdkEPVKZG39Ltiq6Gg246Thf54s4UVLK0bXS3rD5wVN0FdInTc7vABWospZvtbgmn9T9EF9g8uibcITDiAN0qZ2oSnFfz2WJWrsxn2sNF4u86QDfKnt0QsXHZn1h5QmtvTIDbdH7kk2Mhukj2l3P6xyN2frSwkJWheOMvmsOl4tI6dXaJljURc2kzs1nBcleMrg/lGsn3fceKc+K16xKh3CX+5r+wQuyb2b0KlAsF+q9ljIX+/EB7KPdq/8DmEGPl8OLbz4dyuwa3vn2GTivYMmt4EyhDVOv320N0zPF3pnSvDmWYjg9sLma0infMGXUhlKHqD37wjR35jEjxgdUvTupTG8p0VdsMfXjJzgJKFe5Z+dyEa1rFQ3lJXLvrH3lzw7Z9x/IYVkHmob9sWjFzfJ/0qlCeFpfarOMVVw8fO/GRp6dOuWPU4Ksua980NR5KKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkopA/0v0MgxaPX/3MkAAAAASUVORK5CYII=",
         "rightAnswer": 1,
         "answers": [
-            "Воздухозаборное отверстие дизеля не защищено ограждающей сеткой.",
-            "Нарушено лакокрасочное покрытие кожуха системы охлаждения.",
-            "Система смазки заполнена до отметки \"min\"."
+            "Дальний свет.",
+            "Ближний свет."
         ]
     }
 ]

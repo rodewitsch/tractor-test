@@ -5,8 +5,7 @@
         "rightAnswer": 1,
         "answers": [
             "Укорачивают.",
-            "Удлиняют.",
-            "Не изменяют."
+            "Удлиняют."
         ]
     },
     {
@@ -60,41 +59,41 @@
         ]
     },
     {
-        "questionText": "Допускается ли эксплуатация трактора \"Беларус-800\" без одного болта или гайки крепления диски колеса?",
-        "questionImage": "",
-        "rightAnswer": 3,
-        "answers": [
-            "Допускается.",
-            "Допускается на транспортных работах.",
-            "Не допускается."
-        ]
-    },
-    {
-        "questionText": "Допускается ли постановка тракторов на длительное хранение без проведения техобслуживания?",
-        "questionImage": "",
-        "rightAnswer": 2,
-        "answers": [
-            "Допускается.",
-            "Не допускается."
-        ]
-    },
-    {
-        "questionText": "В каком из перечисленных тракторов питание гидроусилителя руля осуществляется от общей гидросистемы тракторов?",
+        "questionText": "Какой способ регулировки ширины колеи направляющих колес трактора МТЗ-80?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "Т-40М.",
-            "Т-25А."
+            "Ступенчатый.",
+            "Бесступенчатый."
         ]
     },
     {
-        "questionText": "Какие составные части тракторов можно подогревать открытым пламенем?",
+        "questionText": "Привод вала отбора мощности трактора Т-30 является:",
         "questionImage": "",
-        "rightAnswer": 3,
+        "rightAnswer": 2,
         "answers": [
-            "Только двигатель.",
-            "Все части, кроме двигателя.",
-            "Подогрев открытым пламенем запрещён."
+            "Зависимым.",
+            "Независимым."
+        ]
+    },
+    {
+        "questionText": "Какое хранение трактора называется кратковременным?",
+        "questionImage": "",
+        "rightAnswer": 2,
+        "answers": [
+            "До 10 дней.",
+            "От 10 дней до 2 месяцев.",
+            "Более 2 месяцев."
+        ]
+    },
+    {
+        "questionText": "Каково значение международного символа, касающегося применения приборов и органов управления?",
+        "questionImage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHERUTBxMWFhUXGBYYGBgYGBsgFRwWIB0iIiAdHyUkMDQsKyYxJx8fLT02NjU3QTpBJitLREU4SzRAQDcBCgoKDg0OGg4ODysZFRkrKy0rNysrKysrKysrKystKysrKysrNysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAF8AggMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAYHBQMCAf/EADcQAAECBAMFBQcEAgMAAAAAAAEAAgMEBREGEiEHMUFRgRMiYXGRF0JTYpKh0hUyUsLB0RRysf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2JERVBERAREQEREBERAREQEREBERAREQERQ6zNxZCBFiS7HRHMY4tY0Euc62gsNd6CYixWk7W6xT3ZK/BES2hIHZxQeNxu6WCvlE2j4aq1h2vZPPuxRl+/7fuircijT8/KU1hiT8RsNg955AF+WqhU3E1DqhyyEzCe7+IcM3odUR1kREBERARQ6jVafSxeoxocMfO4C/lfevGk1+k1m/6XHhxCNSGnvAcyN6DpIuJXsWUOgaVOM1rrXyC5ieGg19Vn1b2yb20OX8nxT/AFb/ALRWuIqls3rlUrss51aY5rw82cWFrXMOoLdNbajoFbUQREQERUvEO0qjYfmHy85Djl7MtyxrC3vNDha7gdx5ILLVKNTKuMtTgsiDhmaCR5HeOirEvsww/KTMOPKh4EN2bsy7NDJG7frobHfwUD2x4e+FM/RD/NWLCGMadi3tf05kVvZZM3aBo/dmtaxP8Sis621TEeenpeWhHQMaQL6do9xGvQD1XpU9jM3DF6XMtef4xGlvnqCf/FFxpEEziOEw+7Fk2a+JYf7LbkGBS9fxlgKI2HUc5ZwZFOaG5vyO4dDpyWxYSxNJYpgdrJ6EaPYf3Mdy8RyKm1qkydbgug1Bocxw6g8HN5ELHdlzo9BrESUiG+btoTuRcy7g63k0281BtM7Ny8hDdEm3BrGAlzjuAWL4i2kVyvxewwy10NhNm5BeO/xvw6ajmrPtynosCThQoZsIkTveIaL29SD0XT2WYblaPJQ42UGLHY2I5/ENdq1o5C1uqCjU3ZPXqoe0rUZsIu1Oa8SL11t91z30uJgWsy8OBELhmgnNaxLHnK4Eeq35YjttD5eoQYjPgssfma95/wAhBouLMC0vFMWHFni9pYC05LAube4BJB3a+qm0bCFAotv+BLsDh77hmf6uuR0UvENZl8Py75icDixmW4YAXd5waLXIG881S/bHh74Uz9EP81RoqLOvbHh74Uz9EP8ANaKiCIiAqXiHZrRsQTD5iciRw9+W4Y5gb3WhotdpO4c1dEQZ17HMPfFmfrh/grFhDB1Owl2v6c+K7tcmbtC02y5rWsB/IroVjEFIogvVI7Iel7E98+TRqegVRbtZosaYhwZVkQsc8NMV1mtF9xA3kXtvtxRVSxrDEtiOE8+9Fk3+haP6rblju2qnTMrMwJ2Xacoa1pdwD2uLm387/ZRZ/bDV5hobToEOG46XJLzfwGg9bqDWcQVyRw/BdGqDgANw95zuDWjiVlGyeUmK5U409HbYNMR5PDtIl9B0LvsodLwdivGsURq857IfF8XR2XlDZw9AFs1Co0lQYLYNOblY36ieJJ4lBTdtVKjT0k2LAF+xfmcPkIsT0OXpdSNlWKZWrSkOXe4CPBaGZSdXMbo1zeelgVeIjGRQWxACCCCDuIPBZBi7ZhOyUQzGEibXzdmHWiMPyHiPDf5oNhWI7bS+YqECGz4LLf8AZz3j/AXjTtp2J6IeyrDBEy7xFaWRR1/2Co8jOTmP6xBi9nlDXQi4DUNhMNzc+Jv6oNrxDR5fEEu+XnC4MfluWEB2jg4WuCN45Kl+xzD3xZn64f4Lp4v2gyOF5hkGYhuiXZmeWEXbc90WO+9jxHDmuhRMbYdrdhJx2hx9x/dffkAd/S6ornscw98WZ+uH+C0VERBERAUOryb6hAiQob3Qy9jmh7SQ5pI0II8VMRBkFI2PTMc58QTFidS2Hq4+bncehV9omCMPUSxk4DS8e+/vPvzBO7pZWJEV8RYUOM0tjAOadCCLgjxCiSVGpUgbyMvBhnmyG1p+wU5EQREQEREEeckZSeGWdhsiDk9ocPuvyRp8lTxlkIUOG3kxjWj0Ckog5lYw/SK2LVSAyJpa5HfA8HDUdCqFW9jsjHu6ixnQz/B4zM8gd463WoIgquzvDs/huWMOpxM7y7QB7nQ2sGgDb7uJ3D7K1IiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg//Z",
+        "rightAnswer": 2,
+        "answers": [
+            "Сигналы поворота.",
+            "Габаритные огни.",
+            "Задние фары."
         ]
     }
 ]

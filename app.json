@@ -2,35 +2,15 @@
   "expo": {
     "name": "TractorTest",
     "slug": "TractorTest",
-    "privacy": "public",
-    "sdkVersion": "38.0.0",
-    "packagerOpts": {
-      "config": "metro.config.js",
-      "sourceExts": [
-        "expo.ts",
-        "expo.tsx",
-        "expo.js",
-        "expo.jsx",
-        "ts",
-        "tsx",
-        "js",
-        "jsx",
-        "json",
-        "wasm",
-        "svg"
-      ]
-    },
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "2.0.3",
+    "version": "3.0.10",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
-      "backgroundColor": "#101010"
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -38,10 +18,16 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "ios": {
+      "supportsTablet": true
+    },
     "android": {
       "permissions": [],
       "package": "com.rdm.tracktortest",
-      "versionCode": 20
+      "versionCode": 29
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
     }
   }
 }

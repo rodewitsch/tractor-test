@@ -1,10 +1,10 @@
 [
     {
-        "questionText": "Как смазываются шатунные шейки коленчатого вала двигателя?",
+        "questionText": "Как подводится масло к шатунным шейкам коленчатого вала двигателя?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "Под давлением.",
+            "Принудительно.",
             "Разбрызгиванием.",
             "Комбинированным способом."
         ]
@@ -41,14 +41,14 @@
         ]
     },
     {
-        "questionText": "С каким трактором агрегатируется плуг ПЛН-3-35?",
+        "questionText": "Какие из перечисленных тракторов при работе с прицепом на дорогах общего пользования должны быть оборудованы опознавательным знаком «Автопоезд» ?",
         "questionImage": "",
         "rightAnswer": 3,
         "answers": [
-            "Т-25 А3.",
+            "Т-25 и Т-25АЗ.",
             "Т-30 и Т-30А.",
-            "МТЗ-800 и МТЗ-820.",
-            "Со всеми перечисленными тракторами."
+            "МТЗ-80 и МТЗ-82.",
+            "Все перечисленные тракторы."
         ]
     },
     {
@@ -62,45 +62,42 @@
         ]
     },
     {
-        "questionText": "Каким из перечисленных приборов измеряется плотность электролита в аккумуляторной батарее?",
-        "questionImage": "",
-        "rightAnswer": 2,
-        "answers": [
-            "Вольтметр.",
-            "Ареометр.",
-            "Нагрузочная вилка.",
-            "Амперметр."
-        ]
-    },
-    {
-        "questionText": "Каково допустимое значение суммарного люфта рулевого колеса тракторов \"Беларус-800\" и \"Беларус-820\"?",
-        "questionImage": "",
-        "rightAnswer": 2,
-        "answers": [
-            "15°.",
-            "20°.",
-            "25°.",
-            "30°."
-        ]
-    },
-    {
-        "questionText": "Можно ли эксплуатировать трактор с превышением нормы дымности?",
+        "questionText": "Какова наименьшая высота грунтозацепов протектора, при которой допускается эксплуатация ведущих колес трактора?",
         "questionImage": "",
         "rightAnswer": 3,
         "answers": [
-            "Можно.",
-            "Можно, при выхлопе чёрного дыма.",
-            "Нельзя."
+            "30 мм.",
+            "15 мм.",
+            "5 мм.",
+            "2 мм."
         ]
     },
     {
-        "questionText": "Какая из указанных операций выполняется только во время сезонного ТО при подготовке тракторов \"Беларус-800\" и \"Беларус-820\" к эксплуатации в весенне-летний период?",
+        "questionText": "Из какого положения рукоятка распределителя в конце хода поршня должна автоматически возвращаться в «нейтральное» положение?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "Установка реле-регулятора в положении \"Л\".",
-            "Произвести перестановку колес на более узкую колею",
-            "Промыть систему охлаждения."
+            "«Подъем».",
+            "«Плавающее»."
+        ]
+    },
+    {
+        "questionText": "В каком состоянии должна быть контрольная лампочка при включе-нии включателя «масса», если генераторная установка у трактора МТЗ исправна?",
+        "questionImage": "",
+        "rightAnswer": 1,
+        "answers": [
+            "Лампочка   загорается.",
+            "Лампочка не загорается."
+        ]
+    },
+    {
+        "questionText": "Каково значение международного символа, касающегося применения приборов и органов управления?",
+        "questionImage": "data:image/png;base64,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",
+        "rightAnswer": 2,
+        "answers": [
+            "Охлаждающая жидкость.",
+            "Топливо.",
+            "Смазка."
         ]
     }
 ]

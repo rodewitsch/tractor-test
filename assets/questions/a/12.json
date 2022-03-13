@@ -6,7 +6,7 @@
         "answers": [
             "50% от номинальной.",
             "70% от номинальной.",
-            "Нагрузка должна постепенно увеличиваться."
+            "90% от номинальной."
         ]
     },
     {
@@ -26,8 +26,7 @@
         "rightAnswer": 1,
         "answers": [
             "Залегание поршневых колец.",
-            "Засорение масляных фильтров.",
-            "Засорение воздушного фильтра."
+            "Засорение масляных фильтров."
         ]
     },
     {
@@ -36,8 +35,7 @@
         "rightAnswer": 2,
         "answers": [
             "Натяжение роликом.",
-            "Отклонением корпуса генератора.",
-            "Гидроцилиндром."
+            "Отклонением корпуса генератора."
         ]
     },
     {
@@ -56,48 +54,44 @@
         "rightAnswer": 1,
         "answers": [
             "Заклинивание рейки топливного насоса.",
-            "Наличие воды в топливе.",
-            "Отказ форсунки."
+            "Наличие воды в топливе."
         ]
     },
     {
-        "questionText": "Разрешена ли работа двигателя в закрытом помещении при техобслуживании тракторов?",
-        "questionImage": "",
-        "rightAnswer": 3,
-        "answers": [
-            "Запрещена.",
-            "Разрешена.",
-            "Допускается только с выводом выхлопных газов за пределы помещения."
-        ]
-    },
-    {
-        "questionText": "Допускается ли эксплуатация тракторов с измененным расположением и числом фар?",
-        "questionImage": "",
-        "rightAnswer": 3,
-        "answers": [
-            "Допускается.",
-            "Допускается с уменьшением числа задних фар.",
-            "Не допускается."
-        ]
-    },
-    {
-        "questionText": "Каким способом осуществляется изменение дорожного просвета трактора Т-25А?",
+        "questionText": "Как изменяют общую длину тяги для увеличения сходимости передних колес трактора МТЗ?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "Перестановкой фланцев цапф передних колес.",
-            "Изменением положения передних колес.",
-            "Заменой колес."
+            "Укорачивают.",
+            "Удлиняют."
         ]
     },
     {
-        "questionText": "До какой метки на маслоизмерительном щупе положено заливать масло в картере двигателя?",
+        "questionText": "По какой из указанных причин может быть затруднено переключение передач?",
         "questionImage": "",
         "rightAnswer": 1,
         "answers": [
-            "До верхней метки.",
-            "До нижней метки.",
-            "Ниже нижней метки."
+            "Неполное выключение сцепления.",
+            "Большое усилие на крюке трактора.",
+            "Велики обороты двигателя."
+        ]
+    },
+    {
+        "questionText": "Какая из перечисленных технологических операций выполняется при переоборудовании трактора для длительной работы задним ходом?",
+        "questionImage": "",
+        "rightAnswer": 1,
+        "answers": [
+            "Перестановка задних колес",
+            "Увеличение давления в гидросистеме."
+        ]
+    },
+    {
+        "questionText": "Каково значение международного символа, касающегося применения приборов и органов управления?",
+        "questionImage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiuI8afHH4cfDfVo9L8W/EDwt4W1OSEXCWWta1bWczRElQ4SR1YqSrDOMZU+lVfDH7Q/wq8ba5a6L4d+Jng7XtZuiwt9O0vX7S5uJiqlm2RpIWbCqxOBwAT2oA9BooooAKKKKACiiigAoopGYRqWYhVUZJJwAKAForyr/hrH4If9Fk+H//AIVFj/8AHa7/AMLeLND8caDa634b1nT/ABBot1u8jUdLukubebaxRtkiEq2GVlODwVI6igDWooooAKKKKACiiigAoorlPHXxY8EfC/7D/wAJl4y8P+Evt2/7J/buqQWX2jZt3+X5rru270zjONy56igDq6K8q/4ax+CH/RZPh/8A+FRY/wDx2vVaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoorzH9pT46aT+zj8F/EvjzVmic6dbkWNnK5X7beMNsEAxk/M+MkA7VDMeFNAH4uf8FUPHUfjb9tDxfDBMk9rodvaaRHIjZGUhV5V6cFZZZVPXlTXkv7InjyH4ZftO/DLxJdTi1srTXbZLqdjgRwSOIpWPsEdjXmPiDXtQ8Va9qWtavdyahqupXMl5eXcxy880jl5HY+rMxJ+tUDkcHg0Af1UUV81/8E//ANpO1/aS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6h4d8TaTa65ol/GYrmxvYhJHIv0PQg4II5BAIIIraooA/If9qD/gjrrug3V/r3wXv/7d0nmUeGdUmC3kPBJWGY4WVRwFD7WwQCXPJ/PLx18N/Fnww1g6V4v8Nar4Z1HnFtq1nJbuwH8ShwNy9ORkHIr+oWsnxP4T0Pxto82k+ItG0/XtKm/1ljqlqlzA/wDvI4KnqeooA/ltor+h/wATf8E8/wBnTxbcSTX3wp0aB5DuI0x57BR16LbyIAOTwB6egrN0f/gmn+zVodys9v8AC6zkdTkC81K+uU/FZZ2B/EUAfz82Njc6peQWdlby3d3O4jiggQvJIxOAqqOSSewr7R/Zw/4JS/Fr4x3VpqHjC1f4a+FZFEpudUjDX8q8/LHabgyHjrLswDkBulftB4D+D3gT4XRuvg/wboPhfzAFkbSNNhtmkAzjcyKC3U9T3rsKAPLf2ev2bPAn7MfgoeHPBGlC1SUq97qE5D3d/IAQHmkwN2MnCjCrk7QMmvUqKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=",
+        "rightAnswer": 1,
+        "answers": [
+            "Уровень охлаждающей жидкости.",
+            "Свеча предпускового подогревателя."
         ]
     }
 ]
