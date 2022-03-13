@@ -75,7 +75,7 @@ class ResultScreen extends React.Component {
         return 'Ни одной ошибки';
       }
       case 'failed': {
-        if (WRONG_ANSWERS > 5) return `Допущено ${WRONG_ANSWERS} ошибок`;
+        if (WRONG_ANSWERS > 4) return `Допущено ${WRONG_ANSWERS} ошибок`;
         return `Допущено ${WRONG_ANSWERS} ошибки`;
       }
       case 'timeout':
