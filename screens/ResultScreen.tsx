@@ -100,7 +100,11 @@ export default function (props: ComponentProps) {
 
   useEffect(() => {
     const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
-      props.navigation.navigate('TestNew');
+      props.navigation.navigate('TestNew', {
+        category: category,
+        ticket: ticketNumber,
+        retry: false,
+      });
       return true;
     });
     return () => {
