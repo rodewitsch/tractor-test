@@ -2,7 +2,7 @@
   "expo": {
     "name": "TractorTest",
     "slug": "TractorTest",
-    "version": "3.0.11",
+    "version": "3.0.12",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -24,7 +24,7 @@
     "android": {
       "permissions": [],
       "package": "com.rdm.tracktortest",
-      "versionCode": 30
+      "versionCode": 31
     },
     "web": {
       "favicon": "./assets/images/favicon.png"

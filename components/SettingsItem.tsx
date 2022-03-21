@@ -1,52 +1,44 @@
-import { useTheme } from '@react-navigation/native';
+import { Theme, useTheme } from '@react-navigation/native';
 import React from 'react';
 import { View, TouchableOpacity, Text, Switch, StyleSheet } from 'react-native';
 import GlobalStyles from '../styles/global';
+import Global from '../global.variables';
+import { ThemeColorType } from '../constants/Colors';
 
-export default function (props: any) {
-  const { colors } = useTheme();
-  return <SettingsItem {...props} colors={colors}></SettingsItem>;
+const getStyles = (colors: ThemeColorType) =>
+  StyleSheet.create({
+    settingLabel: {
+      color: colors.text,
+      fontSize: Global.smallScreen ? 13 : 15,
+      marginTop: 15,
+    },
+    checkbox: {
+      marginTop: 15,
+      marginRight: 5,
+    },
+  });
+
+interface ComponentProps {
+  title: string;
+  onPress: () => void;
+  value: boolean;
 }
 
-class SettingsItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-    this.colors = this.props.colors;
-    this.styles = this.getStyles();
-  }
-
-  shouldComponentUpdate = () => {
-    this.colors = this.props.colors;
-    this.styles = this.getStyles();
-    return true;
-  };
-
-  render = () => (
+export default function (props: ComponentProps) {
+  const { colors } = useTheme() as Theme & { colors: ThemeColorType };
+  const styles = getStyles(colors);
+  return (
     <View style={{ ...GlobalStyles.flexRow, justifyContent: 'space-between', alignItems: 'center' }}>
-      <TouchableOpacity onPress={this.props.onPress} style={{ width: '85%' }}>
-        <Text style={this.styles.settingLabel}>{this.props.title}</Text>
+      <TouchableOpacity onPress={props.onPress} style={{ width: '85%' }}>
+        <Text style={styles.settingLabel}>{props.title}</Text>
       </TouchableOpacity>
       <Switch
-        style={this.styles.checkbox}
+        style={styles.checkbox}
         trackColor={{ false: '#767577', true: '#81b0ff' }}
-        thumbColor={this.props.value ? '#579DD0' : '#f4f3f4'}
-        onValueChange={this.props.onPress}
-        value={this.props.value}
+        thumbColor={props.value ? '#579DD0' : '#f4f3f4'}
+        onValueChange={props.onPress}
+        value={props.value}
       />
     </View>
   );
-
-  getStyles = () =>
-    StyleSheet.create({
-      settingLabel: {
-        color: this.colors.text,
-        fontSize: global.smallScreen ? 13 : 15,
-        marginTop: 15,
-      },
-      checkbox: {
-        marginTop: 15,
-        marginRight: 5,
-      },
-    });
 }

@@ -1,36 +1,11 @@
-import { useNavigation, useTheme } from '@react-navigation/native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { NavigationProp, ParamListBase, Theme, useNavigation, useTheme } from '@react-navigation/native';
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
-
 import Global from '../global.variables';
+import { ThemeColorType } from '../constants/Colors';
 
-type ParamsList = {
-  MenuItem: {
-    image: string;
-    category: string;
-    description: string;
-  };
-};
-
-type Props = NativeStackScreenProps<ParamsList, 'MenuItem'>;
-
-export default function MenuItem({ route, ...props }: Props) {
-  const navigation = useNavigation();
-
-  const startTest = (category: string) => {
-    if (Global.appSettings.requestTicketNumber) {
-      navigation.navigate('Tickets', { category });
-    } else {
-      navigation.navigate('TestNew', { category });
-    }
-  };
-
-  const { image, category, description } = props;
-
-  const { colors, dark } = useTheme();
-
-  const styles = StyleSheet.create({
+const getStyles = (colors: ThemeColorType) =>
+  StyleSheet.create({
     item: {
       backgroundColor: colors.middleground,
       marginVertical: 4,
@@ -54,6 +29,26 @@ export default function MenuItem({ route, ...props }: Props) {
       color: colors.category,
     },
   });
+interface ComponentProps {
+  image: React.ReactNode;
+  category: string;
+  description: string;
+}
+
+export default function (props: ComponentProps) {
+  const navigation: NavigationProp<ParamListBase> = useNavigation();
+
+  const startTest = (category: string) => {
+    if (Global.appSettings.requestTicketNumber) {
+      navigation.navigate('Tickets', { category });
+    } else {
+      navigation.navigate('TestNew', { category });
+    }
+  };
+
+  const { image, category, description } = props;
+  const { colors } = useTheme() as Theme & { colors: ThemeColorType };
+  const styles = getStyles(colors);
 
   return (
     <TouchableOpacity style={styles.item} onPress={() => startTest(category)}>

@@ -27,3 +27,27 @@ export default {
     defaultAnswerColor: '#EEEEEE',
   },
 };
+
+export type ColorsType = {
+  background: 'string';
+  text: 'string';
+  selectItemsBackground: string;
+  settingsButtonColor: string;
+  whiteText: string;
+  questionStatusDefaultBackground: string;
+  questionStatusSuccessBackground: string;
+  questionStatusActiveBackground: string;
+  questionStatusWrongBackground: string;
+  dark: ThemeColorType;
+  light: ThemeColorType;
+};
+
+export type ThemeColorType = {
+  primary: string;
+  background: string;
+  middleground: string;
+  text: string;
+  category: string;
+  questionNumber: string;
+  defaultAnswerColor: string;
+};
