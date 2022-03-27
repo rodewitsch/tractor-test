@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Text, StyleSheet, Image, View, TouchableOpacity, ScrollView, BackHandler } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
 import Modal from 'react-native-modalbox';
@@ -16,7 +16,7 @@ import GlobalStyles from '../styles/global';
 import BackSvg from '../assets/svg/back.svg';
 import TimerSvg from '../assets/svg/timer.svg';
 import PromptModal from '../components/PromptModal';
-import { NavigationProp, Theme, useTheme, ParamListBase, RouteProp } from '@react-navigation/native';
+import { NavigationProp, Theme, useTheme, ParamListBase, RouteProp, useFocusEffect } from '@react-navigation/native';
 
 import Global from '../global.variables';
 
@@ -159,85 +159,35 @@ export default function (props: ComponentProps) {
   const exitModal = useRef<Modal>(null);
   const styles = getStyles(colors);
 
-  const currentCategory = props.route.params.category;
-  const selectedTicket = props.route.params.ticket;
-
-  const ticketNumber =
-    selectedTicket !== undefined
-      ? selectedTicket
-      : randomInteger(0, getCategoryTickets(currentCategory).default.length - 1);
+  function getTicketNumber() {
+    return props.route.params.ticket !== undefined
+      ? props.route.params.ticket
+      : randomInteger(0, getCategoryTickets(props.route.params.category).default.length - 1);
+  }
 
   const initialExamState = {
     examStatus: 'inProgress',
-    ticketNumber,
+    ticketNumber: getTicketNumber(),
     questionNumber: 0,
     timer: '10:00',
-    answers: new Array(getCategoryTickets(currentCategory).default[ticketNumber].length)
+    answers: new Array(getCategoryTickets(props.route.params.category).default[getTicketNumber()].length)
       .fill(null)
       .map((item, index) => ({
-        rightAnswer: getQuestionItem(ticketNumber, index).rightAnswer - 1,
+        rightAnswer: getQuestionItem(getTicketNumber(), index).rightAnswer - 1,
         userAnswer: -1,
       })),
   };
 
   const [timeout, setTimeoutValue] = useState(600);
-  const [state, setState] = useState(initialExamState);
+  const [examState, setExamState] = useState(initialExamState);
 
-  useEffect(() => {
-    const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
-    return () => {
-      backHandler.remove();
-    };
-  }, []);
-
-  useEffect(() => {
-    if (state.examStatus !== 'inProgress') return;
-    const tick = setTimeout(() => setTimeoutValue(timeout - 1), 1000);
-
-    let minutes = parseInt((timeout / 60).toFixed(2), 10);
-    let seconds = parseInt((timeout % 60).toFixed(2), 10);
-
-    setState({
-      ...state,
-      timer: (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds),
-    });
-
-    if (timeout < 0) {
-      setState({
-        ...state,
-        examStatus: 'timeout',
-      });
-
-      return props.navigation.navigate('Result', {
-        examStatus: state.examStatus,
-        ticketNumber: state.ticketNumber,
-        answers: state.answers,
-        category: currentCategory,
-      });
-    }
-
-    return () => {
-      if (tick) clearInterval(tick);
-    };
-  }, [timeout]);
-
-  useEffect(() => {
-    if (state.examStatus !== 'inProgress' && props?.route?.params?.retry) {
-      setState({
-        ...initialExamState,
-        ticketNumber: props.route.params.ticket,
-      });
-      setTimeoutValue(600);
-    }
-  });
-
-  function getQuestionItem(ticketNumber: number = state.ticketNumber, questionNumber: number = state.questionNumber) {
-    return getCategoryTickets(currentCategory).default[ticketNumber][questionNumber];
+  function getQuestionItem(ticketNumber: number = examState.ticketNumber, questionNumber: number = examState.questionNumber) {
+    return getCategoryTickets(props.route.params.category).default[ticketNumber][questionNumber];
   }
 
   function getExamStatus() {
-    if (state.answers.every((item) => item.userAnswer !== -1)) {
-      if (state.answers.reduce((acc, item) => (item.userAnswer !== item.rightAnswer ? (acc += 1) : acc), 0) > 1)
+    if (examState.answers.every((item) => item.userAnswer !== -1)) {
+      if (examState.answers.reduce((acc, item) => (item.userAnswer !== item.rightAnswer ? (acc += 1) : acc), 0) > 1)
         return 'failed';
       else return 'passed';
     }
@@ -252,36 +202,36 @@ export default function (props: ComponentProps) {
 
   function setQuestion(number: number) {
     if (number > 9 || number < 0) return;
-    setState({ ...state, questionNumber: number });
+    setExamState({ ...examState, questionNumber: number });
   }
 
   function setAnswer(number: number) {
-    if (state.examStatus !== 'inProgress') return;
-    if (state.answers[state.questionNumber].userAnswer !== -1) {
-      const EMPTY_ANSWER = state.answers.findIndex(
-        (item, index) => item.userAnswer === -1 && index > state.questionNumber
+    if (examState.examStatus !== 'inProgress') return;
+    if (examState.answers[examState.questionNumber].userAnswer !== -1) {
+      const EMPTY_ANSWER = examState.answers.findIndex(
+        (item, index) => item.userAnswer === -1 && index > examState.questionNumber
       );
-      if (state.questionNumber < 9 && EMPTY_ANSWER !== -1) {
-        setState({
-          ...state,
+      if (examState.questionNumber < 9 && EMPTY_ANSWER !== -1) {
+        setExamState({
+          ...examState,
           questionNumber: EMPTY_ANSWER,
         });
       } else {
-        setState({
-          ...state,
-          questionNumber: state.answers.findIndex((item) => item.userAnswer === -1),
+        setExamState({
+          ...examState,
+          questionNumber: examState.answers.findIndex((item) => item.userAnswer === -1),
         });
       }
     } else {
-      state.answers[state.questionNumber].userAnswer = number;
-      state.examStatus = getExamStatus();
-      setState({ ...state });
-      if (state.examStatus !== 'inProgress') {
+      examState.answers[examState.questionNumber].userAnswer = number;
+      examState.examStatus = getExamStatus();
+      setExamState({ ...examState });
+      if (examState.examStatus !== 'inProgress') {
         return props.navigation.navigate('Result', {
-          examStatus: state.examStatus,
-          ticketNumber: state.ticketNumber,
-          answers: state.answers,
-          category: currentCategory,
+          examStatus: examState.examStatus,
+          ticketNumber: examState.ticketNumber,
+          answers: examState.answers,
+          category: props.route.params.category,
         });
       }
     }
@@ -291,39 +241,86 @@ export default function (props: ComponentProps) {
     if (gestureName === null) {
       const { dx } = gestureState;
       if (dx > 0) {
-        setQuestion(state.questionNumber - 1);
+        setQuestion(examState.questionNumber - 1);
       } else if (dx < 0) {
-        setQuestion(state.questionNumber + 1);
+        setQuestion(examState.questionNumber + 1);
       }
     } else {
       switch (gestureName) {
         case 'SWIPE_RIGHT':
-          setQuestion(state.questionNumber - 1);
+          setQuestion(examState.questionNumber - 1);
           break;
         case 'SWIPE_LEFT':
-          setQuestion(state.questionNumber + 1);
+          setQuestion(examState.questionNumber + 1);
           break;
       }
     }
   }
 
   function getQuestionStatusColor(number: number) {
-    if (number === state.questionNumber) return 'white';
-    if (state.answers[number].userAnswer === -1) return colors.questionNumber;
-    if (state.answers[number].rightAnswer === state.answers[number].userAnswer)
+    if (number === examState.questionNumber) return 'white';
+    if (examState.answers[number].userAnswer === -1) return colors.questionNumber;
+    if (examState.answers[number].rightAnswer === examState.answers[number].userAnswer)
       return COLORS.questionStatusSuccessBackground;
     return COLORS.questionStatusWrongBackground;
   }
 
   function getAnswerStatusColor(number: number) {
     const rightAnswer = getQuestionItem().rightAnswer - 1;
-    const userAnswer = state.answers[state.questionNumber].userAnswer;
+    const userAnswer = examState.answers[examState.questionNumber].userAnswer;
     if (userAnswer === -1) return colors.defaultAnswerColor;
     if (number === userAnswer && userAnswer === rightAnswer) return COLORS.questionStatusSuccessBackground;
     if (number !== userAnswer && number === rightAnswer) return COLORS.questionStatusSuccessBackground;
     if (number === userAnswer && number !== rightAnswer) return COLORS.questionStatusWrongBackground;
     return colors.defaultAnswerColor;
   }
+
+  useEffect(() => {
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+    return () => {
+      backHandler.remove();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (examState.examStatus !== 'inProgress') return;
+    const tick = setTimeout(() => setTimeoutValue(timeout - 1), 1000);
+
+    let minutes = parseInt((timeout / 60).toFixed(2), 10);
+    let seconds = parseInt((timeout % 60).toFixed(2), 10);
+
+    setExamState({
+      ...examState,
+      timer: (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds),
+    });
+
+    if (timeout < 0) {
+      setExamState({
+        ...examState,
+        examStatus: 'timeout',
+      });
+
+      return props.navigation.navigate('Result', {
+        examStatus: examState.examStatus,
+        ticketNumber: examState.ticketNumber,
+        answers: examState.answers,
+        category: props.route.params.category,
+      });
+    }
+
+    return () => {
+      if (tick) clearInterval(tick);
+    };
+  }, [timeout]);
+
+  useFocusEffect(
+    useCallback(() => {
+      if (examState.examStatus !== 'inProgress' && props.route.params.retry) {
+        setExamState(initialExamState);
+        setTimeoutValue(600);
+      }
+    }, [props.route.params])
+  )
 
   return (
     <GestureRecognizer onSwipe={(direction, state) => onSwipe(direction, state)} style={styles.container}>
@@ -354,12 +351,12 @@ export default function (props: ComponentProps) {
             />
           </TouchableOpacity>
           <View style={styles.headerTitle}>
-            <Text style={styles.headerTicketNumber}>Билет {state.ticketNumber + 1}</Text>
-            <Text style={styles.headerCategory}>Категория {currentCategory.substr(0, 1)}</Text>
+            <Text style={styles.headerTicketNumber}>Билет {examState.ticketNumber + 1}</Text>
+            <Text style={styles.headerCategory}>Категория {props.route.params.category.substr(0, 1)}</Text>
           </View>
           <View style={styles.timer}>
             <TimerSvg width={Global.smallScreen ? 20 : 24} height={Global.smallScreen ? 20 : 24} fill={colors.text} />
-            <Text style={styles.timerLabel}>{state.timer}</Text>
+            <Text style={styles.timerLabel}>{examState.timer}</Text>
           </View>
         </View>
 
@@ -401,7 +398,7 @@ export default function (props: ComponentProps) {
           />
         )}
         {getQuestionItem().answers.map((answer, index) => (
-          <TouchableOpacity key={index} disabled={state.examStatus !== 'inProgress'} onPress={() => setAnswer(index)}>
+          <TouchableOpacity key={index} disabled={examState.examStatus !== 'inProgress'} onPress={() => setAnswer(index)}>
             <View
               style={{
                 ...styles.answerItem,
