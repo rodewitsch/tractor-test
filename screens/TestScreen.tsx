@@ -223,7 +223,10 @@ export default function (props: ComponentProps) {
 
   useEffect(() => {
     if (state.examStatus !== 'inProgress' && props?.route?.params?.retry) {
-      setState(initialExamState);
+      setState({
+        ...initialExamState,
+        ticketNumber: props.route.params.ticket,
+      });
       setTimeoutValue(600);
     }
   });
