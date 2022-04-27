@@ -165,15 +165,17 @@ export default function (props: ComponentProps) {
       : randomInteger(0, getCategoryTickets(props.route.params.category).default.length - 1);
   }
 
+  const ticketNumber = getTicketNumber();
+
   const initialExamState = {
     examStatus: 'inProgress',
-    ticketNumber: getTicketNumber(),
+    ticketNumber,
     questionNumber: 0,
     timer: '10:00',
-    answers: new Array(getCategoryTickets(props.route.params.category).default[getTicketNumber()].length)
+    answers: new Array(getCategoryTickets(props.route.params.category).default[ticketNumber].length)
       .fill(null)
       .map((item, index) => ({
-        rightAnswer: getQuestionItem(getTicketNumber(), index).rightAnswer,
+        rightAnswer: getQuestionItem(ticketNumber, index).rightAnswer,
         userAnswer: -1,
       })),
   };
@@ -223,7 +225,6 @@ export default function (props: ComponentProps) {
         });
       }
     } else {
-      console.log('----------------------------------------------------------------------------------------');
       examState.answers[examState.questionNumber].userAnswer = number;
       examState.examStatus = getExamStatus();
       setExamState({ ...examState });
@@ -236,7 +237,6 @@ export default function (props: ComponentProps) {
         });
       }
     }
-    console.log(4, examState.answers[examState.questionNumber]);
   }
 
   function onSwipe(gestureName: string, gestureState: { dx: number }) {
