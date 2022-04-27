@@ -1252,7 +1252,7 @@
     base64-js "^1.2.3"
     xmlbuilder "^14.0.0"
 
-"@expo/prebuild-config@^3.0.15":
+"@expo/prebuild-config@^3.0.16":
   version "3.1.0"
   resolved "https://registry.npmjs.org/@expo/prebuild-config/-/prebuild-config-3.1.0.tgz"
   integrity sha512-Vwz2L3brsrvLVDBXj2gcB2QfeyAPKxa7rCOSFnPhyHf2qpxtmncv9IVrSdkHyWlPW7KmFVfiRsT3/nHXoataqQ==
@@ -3546,7 +3546,7 @@ expo-splash-screen@~0.14.0:
   integrity sha512-X25D/0E2AWEFGgDWIVXZ5Bl7FhYk7TgVhEWvplBqrDY7G7vg5l1aoH6PelOQINWPsa1dcRyA7REdN2ltO+0LAw==
   dependencies:
     "@expo/configure-splash-screen" "^0.6.0"
-    "@expo/prebuild-config" "^3.0.15"
+    "@expo/prebuild-config" "^3.0.16"
 
 expo-status-bar@~1.2.0:
   version "1.2.0"

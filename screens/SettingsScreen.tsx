@@ -151,7 +151,7 @@ export default function (props: ComponentProps) {
               fontSize: Global.smallScreen ? 13 : 15,
             }}
           >
-            3.0.15
+            3.0.16
           </Text>
         </View>
       </ScrollView>

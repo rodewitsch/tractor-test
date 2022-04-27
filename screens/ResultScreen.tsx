@@ -1,5 +1,4 @@
-import { NavigationProp, RouteProp, ParamListBase, Theme, useTheme } from '@react-navigation/native';
-import React, { useEffect } from 'react';
+import { NavigationProp, RouteProp, ParamListBase, Theme, useTheme } from '@react-navigation/native';import React, { useEffect } from 'react';
 import { Text, StyleSheet, View, TouchableOpacity, BackHandler } from 'react-native';
 
 import CloseSvg from '../assets/svg/close.svg';

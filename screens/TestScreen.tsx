@@ -173,7 +173,7 @@ export default function (props: ComponentProps) {
     answers: new Array(getCategoryTickets(props.route.params.category).default[getTicketNumber()].length)
       .fill(null)
       .map((item, index) => ({
-        rightAnswer: getQuestionItem(getTicketNumber(), index).rightAnswer - 1,
+        rightAnswer: getQuestionItem(getTicketNumber(), index).rightAnswer,
         userAnswer: -1,
       })),
   };
@@ -223,6 +223,7 @@ export default function (props: ComponentProps) {
         });
       }
     } else {
+      console.log('----------------------------------------------------------------------------------------');
       examState.answers[examState.questionNumber].userAnswer = number;
       examState.examStatus = getExamStatus();
       setExamState({ ...examState });
@@ -235,6 +236,7 @@ export default function (props: ComponentProps) {
         });
       }
     }
+    console.log(4, examState.answers[examState.questionNumber]);
   }
 
   function onSwipe(gestureName: string, gestureState: { dx: number }) {
@@ -266,7 +268,7 @@ export default function (props: ComponentProps) {
   }
 
   function getAnswerStatusColor(number: number) {
-    const rightAnswer = getQuestionItem().rightAnswer - 1;
+    const rightAnswer = examState.answers[examState.questionNumber].rightAnswer;
     const userAnswer = examState.answers[examState.questionNumber].userAnswer;
     if (userAnswer === -1) return colors.defaultAnswerColor;
     if (number === userAnswer && userAnswer === rightAnswer) return COLORS.questionStatusSuccessBackground;
@@ -398,11 +400,11 @@ export default function (props: ComponentProps) {
           />
         )}
         {getQuestionItem().answers.map((answer, index) => (
-          <TouchableOpacity key={index} disabled={examState.examStatus !== 'inProgress'} onPress={() => setAnswer(index)}>
+          <TouchableOpacity key={index} disabled={examState.examStatus !== 'inProgress'} onPress={() => setAnswer(index+1)}>
             <View
               style={{
                 ...styles.answerItem,
-                borderColor: getAnswerStatusColor(index),
+                borderColor: getAnswerStatusColor(index+1),
               }}
             >
               <Text
