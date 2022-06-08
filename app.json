@@ -2,7 +2,7 @@
   "expo": {
     "name": "TractorTest",
     "slug": "TractorTest",
-    "version": "3.0.17",
+    "version": "3.0.18",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
