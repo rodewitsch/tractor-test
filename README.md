@@ -1,9 +1,7 @@
 # TractorTest
 
 [![GitHub license](https://img.shields.io/github/license/rodewitsch/TractorTest)](https://github.com/rodewitsch/TractorTest/blob/master/LICENSE)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/rodewitsch/TractorTest.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/rodewitsch/TractorTest/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/rodewitsch/TractorTest.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/rodewitsch/TractorTest/context:javascript)
-![Google Play Installations](https://img.shields.io/badge/Google%20Play%20installations-26K%2B-blue)
+[![Google Play Installations](https://img.shields.io/badge/Google%20Play%20installations-70K%2B-blue)](https://play.google.com/store/apps/details?id=com.rdm.tracktortest)
 
 Tests according to the rules of technical operation for obtaining the profession of a tractor driver, categories A, B, D, E, F.
 
