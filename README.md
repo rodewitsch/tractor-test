@@ -1,7 +1,7 @@
 # TractorTest
 
 [![GitHub license](https://img.shields.io/github/license/rodewitsch/TractorTest)](https://github.com/rodewitsch/TractorTest/blob/master/LICENSE)
-[![Google Play Installations](https://img.shields.io/badge/Google%20Play%20installations-70K%2B-blue)](https://play.google.com/store/apps/details?id=com.rdm.tracktortest)
+[![Google Play Installations](https://img.shields.io/badge/Google%20Play%20installations-80K%2B-blue)](https://play.google.com/store/apps/details?id=com.rdm.tracktortest)
 
 Tests according to the rules of technical operation for obtaining the profession of a tractor driver, categories A, B, D, E, F.
 
