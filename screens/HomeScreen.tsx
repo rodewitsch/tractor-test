@@ -1,6 +1,15 @@
-import React, { useRef } from 'react';
-import { TouchableOpacity, StyleSheet, Text, SafeAreaView, FlatList, View, StatusBar, BackHandler } from 'react-native';
-import Modal from 'react-native-modalbox';
+import React, { useRef, useState } from 'react';
+import {
+  TouchableOpacity,
+  StyleSheet,
+  Text,
+  SafeAreaView,
+  FlatList,
+  View,
+  StatusBar,
+  BackHandler,
+  Modal,
+} from 'react-native';
 import IconDarkSvg from '../assets/svg/icon_dark.svg';
 import GearSvg from '../assets/svg/gear.svg';
 import CategoryASvg from '../assets/svg/category_a.svg';
@@ -108,22 +117,22 @@ const getMenuItems = (colors: ThemeColorType) => {
       ),
     },
   ];
-}
+};
 
 interface ComponentProps {
-  navigation: NavigationProp<ParamListBase>
+  navigation: NavigationProp<ParamListBase>;
 }
 
 export default function (props: ComponentProps) {
+  const [modalVisible, setModalVisible] = useState(false);
   const { colors } = useTheme() as Theme & { colors: ThemeColorType };
-  const exitModal = useRef<Modal>(null);
   const styles = getStyles(colors);
   const menuItems = getMenuItems(colors);
 
   useEffect(() => {
     const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
       if (Global.appSettings.requestAppExit) {
-        exitModal.current?.open();
+        setModalVisible(true);
       } else {
         BackHandler.exitApp();
       }
@@ -138,13 +147,15 @@ export default function (props: ComponentProps) {
     <SafeAreaView style={styles.container}>
       <StatusBar hidden={true} />
 
-      <Modal style={GlobalStyles.modal} backButtonClose={true} position="center" ref={exitModal}>
+      <Modal visible={modalVisible} style={GlobalStyles.modal} backButtonClose={true} position="center">
         <PromptModal
           success={() => {
-            exitModal.current?.close();
+            setModalVisible(false);
             setTimeout(() => BackHandler.exitApp(), 300);
           }}
-          cancel={() => exitModal.current?.close()}
+          cancel={() => {
+            setModalVisible(false);
+          }}
           title="Выйти из приложения"
           successButton="Выйти"
           cancelButton="Отмена"

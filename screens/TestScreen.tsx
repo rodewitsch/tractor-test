@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Text, StyleSheet, Image, View, TouchableOpacity, ScrollView, BackHandler } from 'react-native';
+import { Text, StyleSheet, Image, View, TouchableOpacity, ScrollView, BackHandler, Modal } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
-import Modal from 'react-native-modalbox';
 
 import COLORS, { ThemeColorType } from '../constants/Colors';
 
@@ -155,8 +154,8 @@ const getStyles = (colors: ThemeColorType) =>
   });
 
 export default function (props: ComponentProps) {
+  const [modalVisible, setModalVisible] = useState(false);
   const { colors } = useTheme() as Theme & { colors: ThemeColorType };
-  const exitModal = useRef<Modal>(null);
   const styles = getStyles(colors);
 
   function getTicketNumber() {
@@ -183,7 +182,10 @@ export default function (props: ComponentProps) {
   const [timeout, setTimeoutValue] = useState(600);
   const [examState, setExamState] = useState(initialExamState);
 
-  function getQuestionItem(ticketNumber: number = examState.ticketNumber, questionNumber: number = examState.questionNumber) {
+  function getQuestionItem(
+    ticketNumber: number = examState.ticketNumber,
+    questionNumber: number = examState.questionNumber
+  ) {
     return getCategoryTickets(props.route.params.category).default[ticketNumber][questionNumber];
   }
 
@@ -198,7 +200,7 @@ export default function (props: ComponentProps) {
 
   function handleBackPress() {
     if (!Global.appSettings.requestExamExit) props.navigation.navigate('HomeNew');
-    exitModal.current?.open();
+    setModalVisible(true);
     return true;
   }
 
@@ -322,20 +324,20 @@ export default function (props: ComponentProps) {
         setTimeoutValue(600);
       }
     }, [props.route.params])
-  )
+  );
 
   return (
     <GestureRecognizer onSwipe={(direction, state) => onSwipe(direction, state)} style={styles.container}>
       <Modal
+        visible={modalVisible}
         useNativeDriver={true}
         style={GlobalStyles.modal}
         backButtonClose={true}
         position={'center'}
-        ref={exitModal}
       >
         <PromptModal
           success={() => props.navigation.navigate('HomeNew')}
-          cancel={() => exitModal.current?.close()}
+          cancel={() => setModalVisible(false)}
           title="Выйти из экзамена"
           successButton="Выйти"
           cancelButton="Отмена"
@@ -400,11 +402,15 @@ export default function (props: ComponentProps) {
           />
         )}
         {getQuestionItem().answers.map((answer, index) => (
-          <TouchableOpacity key={index} disabled={examState.examStatus !== 'inProgress'} onPress={() => setAnswer(index+1)}>
+          <TouchableOpacity
+            key={index}
+            disabled={examState.examStatus !== 'inProgress'}
+            onPress={() => setAnswer(index + 1)}
+          >
             <View
               style={{
                 ...styles.answerItem,
-                borderColor: getAnswerStatusColor(index+1),
+                borderColor: getAnswerStatusColor(index + 1),
               }}
             >
               <Text
