@@ -2,7 +2,7 @@
   "expo": {
     "name": "TractorTest",
     "slug": "TractorTest",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -55,7 +55,7 @@
         "com.sonyericsson.home.permission.BROADCAST_BADGE"
       ],
       "package": "com.rdm.tracktortest",
-      "versionCode": 42
+      "versionCode": 43
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
