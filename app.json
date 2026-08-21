@@ -2,16 +2,11 @@
   "expo": {
     "name": "TractorTest",
     "slug": "TractorTest",
-    "version": "3.1.2",
+    "version": "3.2.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -55,7 +50,7 @@
         "com.sonyericsson.home.permission.BROADCAST_BADGE"
       ],
       "package": "com.rdm.tracktortest",
-      "versionCode": 44
+      "versionCode": 45
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
@@ -64,6 +59,16 @@
       "eas": {
         "projectId": "aa444585-89bd-4e8b-937e-418ffb4dcf45"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ]
   }
 }
