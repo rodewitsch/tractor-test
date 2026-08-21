@@ -1,17 +1,32 @@
 import { Theme, useTheme } from '@react-navigation/native';
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, GestureResponderEvent } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, GestureResponderEvent, useWindowDimensions } from 'react-native';
 import { ThemeColorType } from '../constants/Colors';
 
 import Global from '../global.variables';
 
-const getStyles = (colors: ThemeColorType) =>
+const getStyles = (colors: ThemeColorType, screenWidth: number, screenHeight: number) =>
   StyleSheet.create({
     container: {
-      backgroundColor: colors.background,
-      height: '100%',
-      width: Global.screenWidth,
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: screenWidth,
+      height: screenHeight,
       display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'rgba(0, 0, 0, 0.4)',
+      zIndex: 100,
+      elevation: 10,
+    },
+    card: {
+      backgroundColor: colors.background,
+      width: screenWidth * 0.85,
+      maxWidth: 400,
+      borderRadius: 15,
+      paddingVertical: 30,
+      paddingHorizontal: 15,
       justifyContent: 'center',
       alignItems: 'center',
     },
@@ -24,13 +39,15 @@ const getStyles = (colors: ThemeColorType) =>
       backgroundColor: colors.background,
       display: 'flex',
       flexDirection: 'row',
+      width: '100%',
       marginTop: 25,
     },
     button: {
+      flex: 1,
+      maxWidth: 160,
       display: 'flex',
       backgroundColor: colors.middleground,
       height: Global.smallScreen ? 38 : 45,
-      width: Global.smallScreen ? 130 : 160,
       borderRadius: 10,
       marginHorizontal: 5,
       alignItems: 'center',
@@ -49,21 +66,28 @@ interface ComponentProps {
   cancelButton: string;
   success: (event: GestureResponderEvent) => void;
   successButton: string;
+  visible: boolean;
 }
 
 export default function (props: ComponentProps) {
   const { colors } = useTheme() as Theme & { colors: ThemeColorType };
-  const styles = getStyles(colors);
+  const { width, height } = useWindowDimensions();
+  const styles = getStyles(colors, Global.screenWidth || width, Global.screenHeight || height);
+
+  if (!props.visible) return null;
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{props.title}</Text>
-      <View style={styles.buttonsArea}>
-        <TouchableOpacity onPress={props.cancel} style={styles.button}>
-          <Text style={styles.label}>{props.cancelButton}</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={props.success} style={styles.button}>
-          <Text style={styles.label}>{props.successButton}</Text>
-        </TouchableOpacity>
+      <View style={styles.card}>
+        <Text style={styles.title}>{props.title}</Text>
+        <View style={styles.buttonsArea}>
+          <TouchableOpacity onPress={props.cancel} style={styles.button}>
+            <Text style={styles.label}>{props.cancelButton}</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={props.success} style={styles.button}>
+            <Text style={styles.label}>{props.successButton}</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

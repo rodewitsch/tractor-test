@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Text, StyleSheet, Image, View, TouchableOpacity, ScrollView, BackHandler, Modal } from 'react-native';
+import { Text, StyleSheet, Image, View, TouchableOpacity, ScrollView, BackHandler } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
 
 import COLORS, { ThemeColorType } from '../constants/Colors';
@@ -328,22 +328,6 @@ export default function (props: ComponentProps) {
 
   return (
     <GestureRecognizer onSwipe={(direction, state) => onSwipe(direction, state)} style={styles.container}>
-      <Modal
-        visible={modalVisible}
-        useNativeDriver={true}
-        style={GlobalStyles.modal}
-        backButtonClose={true}
-        position={'center'}
-      >
-        <PromptModal
-          success={() => props.navigation.navigate('HomeNew')}
-          cancel={() => setModalVisible(false)}
-          title="Выйти из экзамена"
-          successButton="Выйти"
-          cancelButton="Отмена"
-        />
-      </Modal>
-
       <View style={styles.header}>
         <View style={styles.headerIcon}>
           <TouchableOpacity onPress={() => handleBackPress()}>
@@ -425,6 +409,15 @@ export default function (props: ComponentProps) {
           </TouchableOpacity>
         ))}
       </ScrollView>
+
+      <PromptModal
+        visible={modalVisible}
+        success={() => props.navigation.navigate('HomeNew')}
+        cancel={() => setModalVisible(false)}
+        title="Выйти из экзамена"
+        successButton="Выйти"
+        cancelButton="Отмена"
+      />
     </GestureRecognizer>
   );
 }

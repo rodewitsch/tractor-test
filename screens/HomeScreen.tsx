@@ -8,7 +8,6 @@ import {
   View,
   StatusBar,
   BackHandler,
-  Modal,
 } from 'react-native';
 import IconDarkSvg from '../assets/svg/icon_dark.svg';
 import GearSvg from '../assets/svg/gear.svg';
@@ -147,21 +146,6 @@ export default function (props: ComponentProps) {
     <SafeAreaView style={styles.container}>
       <StatusBar hidden={true} />
 
-      <Modal visible={modalVisible} style={GlobalStyles.modal} backButtonClose={true} position="center">
-        <PromptModal
-          success={() => {
-            setModalVisible(false);
-            setTimeout(() => BackHandler.exitApp(), 300);
-          }}
-          cancel={() => {
-            setModalVisible(false);
-          }}
-          title="Выйти из приложения"
-          successButton="Выйти"
-          cancelButton="Отмена"
-        />
-      </Modal>
-
       <View style={styles.header}>
         <View style={GlobalStyles.flexRow}>
           <View style={styles.titleArea}>
@@ -184,6 +168,20 @@ export default function (props: ComponentProps) {
         data={menuItems}
         renderItem={({ item }) => <MenuItem {...item} />}
         keyExtractor={(item) => item.category}
+      />
+
+      <PromptModal
+        visible={modalVisible}
+        success={() => {
+          setModalVisible(false);
+          setTimeout(() => BackHandler.exitApp(), 300);
+        }}
+        cancel={() => {
+          setModalVisible(false);
+        }}
+        title="Выйти из приложения"
+        successButton="Выйти"
+        cancelButton="Отмена"
       />
     </SafeAreaView>
   );
