@@ -1,28 +1,26 @@
 import { Theme, useTheme } from '@react-navigation/native';
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, GestureResponderEvent, useWindowDimensions } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, GestureResponderEvent } from 'react-native';
 import { ThemeColorType } from '../constants/Colors';
 
 import Global from '../global.variables';
 
-const getStyles = (colors: ThemeColorType, screenWidth: number, screenHeight: number) =>
+const getStyles = (colors: ThemeColorType) =>
   StyleSheet.create({
     container: {
       position: 'absolute',
       top: 0,
       left: 0,
-      width: screenWidth,
-      height: screenHeight,
-      display: 'flex',
+      right: 0,
+      bottom: 0,
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: 'rgba(0, 0, 0, 0.4)',
       zIndex: 100,
-      elevation: 10,
     },
     card: {
       backgroundColor: colors.background,
-      width: screenWidth * 0.85,
+      width: '85%',
       maxWidth: 400,
       borderRadius: 15,
       paddingVertical: 30,
@@ -71,8 +69,7 @@ interface ComponentProps {
 
 export default function (props: ComponentProps) {
   const { colors } = useTheme() as Theme & { colors: ThemeColorType };
-  const { width, height } = useWindowDimensions();
-  const styles = getStyles(colors, Global.screenWidth || width, Global.screenHeight || height);
+  const styles = getStyles(colors);
 
   if (!props.visible) return null;
 
